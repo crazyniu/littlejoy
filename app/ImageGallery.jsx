@@ -9,6 +9,8 @@ export default function ImageGallery({
   priority = false,
   captions = true,
   coverOnly = false,
+  limit,
+  tilt = false,
   children,
 }) {
   const dialog = useRef(null);
@@ -28,10 +30,10 @@ export default function ImageGallery({
   return (
     <>
       <div className={"image-gallery " + className}>
-        {(coverOnly ? items.slice(0, 1) : items).map((item, i) => {
+        {items.slice(0, coverOnly ? 1 : (limit ?? items.length)).map((item, i) => {
           const thumb = item.thumbnail ?? item;
           return (
-            <figure key={item.src}>
+            <figure key={item.src} data-tilt={tilt || undefined} style={{ "--n": i }}>
               <button
                 type="button"
                 className="image-trigger"
@@ -50,7 +52,7 @@ export default function ImageGallery({
                   />
                 )}
                 <span className="enlarge" aria-hidden="true">
-                  ⤢
+                  +
                 </span>
               </button>
               {captions && <figcaption>{item.caption}</figcaption>}

@@ -1,62 +1,90 @@
-import { storePoster } from "../lib/catalog";
-import { concepts, games } from "../lib/portfolio.mjs";
+import { concepts, games, totals } from "../lib/portfolio.mjs";
 import conceptNames from "../lib/concept-names.json";
+import CatalogFilter from "./CatalogFilter";
+import GameFeature from "./GameFeature";
 import ImageGallery from "./ImageGallery";
 import PageBanner from "./PageBanner";
+import { CallToAction, SectionHead } from "./StudioPages";
 
-export default function Portfolio({ lang, copy, story }) {
-  const originalNames = conceptNames[lang].names;
-  const entries = [
-    ...games.map((game) => {
-      const name = copy.games[game.slug].name;
-      return {
-        slug: game.slug,
-        name,
-        isConcept: false,
-        artwork: game.posters.map((_, j) => storePoster(game, j, name)),
-      };
-    }),
-    ...concepts.map((slug, index) => ({
-      slug,
-      name: originalNames[index],
-      isConcept: true,
-      artwork: [
-        {
-          src: "/art/covers/" + slug + ".webp",
-          caption: originalNames[index],
-          width: 418,
-          height: 627,
-        },
-      ],
-    })),
-  ];
+export default function Portfolio({ lang, copy, story, show, labels }) {
+  const names = conceptNames[lang].names;
+  const heading = conceptNames[lang].heading;
   return (
     <>
-      <PageBanner title={story.work} intro={story.catalog} compact />
-      <div className="shell catalog-page work-grid all-works">
-        {entries.map(({ slug, name, isConcept, artwork }, i) => (
-          <article key={slug} id={slug} className="portfolio-card">
-            <ImageGallery
-              items={artwork}
-              title={name}
-              controls={copy.explore.preview}
-              className="portfolio-media"
-              captions={false}
-              coverOnly
-              priority={i === 0}
+      <PageBanner
+        lang={lang}
+        kicker={copy.explore.labels.catalog}
+        title={story.work}
+        intro={story.catalog}
+        sprite="pad"
+      >
+        <dl className="banner-stats">
+          <div>
+            <dd>{games.length}</dd>
+            <dt>{copy.ui.works}</dt>
+          </div>
+          <div>
+            <dd>{concepts.length}</dd>
+            <dt>{heading}</dt>
+          </div>
+          <div>
+            <dd>{totals.levels}</dd>
+            <dt>{copy.explore.labels.levels}</dt>
+          </div>
+        </dl>
+      </PageBanner>
+      <div className="catalog" data-catalog data-filter="all">
+        <CatalogFilter
+          options={[
+            ["all", show.all, games.length + concepts.length],
+            ["games", copy.ui.works, games.length],
+            ["concepts", heading, concepts.length],
+          ]}
+        />
+        <section className="games-showcase" data-group="games">
+          {games.map((game, i) => (
+            <GameFeature key={game.slug} game={game} index={i} lang={lang} copy={copy} full />
+          ))}
+        </section>
+        <section className="concept-gallery" data-group="concepts">
+          <div className="shell">
+            <SectionHead
+              kicker={heading}
+              index={String(concepts.length)}
+              title={story.ideaTitle}
+              text={story.ideaText}
+              lang={lang}
             />
-            <h2
-              className="portfolio-name"
-              id={i === games.length ? "concept-heading" : undefined}
-            >
-              {name}
-            </h2>
-            {isConcept && (
-              <span className="concept-status">{story.conceptTag}</span>
-            )}
-          </article>
-        ))}
+            <ul className="concept-grid" data-stagger>
+              {concepts.map((slug, i) => (
+                <li key={slug} id={slug} className="concept-tile" data-reveal>
+                  <ImageGallery
+                    items={[
+                      {
+                        src: "/art/covers/" + slug + ".webp",
+                        caption: names[i],
+                        width: 418,
+                        height: 627,
+                      },
+                    ]}
+                    title={names[i]}
+                    controls={copy.explore.preview}
+                    captions={false}
+                    coverOnly
+                    tilt
+                  />
+                  <div className="concept-meta">
+                    <span className="concept-no">{String(i + 1).padStart(2, "0")}</span>
+                    <h3>{names[i]}</h3>
+                    <span className="concept-tag">{story.conceptTag}</span>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
       </div>
+      <CallToAction lang={lang} labels={labels} story={story} show={show} />
     </>
   );
 }

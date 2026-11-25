@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build --webpack"
+    "build": "next build --webpack",
+    "preview": "node scripts/preview.mjs"
   },
   "dependencies": {
     "next": "16.4.6",
