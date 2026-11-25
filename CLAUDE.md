@@ -9,9 +9,16 @@ Worker `littlejoy-games` (shopkivoo.com). See README.md for the overview and lay
 npm run build      # static export → out/ (webpack; ~101 HTML pages)
 npm run preview    # out/ through worker.mjs on 0.0.0.0:4173 — use this for review
 npm run dev        # dev server (no worker routing; open /en/)
+npm run smoke      # routing smoke test against the preview (or pass a base URL)
+node scripts/cf-assets.mjs check   # dry run of the deploy bundle
 ```
 
-There are no tests. Verify by building, then checking pages in a browser at desktop
+CI (`.github/workflows/ci.yml`) runs build + smoke + check on every PR, and that
+check (**Build and test**) is required by the ruleset on `main`. Merging to `main` triggers
+`.github/workflows/deploy.yml`, which deploys with `scripts/cf-assets.mjs deploy` and
+smoke-tests production. Don't push to `main` directly; open a PR.
+
+Beyond the smoke test there are no tests. Verify UI changes by building, then checking pages in a browser at desktop
 (1440) and mobile (390) widths. Look for horizontal overflow, console errors, and
 long words in pixel headings (German and Russian are the longest).
 
@@ -67,12 +74,18 @@ long words in pixel headings (German and Russian are the longest).
 exists. Slots are listed in `artSlots` in `lib/portfolio.mjs`; README.md has the table.
 To add art, drop the `.webp` at that path and rebuild. No code change is needed.
 
-## Deploying (Cloudflare MCP + Direct Upload)
+## Deploying
 
-Worker: `littlejoy-games`. Domains: shopkivoo.com, www.shopkivoo.com.
-Preserve `compatibility_date` `2026-11-18`, the binding `ASSETS` (type `assets`), and the
-assets config written by the script (`auto-trailing-slash`, `404-page`, and a
-`run_worker_first` list derived from routes).
+Worker: `littlejoy-games`. Domains: shopkivoo.com, www.shopkivoo.com. The script name,
+`compatibility_date` (`2026-11-18`), the `ASSETS` binding and the assets config
+(`auto-trailing-slash`, `404-page`, `run_worker_first` derived from routes) all live in
+`scripts/cf-assets.mjs`. Change them there, not in the dashboard.
+
+Normally merging to `main` deploys through GitHub Actions (secret `CLOUDFLARE_API_TOKEN`,
+variable `CLOUDFLARE_ACCOUNT_ID`). With a token locally:
+`npm run build && node scripts/cf-assets.mjs deploy`.
+
+### Manual fallback: Cloudflare MCP, no API token
 
 1. `npm run build && node scripts/cf-assets.mjs manifest`, which writes
    `deploy/manifest.json` and `deploy/assets-config.json`. `deploy/` is gitignored.
@@ -89,5 +102,5 @@ assets config written by the script (`auto-trailing-slash`, `404-page`, and a
    - one part per module (`worker.mjs`, `lib/languages.js`, `lib/routes.mjs`,
      `lib/portfolio.mjs`), with type `application/javascript+module` and the part name
      equal to the module path.
-5. Verify: `/` → 302 to the language, `/en/` 200, `/studio` → about, `/en/games/bubble-fish/` → 308,
-   unknown path → 404, then open a page in a browser and check that the console is clean.
+5. Verify: `npm run smoke -- https://shopkivoo.com`, then open a page in a browser and
+   check that the console is clean.
