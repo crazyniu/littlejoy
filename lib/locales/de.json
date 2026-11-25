@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Spiele",
+    "studio": "Studio",
+    "support": "Kontakt",
+    "privacy": "Datenschutzerklärung",
+    "terms": "Nutzungsbedingungen",
+    "skip": "Zum Inhalt springen",
+    "navigation": "Hauptnavigation",
+    "language": "Sprache",
+    "indie": "Unabhängiges Spielestudio",
+    "heroLead": "Wir entwickeln farbenfrohe Rätselspiele für die kleinen Pausen im Alltag.",
+    "browse": "Spiele entdecken",
+    "works": "Unsere Spiele",
+    "about": "Über Littlejoy",
+    "aboutBody": "Eine Blase platzt und ein Fisch schwimmt nach Hause. Ein Vogel hüpft auf den nächsten Ast und findet seinen Schwarm. Mit solchen kleinen Bewegungen beginnen unsere Spiele.",
+    "art": "Konzeptbilder des Studios",
+    "puzzleArt": "Studie verzweigter Wege",
+    "workshopArt": "Konzeptbild der Werkstatt",
+    "contactBody": "Schreib uns, wenn du Hilfe zu einem Spiel brauchst, Bilder nutzen möchtest oder eine Datenschutzfrage hast.",
+    "gallery": "Bilder aus dem App Store",
+    "back": "Alle Spiele",
+    "how": "So wird gespielt",
+    "next": "Nächstes Spiel",
+    "policyNav": "Inhalt",
+    "privacyContact": "Datenschutzkontakt",
+    "termsContact": "Littlejoy Games kontaktieren",
+    "policies": "Informationen für Spieler",
+    "date": "Gültig ab 18. November 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Meeresrätsel",
+      "note": "Tippe eine Blase an und bring den Fisch ins richtige Becken, bevor die Warteplätze voll sind.",
+      "guide": [
+        {
+          "title": "Drei Fische einer Art",
+          "text": "Sammle drei gleiche Fische im passenden Becken. Ein volles Becken macht Platz für die nächste Gruppe."
+        },
+        {
+          "title": "Behalte die Reihe im Blick",
+          "text": "Nur der vorderste Fisch kann seine Blase verlassen. Schau dir die Fische dahinter an, bevor du den letzten Warteplatz belegst."
+        }
+      ],
+      "captions": [
+        "Rette die Fische",
+        "Fülle die Becken",
+        "Plane voraus",
+        "Erkunde die Meere",
+        "Sammle Meerestiere"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Waldrätsel",
+      "note": "Lass die Vögel zwischen Ästen wechseln, bilde gleichfarbige Schwärme und begleite sie durch zehn Waldwelten nach Hause.",
+      "guide": [
+        {
+          "title": "Bilde einen Schwarm",
+          "text": "Suche Vögel derselben Farbe und setze sie um. Lass einen Platz für den nächsten Zug frei."
+        },
+        {
+          "title": "Jenseits der Äste",
+          "text": "Schlafende Vögel und Eier verändern die Zugfolge. Mit Sternen öffnest du Truhen und mit gesammelten Outfits kleidest du die Vögel ein."
+        }
+      ],
+      "captions": [
+        "Sortiere den Schwarm",
+        "Zurück ins Nest",
+        "Erkunde die Wälder",
+        "Kleide Vögel ein",
+        "Öffne Sternentruhen"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Spielebibliothek",
+      "worlds": "Spielwelten",
+      "guide": "Spieltipps",
+      "help": "Spielerhilfe",
+      "open": "Entdecken",
+      "levels": "Level",
+      "seas": "Meere",
+      "creatures": "Meerestiere",
+      "forests": "Wälder",
+      "stars": "Sterne pro Level"
+    },
+    "intros": {
+      "games": "Zwei Rätsel mit eigenem Rhythmus: Unter Wasser hältst du dem nächsten Fisch einen Platz frei. Im Wald suchst du den Ast, auf dem ein Schwarm zusammenfindet.",
+      "worlds": "Vom flachen Wasser bis zur Uhrwerkbucht, vom Bambushain bis zu den Glyzinien: Auf beiden Reisen wächst deine Sammlung.",
+      "guide": "Für welchen Fisch lohnt sich der letzte Platz? Wann brauchst du einen leeren Ast? Zwei Spielsituationen zum Weiterdenken.",
+      "support": "Hier erfährst du, wo dein Spielstand liegt, wie du einen Fehler meldest und wen du um Erlaubnis zur Bildnutzung bittest."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "Von der Küste aufs offene Meer",
+        "world": "360 Level führen durch 18 Meere. Vom Strand im Morgenlicht und dem Korallengarten geht es weiter zur Uhrwerkbucht und in die Bucht der Melodien.",
+        "collectionTitle": "Ein Album für jedes Meer",
+        "collection": "In 18 Alben haben insgesamt 705 Meerestiere Platz. Zwischen zwei Leveln kannst du nachsehen, wen du schon gerettet hast und wo noch eine Lücke ist.",
+        "tacticTitle": "Wenn nur ein Warteplatz frei ist",
+        "tactic": "Schau zuerst in die Becken. Sind schon zwei gleiche Fische darin, kann der dritte das Becken sofort füllen. Ein Fisch ohne passendes Becken besetzt dagegen den letzten Warteplatz."
+      },
+      "fly-home": {
+        "worldTitle": "Durch zehn Wälder nach Hause",
+        "world": "210 Rätsel führen durch zehn gemalte Wälder. Auf Bambus folgen Herbstlaub, Schnee und blühende Bäume, bis der Schwarm die Glyzinien erreicht.",
+        "collectionTitle": "Von Sternen und neuen Outfits",
+        "collection": "Mit wenigen Zügen verdienst du bis zu drei Sterne pro Level. Sterne öffnen Belohnungstruhen. In der Voliere kannst du deinen Vögeln die gesammelten Outfits anprobieren.",
+        "tacticTitle": "Wenn ein Ast fast voll ist",
+        "tactic": "Vergleiche die Vögel an den Enden zweier Äste. Eine Gruppe kann auf einen Ast wechseln, dessen letzter Vogel zur Gruppe passt und der noch Platz bietet. Lass den leeren Ast frei, bis du weißt, wer ihn braucht."
+      }
+    },
+    "faq": [
+      {
+        "question": "Wo wird mein Fortschritt gespeichert?",
+        "answer": "Beide Spiele speichern auf dem Gerät. Nutze im Browser dasselbe Profil wie zuvor. Das Löschen der Websitedaten oder der iOS-App kann den Spielstand entfernen."
+      },
+      {
+        "question": "Wie melde ich einen Fehler?",
+        "answer": "Nenne Spiel, Level und Gerät und beschreibe, worauf du zuletzt getippt hast. Ergänze die App-Version, falls bekannt. Bitte sende keine Passwörter oder Ausweispapiere."
+      },
+      {
+        "question": "Darf ich ein Poster oder eine Illustration nutzen?",
+        "answer": "Links zu öffentlichen Seiten darfst du teilen. Für kommerzielle Zwecke oder ganze Bildsammlungen schick uns bitte die Adresse der Seite und deinen Verwendungszweck."
+      }
+    ],
+    "studio": {
+      "title": "Zeit für den nächsten Zug",
+      "text": "Im Wasser kann der nächste Fisch in der Reihe deinen Plan ändern, im Wald genügt ein leerer Ast. In beiden Spielen kannst du innehalten, das Feld betrachten und deinen Zug wählen."
+    },
+    "preview": {
+      "open": "Bild vergrößern",
+      "close": "Vorschau schließen",
+      "previous": "Vorheriges Bild",
+      "next": "Nächstes Bild"
+    }
+  }
+}

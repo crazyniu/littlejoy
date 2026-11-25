@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Jeux",
+    "studio": "Studio",
+    "support": "Contact",
+    "privacy": "Politique de confidentialité",
+    "terms": "Conditions d’utilisation",
+    "skip": "Aller au contenu",
+    "navigation": "Navigation principale",
+    "language": "Langue",
+    "indie": "Studio de jeux indépendant",
+    "heroLead": "Nous créons des jeux de réflexion colorés pour les petites pauses du quotidien.",
+    "browse": "Découvrir nos jeux",
+    "works": "Nos jeux",
+    "about": "Le studio Littlejoy",
+    "aboutBody": "Une bulle éclate, un poisson retrouve son chemin. Un oiseau change de branche et rejoint les siens. Nos jeux naissent de ces petits gestes.",
+    "art": "Illustrations du studio",
+    "puzzleArt": "Étude de chemins qui bifurquent",
+    "workshopArt": "Vue de l’atelier",
+    "contactBody": "Écrivez à Littlejoy Games pour obtenir de l’aide, demander une autorisation d’utiliser nos images ou poser une question sur vos données.",
+    "gallery": "Visuels de l’App Store",
+    "back": "Tous les jeux",
+    "how": "Comment jouer",
+    "next": "Jeu suivant",
+    "policyNav": "Sommaire",
+    "privacyContact": "Contact pour les données personnelles",
+    "termsContact": "Contacter Littlejoy Games",
+    "policies": "Informations pour les joueurs",
+    "date": "En vigueur le 18 novembre 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Puzzle marin",
+      "note": "Touchez une bulle et guidez le poisson vers son aquarium avant que les places d’attente soient prises.",
+      "guide": [
+        {
+          "title": "Réunissez trois poissons",
+          "text": "Placez trois poissons de la même espèce dans le bon aquarium. Une fois plein, il laisse la place au groupe suivant."
+        },
+        {
+          "title": "Observez la file",
+          "text": "Seul le premier poisson d’une bulle peut sortir. Regardez les suivants avant d’occuper la dernière place."
+        }
+      ],
+      "captions": [
+        "Sauvez les poissons",
+        "Remplissez les aquariums",
+        "Anticipez",
+        "Explorez les mers",
+        "Collectionnez les créatures marines"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Puzzle forestier",
+      "note": "Déplacez les oiseaux de branche en branche et regroupez-les par couleur pour les ramener au nid à travers dix forêts.",
+      "guide": [
+        {
+          "title": "Formez une volée",
+          "text": "Repérez les oiseaux de la même couleur. Gardez un perchoir libre pour votre prochain déplacement."
+        },
+        {
+          "title": "Au-delà des branches",
+          "text": "Les œufs et les oiseaux endormis demandent de changer de stratégie. Ouvrez des coffres avec vos étoiles et habillez vos oiseaux."
+        }
+      ],
+      "captions": [
+        "Triez la volée",
+        "Rentrez au nid",
+        "Explorez les forêts",
+        "Habillez les oiseaux",
+        "Ouvrez les coffres"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Catalogue de jeux",
+      "worlds": "Mondes",
+      "guide": "Guide de jeu",
+      "help": "Aide aux joueurs",
+      "open": "Découvrir",
+      "levels": "Niveaux",
+      "seas": "Mers",
+      "creatures": "Créatures marines",
+      "forests": "Forêts",
+      "stars": "Étoiles par niveau"
+    },
+    "intros": {
+      "games": "Deux puzzles, deux rythmes. Sous l’eau, on réserve une place au prochain poisson. Dans la forêt, on choisit la branche qui réunira les oiseaux.",
+      "worlds": "Des eaux peu profondes à la baie des engrenages, des bambous aux glycines, chaque voyage a sa collection.",
+      "guide": "À qui réserver la dernière place ? Quand utiliser une branche vide ? Voici deux situations pour réfléchir au prochain coup.",
+      "support": "Retrouvez vos sauvegardes, préparez un signalement de bug ou demandez l’autorisation d’utiliser une illustration."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "Du rivage au grand large",
+        "world": "Les 360 niveaux se répartissent sur 18 mers. Après le rivage à l’aube et le jardin de corail, cap sur la baie des engrenages et la crique des mélodies.",
+        "collectionTitle": "Un album pour chaque mer",
+        "collection": "Les 18 albums réunissent 705 créatures marines. Entre deux niveaux, feuilletez-les pour retrouver vos découvertes et les cases encore vides.",
+        "tacticTitle": "Quand il ne reste qu’une place",
+        "tactic": "Regardez d’abord les aquariums. S’il y a déjà deux poissons de la même espèce, le troisième complète l’aquarium et le fait partir. Un poisson sans aquarium disponible prendra la dernière place d’attente."
+      },
+      "fly-home": {
+        "worldTitle": "Dix forêts sur le chemin du nid",
+        "world": "Les 210 puzzles traversent dix forêts peintes. Aux bambous succèdent les feuilles d’automne, la neige et les arbres en fleurs, jusqu’aux glycines.",
+        "collectionTitle": "Des étoiles aux costumes",
+        "collection": "Terminez un niveau en peu de coups pour gagner jusqu’à trois étoiles. Elles ouvrent les coffres de récompenses. De retour à la volière, essayez les tenues de votre collection.",
+        "tacticTitle": "Quand une branche est presque pleine",
+        "tactic": "Comparez les oiseaux au bout de deux branches. Un groupe peut rejoindre une branche s’il y reste de la place et si son dernier oiseau est de la même espèce. Gardez la branche vide jusqu’à savoir qui en a besoin."
+      }
+    },
+    "faq": [
+      {
+        "question": "Où ma partie est-elle enregistrée ?",
+        "answer": "Les deux jeux conservent la progression sur l’appareil. Sur le web, reprenez le même profil de navigateur. Effacer les données du site ou supprimer l’app iOS peut effacer la partie."
+      },
+      {
+        "question": "Comment signaler un bug ?",
+        "answer": "Précisez le jeu, le niveau, l’appareil et la dernière action effectuée. Ajoutez la version de l’app si vous la connaissez. Ne joignez ni mot de passe ni pièce d’identité."
+      },
+      {
+        "question": "Puis-je réutiliser une affiche ou une illustration ?",
+        "answer": "Vous pouvez partager les liens vers nos pages publiques. Pour un usage commercial ou un ensemble d’images, envoyez-nous l’URL par courriel en précisant votre projet."
+      }
+    ],
+    "studio": {
+      "title": "Prendre le temps d’un coup",
+      "text": "Dans l’eau, un poisson en file d’attente peut changer vos plans. Dans la forêt, c’est une branche vide. Dans les deux cas, vous avez le temps de regarder le plateau et de choisir."
+    },
+    "preview": {
+      "open": "Agrandir l’image",
+      "close": "Fermer l’aperçu",
+      "previous": "Image précédente",
+      "next": "Image suivante"
+    }
+  }
+}

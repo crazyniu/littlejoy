@@ -1,0 +1,133 @@
+{
+  "privacy": {
+    "intro": "Kebijakan ini mencakup gim terbitan Littlejoy Games, shopkivoo.com, dan dukungan pemain. Kami menjelaskan data yang tetap di perangkat, data yang dapat dikirim, serta cara menghubungi pengembang.",
+    "sections": [
+      [
+        "operator",
+        "Tentang Kami",
+        [
+          "Littlejoy Games mengelola shopkivoo.com. Kami adalah tim pengembangan gim yang terdiri dari mahasiswa dan berbasis di Los Angeles, Amerika Serikat. Hubungi alamat email pada halaman ini untuk meminta akses, perbaikan, atau penghapusan informasi pribadi Anda."
+        ]
+      ],
+      [
+        "game-data",
+        "Data gim dan fitur perangkat",
+        [
+          "Edisi luring dengan simpanan lokal tidak memerlukan akun. Kemajuan, inventaris, pencapaian, dan preferensi disimpan pada aplikasi atau peramban untuk melanjutkan permainan. Bermain luring tidak mengirim catatan ini ke studio.",
+          "Saat memakai fitur berbagi sistem, Anda memilih isi, aplikasi dan penerima, dan dapat membatalkan sebelum mengirim. Saat sumber daya diunduh, host menerima IP dan jalur berkas yang diperlukan. Sebelum fitur daring memproses data tambahan, kami menjelaskan data, tujuan dan penerima serta meminta persetujuan bila diwajibkan.",
+          "Versi seluler Bird Sort yang menggunakan Firebase Analytics mengirimkan ID instance aplikasi, perkiraan lokasi dari alamat IP yang disamarkan, tampilan layar, sesi, dan peristiwa permainan seperti mulai atau menyelesaikan level kepada Google. Littlejoy Games menggunakan informasi ini untuk memahami cara orang bermain dan meningkatkan permainan. Data analitik dienkripsi saat dikirim, dan pengumpulan ID iklan dinonaktifkan di Firebase Analytics."
+        ]
+      ],
+      [
+        "advertising",
+        "Iklan dan pilihan privasi",
+        [
+          "Sebagian edisi seluler menampilkan iklan melalui Google AdMob. Saat suatu edisi menggunakan AdMob, Google dapat mengumpulkan atau menerima alamat IP dan perkiraan lokasi, pengenal perangkat atau aplikasi (termasuk ID iklan jika tersedia), interaksi dalam aplikasi seperti membuka aplikasi atau mengetuk layar, tayangan dan interaksi iklan, serta data error dan performa. Google dan mitra periklanannya dapat menggunakan atau membagikan informasi tersebut untuk menayangkan dan mengukur iklan, mendiagnosis masalah, serta mencegah penipuan. Jika diizinkan, informasi itu juga dapat digunakan untuk personalisasi iklan.",
+          "Jika persetujuan diperlukan, game menampilkan pemberitahuan privasi untuk iklan. Jika tersedia, buka Opsi Privasi di pengaturan game untuk meninjau atau mengubah pilihan, termasuk menarik persetujuan. Di iOS, kelola izin melalui Pengaturan → Privasi & Keamanan → Pelacakan. Jika Anda menolak pelacakan, aplikasi tidak dapat mengakses pengenal iklan iOS (IDFA). Di Android, gunakan pengaturan iklan pada perangkat untuk mengelola atau menghapus ID iklan. Bergantung pada pilihan dan wilayah, Anda mungkin tetap melihat iklan yang tidak dipersonalisasi."
+        ]
+      ],
+      [
+        "website",
+        "Saat mengunjungi situs",
+        [
+          "Cloudflare mengirimkan halaman dan gambar. Untuk menyediakan konten, melindungi situs, dan mendiagnosis gangguan, jaringannya dapat memproses alamat IP, jalur yang diminta, waktu, informasi peramban, dan status respons. Pemrosesan dapat berlangsung di luar negara Anda.",
+          "Anda dapat melihat gim dan membuka pratinjau gambar tanpa akun. Situs ini tidak memiliki formulir kontak, pembayaran, tag iklan, atau alat analitik internal. Tautan email membuka aplikasi email Anda. Kami hanya menerima pesan setelah Anda mengirimkannya. Situs ini tidak membaca simpanan gim.",
+          "Pada URL tanpa kode bahasa, server memilih halaman sesuai preferensi bahasa yang dikirim peramban. Bahasa yang tercantum pada URL diutamakan. Fitur ini tidak menggunakan kuki."
+        ]
+      ],
+      [
+        "email",
+        "Saat Anda mengirim email",
+        [
+          "Kami menerima alamat pengirim, pesan, dan lampiran pilihan Anda untuk menjawab, menyelidiki masalah, atau menangani permintaan privasi. Kotak surat dukungan menggunakan Gmail dari Google. Jangan sertakan kata sandi, dokumen identitas, atau rincian pribadi yang tidak diperlukan.",
+          "Surat hanya disimpan selama diperlukan untuk menyelesaikan permintaan, menangani sengketa terkait, atau memenuhi kewajiban hukum, lalu dihapus. Penyedia hosting mengelola log teknis sesuai kebijakan retensinya. Kami dapat memberikan informasi jika diwajibkan hukum."
+        ]
+      ],
+      [
+        "security",
+        "Penyedia layanan dan keamanan",
+        [
+          "Situs dan gambar dikirim melalui HTTPS. Akses ke email dukungan terbatas pada petugas yang menangani permintaan. Penyedia yang bekerja atas nama kami wajib menggunakan data sesuai tujuan dan memberikan perlindungan setara. Data pribadi dalam pesan hanya diungkapkan untuk layanan pilihan Anda atau bila hukum mewajibkan."
+        ]
+      ],
+      [
+        "choices",
+        "Pilihan dan penghapusan",
+        [
+          "Di iOS, Hapus App menghapus data lokal. Mengeluarkan app dengan tetap menyimpan dokumen dan data mempertahankan simpanan. Di Android, hapus penyimpanan aplikasi. Di peramban, hapus data situs gim. Kemajuan dapat hilang permanen. Kelola cadangan sistem atau awan secara terpisah.",
+          "Untuk mengakses, menyalin, memperbaiki, membatasi pemrosesan, menghapus data yang pernah Anda kirim, atau menarik persetujuan jika berlaku, kirim email dari alamat semula dan sebutkan gim atau pesan terkait. Kami dapat meminta informasi minimum untuk memverifikasi permintaan dan akan menjawab dalam batas waktu yang diwajibkan hukum.",
+          "Anda juga dapat menghubungi otoritas perlindungan data setempat. Studio tidak dapat mengambil atau menghapus dari jarak jauh simpanan yang hanya ada di perangkat Anda."
+        ]
+      ],
+      [
+        "children",
+        "Anak dan keluarga",
+        [
+          "Bermain luring tidak memerlukan nama, tanggal lahir, atau kontak anak. Jika anak mengirim data melalui email, orang tua atau wali dapat meminta akses atau penghapusan. Jangan sertakan identitas pada permintaan pertama. Persetujuan orang tua diminta bila diwajibkan."
+        ]
+      ],
+      [
+        "platforms",
+        "Platform dan perubahan kebijakan",
+        [
+          "Apple, Google Play dan platform perangkat menangani akun toko, unduhan, cadangan dan diagnostik yang Anda pilih untuk dibagikan sesuai kebijakan dan pengaturan masing-masing. Platform lain seperti WeChat atau host sumber daya dapat memproses permintaan pengiriman. Baca pemberitahuan tambahan untuk edisi Anda.",
+          "Littlejoy Games mengoperasikan situs dan menerima permintaan privasi melalui email di bawah. Jika praktik berubah, kami akan memperbarui halaman dan tanggal berlakunya serta meminta persetujuan bila diwajibkan."
+        ]
+      ]
+    ]
+  },
+  "terms": {
+    "intro": "Ketentuan ini mencakup gim terbitan Littlejoy Games, situs resmi, portofolio dan dukungan pemain. Ketentuan distribusi dan lisensi yang menyertai suatu edisi juga berlaku.",
+    "sections": [
+      [
+        "scope",
+        "Penggunaan situs",
+        [
+          "Anda dapat mengunjungi situs, melihat dan mengunduh gim yang tersedia, serta menghubungi studio. Gunakan kanal resmi. Edisi App Store dan Google Play juga tunduk pada ketentuan toko dan lisensi edisi terkait."
+        ]
+      ],
+      [
+        "game-license",
+        "Lisensi gim dan simpanan",
+        [
+          "Sesuai ketentuan yang berlaku, Anda boleh bermain di perangkat kompatibel milik Anda untuk hiburan pribadi nonkomersial. Hak tetap milik pemegangnya. Jangan menyebarkan pemasang tanpa izin, menyamar sebagai rilis resmi, atau mengganggu pemain atau layanan. Menghapus data, menghapus aplikasi, atau mengganti perangkat dapat menghilangkan kemajuan. Hak Anda menurut hukum tetap berlaku."
+        ]
+      ],
+      [
+        "rights",
+        "Hak atas karya",
+        [
+          "Studio dan pemberi lisensinya memegang hak atas gim, ilustrasi, karakter, tangkapan layar, nama, dan konten. Anda boleh membagikan tautan ke halaman publik. Penggunaan pribadi, kutipan, ulasan, dan penggunaan lain yang dibolehkan hukum tetap diizinkan. Untuk penggunaan komersial, produk turunan, atau penerbitan ulang kumpulan aset, mintalah izin melalui email. Karya pihak ketiga tunduk pada lisensinya sendiri."
+        ]
+      ],
+      [
+        "conduct",
+        "Penggunaan yang wajar",
+        [
+          "Patuhi hukum. Jangan menyamar sebagai studio, mengedarkan unduhan yang diubah seolah-olah resmi, mengganggu situs, atau mengirim materi yang melanggar hak orang lain. Laporkan masalah hak secara pribadi dengan URL dan rincian yang cukup untuk mengenali materi."
+        ]
+      ],
+      [
+        "games",
+        "Pratinjau dan ketersediaan",
+        [
+          "Proyek berlabel “Konsep gim” adalah eksplorasi desain. Desain, rencana publikasi, dan jadwal rilis dapat berubah. Lihat toko terkait untuk mengetahui ketersediaan di wilayah Anda. Situs ini tidak memproses pembelian gim."
+        ]
+      ],
+      [
+        "responsibility",
+        "Layanan dan hak Anda",
+        [
+          "Akses dapat terhenti karena pemeliharaan atau gangguan jaringan. Kami berupaya memperbaiki kesalahan penting yang dilaporkan. Ketentuan ini tidak membatasi perlindungan konsumen wajib, upaya hukum, atau tanggung jawab yang tidak dapat dikecualikan menurut hukum. Anak di bawah umur perlu izin orang tua atau wali jika diwajibkan."
+        ]
+      ],
+      [
+        "contact",
+        "Pembaruan dan kontak",
+        [
+          "Tanggal berlaku menunjukkan versi ini. Perubahan penting akan diumumkan di sini. Kirim permintaan izin, pertanyaan, atau keluhan ke email di bawah. Anda tetap berhak mengakses pengadilan dan upaya hukum yang tersedia berdasarkan hukum yang berlaku."
+        ]
+      ]
+    ]
+  }
+}

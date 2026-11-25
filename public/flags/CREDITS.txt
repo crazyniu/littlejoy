@@ -1,0 +1,4 @@
+Hong Kong flag emoji (hk.png)
+Twemoji graphics by Twitter, Inc. and other contributors, maintained by the Twemoji project.
+Source: https://github.com/jdecked/twemoji/blob/main/assets/72x72/1f1ed-1f1f0.png
+Licensed under Creative Commons Attribution 4.0 International: https://creativecommons.org/licenses/by/4.0/

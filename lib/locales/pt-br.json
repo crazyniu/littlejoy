@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Jogos",
+    "studio": "Estúdio",
+    "support": "Contato",
+    "privacy": "Política de privacidade",
+    "terms": "Termos de uso",
+    "skip": "Pular para o conteúdo",
+    "navigation": "Navegação principal",
+    "language": "Idioma",
+    "indie": "Estúdio independente de jogos",
+    "heroLead": "Criamos jogos de quebra-cabeça cheios de cor para as pequenas pausas do dia.",
+    "browse": "Explore os jogos",
+    "works": "Nossos jogos",
+    "about": "Sobre a Littlejoy",
+    "aboutBody": "Uma bolha se abre e um peixe encontra o caminho de casa. Um pássaro muda de galho e reencontra seu bando. Nossos jogos começam com esses pequenos movimentos.",
+    "art": "Arte do estúdio",
+    "puzzleArt": "Estudo de caminhos que se dividem",
+    "workshopArt": "Arte conceitual da oficina",
+    "contactBody": "Escreva para a Littlejoy Games se precisar de suporte, autorização para usar imagens ou ajuda com privacidade.",
+    "gallery": "Imagens da App Store",
+    "back": "Todos os jogos",
+    "how": "Como jogar",
+    "next": "Próximo jogo",
+    "policyNav": "Sumário",
+    "privacyContact": "Contato de privacidade",
+    "termsContact": "Fale com a Littlejoy Games",
+    "policies": "Informações para jogadores",
+    "date": "Em vigor em 18 de novembro de 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Quebra-cabeça marinho",
+      "note": "Toque nas bolhas e leve os peixes aos aquários antes que acabem os lugares de espera.",
+      "guide": [
+        {
+          "title": "Agrupe três peixes",
+          "text": "Coloque três peixes da mesma espécie no aquário correspondente. Quando ele fica cheio, dá lugar ao próximo grupo."
+        },
+        {
+          "title": "Observe a fila",
+          "text": "Só o primeiro peixe de cada bolha consegue sair. Veja quem vem atrás antes de ocupar a última vaga."
+        }
+      ],
+      "captions": [
+        "Resgate os peixes",
+        "Encha os aquários",
+        "Planeje a jogada",
+        "Explore os mares",
+        "Colecione criaturas marinhas"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Quebra-cabeça na floresta",
+      "note": "Mova os pássaros entre os galhos, forme bandos da mesma cor e leve-os para casa por dez florestas.",
+      "guide": [
+        {
+          "title": "Reúna o bando",
+          "text": "Encontre pássaros da mesma cor e deixe um poleiro livre para a próxima jogada."
+        },
+        {
+          "title": "Além dos galhos",
+          "text": "Ovos e pássaros adormecidos mudam sua estratégia. Use as estrelas das fases para abrir baús e vista seus pássaros com os trajes que encontrar."
+        }
+      ],
+      "captions": [
+        "Organize o bando",
+        "Volte ao ninho",
+        "Explore as florestas",
+        "Vista os pássaros",
+        "Abra baús de estrelas"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Catálogo de jogos",
+      "worlds": "Mundos",
+      "guide": "Guia de jogo",
+      "help": "Suporte ao jogador",
+      "open": "Explorar",
+      "levels": "Fases",
+      "seas": "Mares",
+      "creatures": "Criaturas marinhas",
+      "forests": "Florestas",
+      "stars": "Estrelas por fase"
+    },
+    "intros": {
+      "games": "Dois quebra-cabeças com ritmos diferentes. No fundo do mar, abra espaço para o próximo peixe. Na floresta, encontre o galho que vai reunir o bando.",
+      "worlds": "Das águas rasas à baía das engrenagens, do bambuzal às glicínias. Cada viagem tem uma coleção própria.",
+      "guide": "Para quem guardar a última vaga? Quando usar um galho vazio? Pense na próxima jogada a partir de duas situações do jogo.",
+      "support": "Saiba onde fica o progresso, o que incluir ao relatar um erro e como pedir autorização para usar as ilustrações."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "Da praia ao alto-mar",
+        "world": "São 360 fases por 18 mares. Depois da praia ao amanhecer e do jardim de corais, o caminho segue para a baía das engrenagens e a enseada das melodias.",
+        "collectionTitle": "Um álbum para cada mar",
+        "collection": "Os 18 álbuns reúnem 705 criaturas marinhas. Entre as fases, volte à coleção para ver quem já foi resgatado e quais espaços ainda estão vazios.",
+        "tacticTitle": "Quando só resta uma vaga",
+        "tactic": "Olhe primeiro os aquários. Se já houver dois peixes da mesma espécie, o terceiro completa o aquário e libera espaço. Já um peixe sem aquário vai ocupar a última vaga de espera."
+      },
+      "fly-home": {
+        "worldTitle": "Dez florestas até o ninho",
+        "world": "As 210 fases passam por dez florestas pintadas. O bambu dá lugar às folhas de outono, à neve e às flores até o bando alcançar as glicínias.",
+        "collectionTitle": "Das estrelas aos figurinos",
+        "collection": "Com poucas jogadas você ganha até três estrelas por fase. As estrelas abrem baús de recompensa. No viveiro, experimente os trajes nos pássaros que já encontrou.",
+        "tacticTitle": "Quando um galho está quase cheio",
+        "tactic": "Compare as pontas de dois galhos. Um grupo pode pousar no galho que tiver espaço e um pássaro da mesma espécie na ponta. Deixe o galho vazio livre até saber qual grupo precisa dele."
+      }
+    },
+    "faq": [
+      {
+        "question": "Onde fica meu progresso?",
+        "answer": "Os dois jogos salvam no aparelho. Na versão web, volte usando o mesmo perfil do navegador. Apagar os dados do site ou o app no iOS pode apagar o progresso."
+      },
+      {
+        "question": "O que devo informar ao relatar um erro?",
+        "answer": "Diga qual era o jogo, a fase, o aparelho e onde você tocou antes do problema. Inclua a versão se souber. Não envie senhas nem documentos pessoais."
+      },
+      {
+        "question": "Posso usar um pôster ou uma ilustração?",
+        "answer": "Você pode compartilhar os links das páginas públicas. Para uso comercial ou de uma coleção de imagens, envie o endereço da página e explique como pretende usar o material."
+      }
+    ],
+    "studio": {
+      "title": "Uma pausa para escolher",
+      "text": "No mar, o próximo peixe da fila pode mudar seus planos. Na floresta, basta um galho vazio. Os dois jogos deixam você parar, observar e escolher a próxima jogada."
+    },
+    "preview": {
+      "open": "Ampliar imagem",
+      "close": "Fechar visualização",
+      "previous": "Imagem anterior",
+      "next": "Próxima imagem"
+    }
+  }
+}

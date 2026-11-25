@@ -1,0 +1,133 @@
+{
+  "privacy": {
+    "intro": "Chính sách này áp dụng cho các trò chơi do Littlejoy Games phát hành, shopkivoo.com và dịch vụ hỗ trợ. Chính sách giải thích dữ liệu lưu trên thiết bị, dữ liệu có thể được gửi đi và cách liên hệ với nhà phát triển.",
+    "sections": [
+      [
+        "operator",
+        "Về chúng tôi",
+        [
+          "Littlejoy Games vận hành shopkivoo.com. Chúng tôi là nhóm phát triển game gồm các sinh viên đại học, có trụ sở tại Los Angeles, Hoa Kỳ. Để hỏi về dữ liệu cá nhân hoặc yêu cầu sửa hay xóa dữ liệu, hãy dùng email trên trang này."
+        ]
+      ],
+      [
+        "game-data",
+        "Dữ liệu trò chơi và tính năng thiết bị",
+        [
+          "Bản ngoại tuyến lưu cục bộ không cần đăng nhập. Tiến trình, vật phẩm, thành tích và tùy chọn được lưu trong ứng dụng hoặc trình duyệt để chơi tiếp. Chơi ngoại tuyến không gửi các bản ghi đó về studio.",
+          "Nếu dùng tính năng chia sẻ của hệ thống, bạn chọn nội dung, ứng dụng và người nhận, hoặc hủy trước khi gửi. Máy chủ phân phối tài nguyên nhận địa chỉ IP và đường dẫn cần thiết để gửi tệp. Nếu tính năng trực tuyến cần xử lý thêm dữ liệu, chúng tôi sẽ nêu rõ loại dữ liệu, mục đích, bên nhận và xin sự đồng ý khi cần trước khi dùng.",
+          "Các phiên bản di động của Bird Sort có Firebase Analytics gửi cho Google mã nhận dạng phiên bản cài đặt ứng dụng, vị trí gần đúng suy ra từ địa chỉ IP đã che, lượt xem màn hình, phiên sử dụng và các sự kiện chơi như bắt đầu hoặc hoàn thành cấp độ. Littlejoy Games dùng thông tin này để hiểu cách người chơi sử dụng và cải thiện trò chơi. Dữ liệu phân tích được mã hóa khi truyền và Firebase Analytics đã tắt tính năng thu thập mã nhận dạng quảng cáo."
+        ]
+      ],
+      [
+        "advertising",
+        "Quảng cáo và lựa chọn quyền riêng tư",
+        [
+          "Một số phiên bản dành cho thiết bị di động hiển thị quảng cáo qua Google AdMob. Khi phiên bản sử dụng AdMob, Google có thể thu thập hoặc nhận địa chỉ IP và vị trí gần đúng, mã nhận dạng thiết bị hoặc ứng dụng (bao gồm mã quảng cáo nếu có), tương tác với ứng dụng (như mở ứng dụng hoặc nhấn), lượt hiển thị và tương tác với quảng cáo, cùng dữ liệu về sự cố và hiệu suất. Google và các đối tác quảng cáo có thể sử dụng hoặc chia sẻ thông tin này để phân phối và đo lường quảng cáo, chẩn đoán sự cố và ngăn chặn gian lận. Thông tin này cũng có thể được dùng để cá nhân hóa quảng cáo khi được phép.",
+          "Khi cần sự đồng ý, trò chơi sẽ hiển thị thông báo về quyền riêng tư đối với quảng cáo. Nếu có mục Tùy chọn quyền riêng tư trong phần cài đặt trò chơi, bạn có thể xem hoặc thay đổi lựa chọn, kể cả rút lại sự đồng ý. Trên iOS, bạn có thể quản lý quyền trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Nếu từ chối theo dõi, ứng dụng không thể truy cập mã nhận dạng quảng cáo iOS (IDFA). Trên Android, hãy dùng phần cài đặt quảng cáo của thiết bị để quản lý hoặc xóa mã quảng cáo. Tùy vào lựa chọn và khu vực, bạn vẫn có thể thấy quảng cáo không được cá nhân hóa."
+        ]
+      ],
+      [
+        "website",
+        "Truy cập trang web",
+        [
+          "Cloudflare phân phối trang và hình ảnh. Để trả về nội dung, bảo vệ trang và chẩn đoán lỗi, mạng của họ có thể xử lý địa chỉ IP, đường dẫn yêu cầu, thời điểm, thông tin trình duyệt và trạng thái phản hồi, kể cả tại quốc gia khác.",
+          "Bạn không cần tài khoản để xem trò chơi và ảnh. Website không có biểu mẫu liên hệ, thanh toán, thẻ quảng cáo hay công cụ phân tích riêng. Liên kết email mở ứng dụng thư của bạn và chúng tôi chỉ nhận được thư sau khi bạn gửi. Website không đọc bản lưu trò chơi.",
+          "Với URL không ghi ngôn ngữ, máy chủ chọn trang theo danh sách ngôn ngữ ưu tiên mà trình duyệt gửi. Ngôn ngữ ghi trong URL được ưu tiên. Tính năng này không dùng cookie."
+        ]
+      ],
+      [
+        "email",
+        "Khi bạn gửi email",
+        [
+          "Chúng tôi nhận địa chỉ người gửi, nội dung và tệp bạn tự đính kèm để trả lời, điều tra sự cố hoặc giải quyết yêu cầu về quyền riêng tư. Hộp thư hỗ trợ dùng Gmail của Google. Vui lòng không gửi mật khẩu, giấy tờ tùy thân hoặc dữ liệu cá nhân không cần thiết.",
+          "Thư chỉ được lưu trong thời gian cần để giải quyết yêu cầu, tranh chấp liên quan hoặc nghĩa vụ pháp lý, sau đó được xóa. Nhà cung cấp dịch vụ lưu trữ quản lý nhật ký kỹ thuật theo chính sách riêng. Chúng tôi có thể cung cấp thông tin khi pháp luật yêu cầu."
+        ]
+      ],
+      [
+        "security",
+        "Nhà cung cấp và bảo mật",
+        [
+          "Trang web và hình ảnh được truyền qua HTTPS. Chỉ người xử lý yêu cầu mới truy cập thư hỗ trợ. Bên xử lý thay mặt chúng tôi phải giới hạn việc sử dụng đúng mục đích đã thỏa thuận và bảo vệ tương đương chính sách này. Chúng tôi chỉ cung cấp dữ liệu trong thư để thực hiện dịch vụ bạn chọn hoặc khi luật yêu cầu."
+        ]
+      ],
+      [
+        "choices",
+        "Lựa chọn và xóa dữ liệu",
+        [
+          "Trên iOS, chọn Xóa ứng dụng để xóa dữ liệu cục bộ. Gỡ bỏ mà giữ tài liệu và dữ liệu sẽ giữ bản lưu. Trên Android hãy xóa bộ nhớ của ứng dụng. Bản trình duyệt có thể xóa dữ liệu của trang. Tiến trình có thể mất vĩnh viễn. Quản lý bản sao lưu riêng trong cài đặt hệ thống hoặc đám mây.",
+          "Để yêu cầu truy cập, nhận bản sao, chỉnh sửa, hạn chế xử lý, xóa thông tin đã gửi hoặc rút lại sự đồng ý khi áp dụng, hãy viết từ địa chỉ email ban đầu và nêu trò chơi hay thư liên quan. Chúng tôi có thể yêu cầu thông tin tối thiểu để xác minh và sẽ trả lời trong thời hạn luật định.",
+          "Bạn cũng có thể liên hệ cơ quan bảo vệ dữ liệu tại địa phương. Studio không thể lấy hoặc xóa từ xa bản lưu chỉ tồn tại trên thiết bị của bạn."
+        ]
+      ],
+      [
+        "children",
+        "Trẻ em và gia đình",
+        [
+          "Chơi ngoại tuyến không cần tên, ngày sinh hay liên hệ của trẻ. Nếu trẻ gửi dữ liệu qua email, người giám hộ có thể yêu cầu xem hoặc xóa. Không gửi giấy tờ tùy thân trong lần đầu liên hệ. Chúng tôi xin phép người giám hộ khi pháp luật yêu cầu."
+        ]
+      ],
+      [
+        "platforms",
+        "Nền tảng và cập nhật",
+        [
+          "Apple, Google Play và hệ thống thiết bị xử lý riêng tài khoản cửa hàng, tải xuống, sao lưu và chẩn đoán bạn chọn chia sẻ theo chính sách và cài đặt tương ứng. Các nền tảng như WeChat hoặc máy chủ tài nguyên có thể xử lý yêu cầu phân phối. Xem thông báo bổ sung của phiên bản đang dùng.",
+          "Littlejoy Games vận hành trang và nhận yêu cầu về quyền riêng tư qua email bên dưới. Khi cách xử lý thay đổi, chúng tôi sẽ cập nhật trang, ngày hiệu lực và xin sự đồng ý khi cần."
+        ]
+      ]
+    ]
+  },
+  "terms": {
+    "intro": "Điều khoản áp dụng cho các trò chơi do Littlejoy Games phát hành, website chính thức, danh mục tác phẩm và hỗ trợ người chơi. Điều kiện của nền tảng phân phối và giấy phép đi kèm cũng áp dụng.",
+    "sections": [
+      [
+        "scope",
+        "Sử dụng trang web",
+        [
+          "Bạn có thể xem website, tìm và tải bản game có sẵn, hoặc liên hệ studio. Chỉ tải game từ nguồn được phép. Bản App Store và Google Play chịu điều khoản cửa hàng và giấy phép đi kèm phiên bản."
+        ]
+      ],
+      [
+        "game-license",
+        "Quyền sử dụng game và bản lưu",
+        [
+          "Theo các điều khoản áp dụng, bạn có thể chơi trên thiết bị tương thích của mình để giải trí cá nhân, phi thương mại. Quyền sở hữu thuộc các chủ thể có quyền. Không tự ý phát tán bộ cài, giả danh bản chính thức hoặc gây trở ngại cho người chơi và dịch vụ. Xóa dữ liệu, gỡ ứng dụng hoặc đổi thiết bị có thể làm mất tiến trình. Các quyền theo luật được giữ nguyên."
+        ]
+      ],
+      [
+        "rights",
+        "Quyền đối với tác phẩm",
+        [
+          "Studio và các bên cấp phép giữ quyền đối với trò chơi, tranh, nhân vật, ảnh chụp, tên và nội dung trang. Bạn có thể chia sẻ liên kết đến trang công khai. Việc xem cá nhân, trích dẫn, nhận xét và các cách dùng hợp pháp khác vẫn được phép. Muốn dùng cho mục đích thương mại, làm sản phẩm hoặc đăng lại bộ tư liệu, hãy xin phép qua email. Tác phẩm bên thứ ba tuân theo giấy phép riêng."
+        ]
+      ],
+      [
+        "conduct",
+        "Quy tắc sử dụng",
+        [
+          "Hãy tuân thủ pháp luật. Không mạo danh studio, phát hành bản sửa đổi dưới danh nghĩa bản chính thức, cản trở trang hoặc gửi nội dung xâm phạm quyền người khác. Khi phản ánh vi phạm, hãy gửi riêng URL và chi tiết giúp nhận diện tư liệu."
+        ]
+      ],
+      [
+        "games",
+        "Giới thiệu và phát hành",
+        [
+          "Các dự án trong mục “Ý tưởng game” là thiết kế ý tưởng. Thiết kế, kế hoạch và thời điểm ra mắt có thể thay đổi. Hãy xem cửa hàng tương ứng để biết game có được cung cấp tại khu vực của bạn hay không. Website không xử lý giao dịch game."
+        ]
+      ],
+      [
+        "responsibility",
+        "Dịch vụ và quyền của bạn",
+        [
+          "Việc bảo trì hoặc sự cố mạng có thể làm gián đoạn truy cập. Chúng tôi cố gắng sửa lỗi nghiêm trọng được báo cáo. Điều khoản không hạn chế quyền người tiêu dùng bắt buộc, biện pháp khắc phục theo luật hoặc trách nhiệm không thể miễn trừ. Người chưa thành niên cần có sự đồng ý của cha mẹ hoặc người giám hộ khi pháp luật yêu cầu."
+        ]
+      ],
+      [
+        "contact",
+        "Thay đổi và liên hệ",
+        [
+          "Ngày hiệu lực xác định phiên bản hiện hành. Thay đổi quan trọng sẽ đăng trên trang này. Để xin phép, đặt câu hỏi hoặc khiếu nại, hãy viết tới email bên dưới. Bạn giữ quyền yêu cầu tòa án và sử dụng biện pháp bảo vệ theo luật áp dụng."
+        ]
+      ]
+    ]
+  }
+}

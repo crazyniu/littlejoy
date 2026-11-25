@@ -1,0 +1,133 @@
+{
+  "privacy": {
+    "intro": "Cette politique couvre les jeux publiés par Littlejoy Games, shopkivoo.com et l’assistance aux joueurs. Elle décrit les données conservées sur votre appareil, celles susceptibles d’être transmises et les moyens de contacter le développeur.",
+    "sections": [
+      [
+        "operator",
+        "À propos",
+        [
+          "Littlejoy Games exploite shopkivoo.com. Notre équipe de développement, composée d’étudiants à l’université, est basée à Los Angeles, aux États-Unis. Pour demander l’accès à vos données personnelles, leur rectification ou leur suppression, utilisez l’adresse e-mail indiquée sur cette page."
+        ]
+      ],
+      [
+        "game-data",
+        "Données de jeu et fonctions de l’appareil",
+        [
+          "Les éditions hors ligne à sauvegarde locale ne nécessitent pas de connexion à un compte. Progression, inventaire, succès et réglages restent dans l’app ou le navigateur pour reprendre la partie. Le jeu hors ligne ne transmet pas ces données au studio.",
+          "Avec le partage système, vous choisissez le contenu, l’application et le destinataire et pouvez annuler avant l’envoi. L’hébergeur de ressources reçoit l’adresse IP et le chemin de fichier nécessaires à la livraison. Avant l’utilisation d’une fonction en ligne traitant d’autres données, nous indiquons données, finalités et destinataires et demandons le consentement requis.",
+          "Les éditions mobiles de Bird Sort qui intègrent Firebase Analytics transmettent à Google un identifiant d’instance de l’application, une localisation approximative déduite d’une adresse IP masquée, les écrans consultés, les sessions et des événements de jeu comme le début ou la fin d’un niveau. Littlejoy Games utilise ces informations pour comprendre les usages et améliorer le jeu. Les données d’analyse sont chiffrées en transit et Firebase Analytics ne collecte pas l’identifiant publicitaire."
+        ]
+      ],
+      [
+        "advertising",
+        "Publicité et choix de confidentialité",
+        [
+          "Certaines versions mobiles affichent des publicités via Google AdMob. Lorsqu’une version utilise AdMob, Google peut recueillir ou recevoir votre adresse IP et votre position approximative, des identifiants d’appareil ou d’application (dont l’identifiant publicitaire s’il est disponible), les interactions avec l’application, comme son ouverture ou les appuis à l’écran, les impressions publicitaires et les interactions avec les annonces, ainsi que des données sur les plantages et les performances. Google et ses partenaires publicitaires peuvent utiliser ou partager ces informations pour diffuser des annonces et en mesurer les résultats, diagnostiquer des problèmes et prévenir la fraude. Ces informations peuvent aussi servir à personnaliser les annonces lorsque cela est autorisé.",
+          "Lorsque le consentement est requis, le jeu affiche un message concernant la confidentialité des annonces. Si le menu des options de confidentialité est disponible dans les réglages du jeu, vous pouvez y consulter ou modifier vos choix, y compris retirer votre consentement. Sur iOS, gérez l’autorisation de suivi dans Réglages → Confidentialité et sécurité → Suivi. Si vous refusez le suivi, l’app ne peut pas accéder à l’identifiant publicitaire iOS (IDFA). Sur Android, les paramètres de publicité de l’appareil permettent de gérer ou de supprimer l’identifiant publicitaire. Selon vos choix et votre région, des annonces non personnalisées peuvent encore s’afficher."
+        ]
+      ],
+      [
+        "website",
+        "Consultation du site",
+        [
+          "Cloudflare distribue nos pages et images. Pour fournir et protéger le site et diagnostiquer les pannes, son réseau peut traiter l’adresse IP, le chemin demandé, l’horodatage, des informations sur le navigateur et le statut de la réponse, y compris hors de votre pays.",
+          "Vous pouvez consulter les jeux et agrandir les visuels sans compte. Le site n’utilise ni formulaire de contact, ni paiement, ni balise publicitaire, ni outil interne de mesure d’audience. Un lien de contact ouvre votre messagerie. Nous recevons uniquement les messages que vous envoyez. Le site ne lit pas les sauvegardes.",
+          "Pour une URL sans langue précisée, le serveur utilise les préférences linguistiques transmises par le navigateur. La langue dans l’URL est prioritaire. Cette fonction n’utilise pas de cookie."
+        ]
+      ],
+      [
+        "email",
+        "Correspondance",
+        [
+          "Nous recevons votre adresse, votre message et les pièces jointes que vous choisissez pour répondre, étudier un problème ou traiter une demande relative à vos données. Notre messagerie utilise Gmail de Google. N’envoyez ni mot de passe, ni pièce d’identité, ni donnée personnelle superflue.",
+          "Nous conservons les échanges uniquement le temps de traiter la demande, un litige lié ou une obligation légale, puis les supprimons. L’hébergeur gère les journaux techniques selon ses règles de conservation. Nous pouvons communiquer des informations lorsque la loi l’exige."
+        ]
+      ],
+      [
+        "security",
+        "Prestataires et sécurité",
+        [
+          "Les pages et images sont servies via HTTPS. L’accès aux courriels est limité aux personnes qui traitent la demande. Nos sous-traitants doivent s’en tenir aux finalités convenues et assurer une protection équivalente à celle de cette politique. Les données des messages ne sont communiquées que pour le service choisi ou sur obligation légale."
+        ]
+      ],
+      [
+        "choices",
+        "Vos choix et l’effacement",
+        [
+          "Sur iOS, supprimer l’app efface ses données locales, tandis que la décharger conserve documents et données. Sur Android, effacez le stockage de l’application. Dans le navigateur, effacez les données du site concerné. La perte peut être définitive. Gérez séparément les sauvegardes système ou cloud.",
+          "Pour obtenir l’accès, une copie, la rectification, la limitation ou l’effacement des informations transmises, ou retirer un consentement le cas échéant, écrivez depuis l’adresse utilisée en précisant le jeu ou le message. Nous pouvons demander le strict nécessaire pour vérifier la demande et répondrons dans le délai légal.",
+          "Vous pouvez aussi saisir l’autorité locale de protection des données. Nous ne pouvons ni récupérer ni effacer à distance une sauvegarde présente uniquement sur votre appareil."
+        ]
+      ],
+      [
+        "children",
+        "Enfants et familles",
+        [
+          "Le jeu hors ligne ne demande ni nom, ni date de naissance, ni coordonnées d’un enfant. Si un enfant nous a écrit, son représentant légal peut demander l’accès ou l’effacement. Ne joignez pas de pièce d’identité au premier message. Le consentement parental est recueilli lorsqu’il est requis."
+        ]
+      ],
+      [
+        "platforms",
+        "Plateformes et mises à jour",
+        [
+          "Apple, Google Play et les plateformes gèrent séparément comptes de boutique, téléchargements, sauvegardes et diagnostics que vous décidez de partager selon vos réglages. Des plateformes comme WeChat ou des hébergeurs de ressources peuvent traiter les requêtes de distribution. Consultez les notices propres à votre édition.",
+          "Littlejoy Games exploite ce site et reçoit les demandes à l’adresse ci-dessous. Si nos pratiques changent, nous actualiserons cette page et sa date et recueillerons votre consentement lorsque nécessaire."
+        ]
+      ]
+    ]
+  },
+  "terms": {
+    "intro": "Ces conditions concernent les jeux publiés par Littlejoy Games, le site officiel, les visuels présentés et l’assistance. Les conditions de la plateforme et la licence de l’édition s’appliquent également.",
+    "sections": [
+      [
+        "scope",
+        "Utilisation du site",
+        [
+          "Vous pouvez consulter le site, découvrir ou télécharger les éditions disponibles et contacter le studio. Utilisez les canaux autorisés. Les versions App Store et Google Play relèvent aussi des conditions de la boutique et de la licence fournie."
+        ]
+      ],
+      [
+        "game-license",
+        "Licence et sauvegardes",
+        [
+          "Sous réserve des conditions applicables, vous pouvez jouer à titre personnel et non commercial sur vos appareils compatibles. Les titulaires conservent leurs droits. Ne redistribuez pas les installateurs sans autorisation, ne présentez pas de fausse version officielle et ne perturbez pas les joueurs ou services. Effacer les données, supprimer l’app ou changer d’appareil peut faire perdre la progression. Vos droits légaux restent applicables."
+        ]
+      ],
+      [
+        "rights",
+        "Droits sur les œuvres",
+        [
+          "Le studio et ses concédants conservent les droits sur les jeux, illustrations, personnages, captures, noms et contenus. Vous pouvez partager des liens vers les pages publiques. La consultation personnelle, les citations, la critique et les autres usages autorisés par la loi restent possibles. Pour un usage commercial, des produits dérivés ou la republication d’un ensemble de ressources, demandez l’autorisation par courriel. Les œuvres de tiers gardent leur propre licence."
+        ]
+      ],
+      [
+        "conduct",
+        "Usages autorisés",
+        [
+          "Respectez la loi. N’usurpez pas l’identité du studio, ne distribuez pas de version modifiée présentée comme officielle, ne perturbez pas le site et n’envoyez pas de contenu portant atteinte aux droits d’autrui. Signalez toute atteinte en privé en indiquant l’URL et les détails permettant d’identifier l’œuvre."
+        ]
+      ],
+      [
+        "games",
+        "Aperçus et disponibilité",
+        [
+          "Les projets présentés comme « Concept de jeu » sont des pistes créatives. Leur conception, leur publication et leur calendrier peuvent évoluer. Vérifiez la disponibilité dans votre région sur la boutique concernée. Le site ne traite pas d’achats de jeux."
+        ]
+      ],
+      [
+        "responsibility",
+        "Service et droits",
+        [
+          "L’accès peut être interrompu pour maintenance ou en cas de panne. Nous nous efforçons de corriger les erreurs importantes signalées. Ces conditions ne limitent ni les protections impératives des consommateurs, ni les recours légaux, ni les responsabilités qui ne peuvent être exclues. L’accord d’un parent ou représentant est requis pour les mineurs lorsque la loi le prévoit."
+        ]
+      ],
+      [
+        "contact",
+        "Modifications et contact",
+        [
+          "La date d’entrée en vigueur identifie cette version. Les changements importants seront publiés ici. Pour une autorisation, une question ou une réclamation, écrivez à l’adresse ci-dessous. Vous conservez l’accès aux tribunaux et aux recours prévus par la loi applicable."
+        ]
+      ]
+    ]
+  }
+}

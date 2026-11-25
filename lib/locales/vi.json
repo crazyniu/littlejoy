@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Trò chơi",
+    "studio": "Studio",
+    "support": "Liên hệ",
+    "privacy": "Chính sách quyền riêng tư",
+    "terms": "Điều khoản sử dụng",
+    "skip": "Chuyển đến nội dung",
+    "navigation": "Điều hướng chính",
+    "language": "Ngôn ngữ",
+    "indie": "Studio game độc lập",
+    "heroLead": "Chúng tôi làm những trò giải đố đầy màu sắc với cá dưới biển và chim trên cành, dành cho những phút nghỉ ngơi.",
+    "browse": "Khám phá trò chơi",
+    "works": "Trò chơi của chúng tôi",
+    "about": "Về Littlejoy",
+    "aboutBody": "Chạm vào bong bóng, một chú cá tìm được đường về. Chuyển cành cho một chú chim, cả đàn gặp lại nhau. Mỗi câu đố bắt đầu bằng một động tác nhỏ như thế.",
+    "art": "Tranh ý tưởng của studio",
+    "puzzleArt": "Phác thảo các lối rẽ",
+    "workshopArt": "Tranh ý tưởng xưởng vẽ",
+    "contactBody": "Hãy gửi email cho Littlejoy Games nếu bạn cần hỗ trợ, xin phép sử dụng hình ảnh hoặc có câu hỏi về quyền riêng tư.",
+    "gallery": "Ảnh giới thiệu trên App Store",
+    "back": "Tất cả trò chơi",
+    "how": "Cách chơi",
+    "next": "Trò chơi tiếp theo",
+    "policyNav": "Mục lục",
+    "privacyContact": "Liên hệ về quyền riêng tư",
+    "termsContact": "Liên hệ Littlejoy Games",
+    "policies": "Thông tin cho người chơi",
+    "date": "Có hiệu lực từ ngày 18 tháng 11 năm 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Giải đố đại dương",
+      "note": "Chạm vào bong bóng để đưa cá về đúng bể trước khi hết chỗ chờ.",
+      "guide": [
+        {
+          "title": "Gom đủ ba con",
+          "text": "Đưa ba con cá cùng loài vào đúng bể. Bể đầy sẽ rời đi, nhường chỗ cho nhóm tiếp theo."
+        },
+        {
+          "title": "Nhìn trước hàng cá",
+          "text": "Chỉ con cá đứng đầu trong mỗi bong bóng mới bơi ra được. Hãy nhìn những con phía sau trước khi dùng ô chờ cuối cùng."
+        }
+      ],
+      "captions": [
+        "Giải cứu cá",
+        "Lấp đầy bể",
+        "Tính nước tiếp theo",
+        "Khám phá biển",
+        "Sưu tập sinh vật biển"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Giải đố rừng xanh",
+      "note": "Chuyển chim qua các cành, gom đàn cùng màu và đưa chúng về tổ qua mười khu rừng.",
+      "guide": [
+        {
+          "title": "Tập hợp đàn chim",
+          "text": "Tìm những chú chim cùng màu rồi chuyển chúng qua lại giữa các cành. Chừa một chỗ đậu cho nước đi kế tiếp."
+        },
+        {
+          "title": "Bên kia tán lá",
+          "text": "Tính đường đi khi gặp chim ngủ và trứng. Dùng sao kiếm được để mở rương và thay trang phục cho đàn chim."
+        }
+      ],
+      "captions": [
+        "Xếp đàn chim",
+        "Đưa chim về tổ",
+        "Khám phá rừng",
+        "Thay trang phục",
+        "Mở rương sao"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Thư viện trò chơi",
+      "worlds": "Thế giới",
+      "guide": "Cẩm nang",
+      "help": "Hỗ trợ người chơi",
+      "open": "Xem chi tiết",
+      "levels": "Màn chơi",
+      "seas": "Vùng biển",
+      "creatures": "Loài sinh vật biển",
+      "forests": "Khu rừng",
+      "stars": "Sao tối đa mỗi màn"
+    },
+    "intros": {
+      "games": "Hai trò giải đố có nhịp chơi riêng. Dưới biển, hãy chừa chỗ cho chú cá tiếp theo. Trên cành, hãy tìm nơi để cả đàn tụ họp.",
+      "worlds": "Từ bãi biển đến vịnh bánh răng, từ rừng tre đến những tán tử đằng. Mỗi chuyến đi đều có một bộ sưu tập riêng.",
+      "guide": "Khi chỉ còn một ô chờ hoặc một cành sắp đầy, nước đi nào sẽ mở đường? Hãy thử suy nghĩ qua hai tình huống cụ thể.",
+      "support": "Tìm hiểu nơi lưu tiến trình, cách báo lỗi và cách xin phép sử dụng tranh của trò chơi."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "Từ bãi biển ra khơi",
+        "world": "360 màn chơi trải khắp 18 vùng biển. Từ bãi biển lúc bình minh và vườn san hô, bạn sẽ đến vịnh bánh răng và vùng vịnh ngân nga giai điệu.",
+        "collectionTitle": "Mỗi vùng biển một cuốn album",
+        "collection": "18 album ghi lại tổng cộng 705 loài sinh vật biển. Giữa hai màn chơi, mở album để xem những người bạn đã cứu và những ô còn trống.",
+        "tacticTitle": "Khi chỉ còn một ô chờ",
+        "tactic": "Hãy nhìn các bể trước. Nếu bể đã có hai con cùng loài, đưa con thứ ba vào sẽ giải phóng cả bể. Đưa một con chưa có bể nhận sẽ chiếm mất ô chờ cuối cùng."
+      },
+      "fly-home": {
+        "worldTitle": "Đường về qua mười khu rừng",
+        "world": "210 câu đố nối mười khu rừng vẽ tay. Đi qua rặng tre, lá thu, tuyết trắng và vườn hoa trước khi đến những tán tử đằng.",
+        "collectionTitle": "Từ ngôi sao đến bộ cánh mới",
+        "collection": "Hoàn thành màn chơi trong ít nước đi để nhận tối đa ba sao. Dùng sao mở rương thưởng, rồi vào chuồng chim để thử trang phục cho đàn.",
+        "tacticTitle": "Khi cành cây sắp đầy",
+        "tactic": "Quan sát những con chim ở đầu hai cành. Có thể chuyển một nhóm đến cành còn chỗ với chim cùng loại ở đầu cành. Giữ cành trống cho đến khi biết nhóm nào cần nó nhất."
+      }
+    },
+    "faq": [
+      {
+        "question": "Tiến trình được lưu ở đâu?",
+        "answer": "Cả hai trò chơi đều lưu trên thiết bị. Với bản web, hãy dùng lại cùng hồ sơ trình duyệt. Xóa dữ liệu trang hoặc xóa ứng dụng iOS có thể làm mất tiến trình."
+      },
+      {
+        "question": "Khi báo lỗi cần ghi gì?",
+        "answer": "Cho biết tên trò chơi, màn chơi, thiết bị và thao tác ngay trước khi gặp lỗi. Ghi thêm phiên bản ứng dụng nếu biết. Không gửi mật khẩu hay giấy tờ tùy thân."
+      },
+      {
+        "question": "Tôi có thể dùng áp phích hoặc tranh không?",
+        "answer": "Bạn có thể chia sẻ liên kết đến trang công khai. Nếu muốn dùng cho mục đích thương mại hoặc dùng cả bộ ảnh, hãy gửi email kèm địa chỉ trang và mục đích sử dụng."
+      }
+    ],
+    "studio": {
+      "title": "Dừng một nhịp trước khi đi",
+      "text": "Dưới biển, chú cá kế tiếp trong hàng có thể làm bạn đổi ý. Trong rừng, một cành trống cũng làm được điều đó. Cả hai trò chơi đều cho bạn thời gian quan sát và chọn nước đi."
+    },
+    "preview": {
+      "open": "Phóng to ảnh",
+      "close": "Đóng ảnh",
+      "previous": "Ảnh trước",
+      "next": "Ảnh sau"
+    }
+  }
+}

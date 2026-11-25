@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Juegos",
+    "studio": "Estudio",
+    "support": "Contacto",
+    "privacy": "Política de privacidad",
+    "terms": "Condiciones de uso",
+    "skip": "Saltar al contenido",
+    "navigation": "Navegación principal",
+    "language": "Idioma",
+    "indie": "Estudio independiente de videojuegos",
+    "heroLead": "Creamos juegos de puzles llenos de color para esos pequeños descansos del día.",
+    "browse": "Explorar los juegos",
+    "works": "Nuestros juegos",
+    "about": "El estudio Littlejoy",
+    "aboutBody": "Una burbuja se abre y un pez nada hacia su hogar. Un pájaro cambia de rama y se reúne con su bandada. Nuestros mundos empiezan con un pequeño movimiento.",
+    "art": "Arte del estudio",
+    "puzzleArt": "Estudio de caminos que se bifurcan",
+    "workshopArt": "Arte conceptual del taller",
+    "contactBody": "Escríbenos si necesitas ayuda con un juego, quieres usar una ilustración o tienes una consulta de privacidad.",
+    "gallery": "Imágenes de la App Store",
+    "back": "Todos los juegos",
+    "how": "Cómo se juega",
+    "next": "Siguiente juego",
+    "policyNav": "Índice",
+    "privacyContact": "Contacto de privacidad",
+    "termsContact": "Contactar con Littlejoy Games",
+    "policies": "Información para jugadores",
+    "date": "En vigor desde el 18 de noviembre de 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Puzle marino",
+      "note": "Toca una burbuja y lleva cada pez a su acuario antes de que se llenen los espacios de espera.",
+      "guide": [
+        {
+          "title": "Reúne tres peces",
+          "text": "Coloca tres peces de la misma especie en el acuario correspondiente. Cuando se llena, se marcha y deja sitio al siguiente grupo."
+        },
+        {
+          "title": "Observa la fila",
+          "text": "Solo puede salir el primer pez de cada burbuja. Mira cuáles vienen detrás antes de ocupar el último hueco."
+        }
+      ],
+      "captions": [
+        "Rescata a los peces",
+        "Llena los acuarios",
+        "Planea tu jugada",
+        "Explora los mares",
+        "Colecciona criaturas marinas"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Puzle del bosque",
+      "note": "Mueve pájaros de rama en rama, reúne bandadas del mismo color y guíalas a casa a través de diez bosques.",
+      "guide": [
+        {
+          "title": "Reúne a la bandada",
+          "text": "Busca pájaros del mismo color y muévelos entre ramas. Guarda un sitio libre para el siguiente movimiento."
+        },
+        {
+          "title": "Más allá de las ramas",
+          "text": "Los huevos y los pájaros dormidos cambian tu ruta. Abre cofres con las estrellas de los niveles y viste a tus pájaros."
+        }
+      ],
+      "captions": [
+        "Ordena la bandada",
+        "Regresa al nido",
+        "Explora los bosques",
+        "Viste a los pájaros",
+        "Abre cofres de estrellas"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Catálogo de juegos",
+      "worlds": "Mundos",
+      "guide": "Guía de juego",
+      "help": "Ayuda al jugador",
+      "open": "Ver más",
+      "levels": "Niveles",
+      "seas": "Mares",
+      "creatures": "Criaturas marinas",
+      "forests": "Bosques",
+      "stars": "Estrellas por nivel"
+    },
+    "intros": {
+      "games": "Dos puzles con ritmos distintos. Bajo el agua toca hacer sitio al siguiente pez; entre las ramas, encontrar el lugar donde reunir la bandada.",
+      "worlds": "De los bajíos a una bahía de engranajes, y del bambú a los árboles cubiertos de glicinas. Cada viaje tiene su propia colección.",
+      "guide": "¿A quién reservar el último hueco? ¿Cuándo conviene usar una rama vacía? Dos situaciones para pensar la próxima jugada.",
+      "support": "Dónde se guarda tu partida, qué incluir al comunicar un fallo y cómo solicitar permiso para usar las ilustraciones."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "De la orilla al mar abierto",
+        "world": "Los 360 niveles se reparten entre 18 mares. Desde la costa al amanecer y el jardín de coral, el viaje sigue hasta la bahía de engranajes y la cala de las melodías.",
+        "collectionTitle": "Un álbum por mar",
+        "collection": "Los 18 álbumes reúnen 705 criaturas marinas. Entre niveles, vuelve a ellos para ver a quién has rescatado y qué huecos quedan por llenar.",
+        "tacticTitle": "Cuando solo queda un hueco",
+        "tactic": "Mira primero los acuarios. Si ya hay dos peces iguales, el tercero completa el acuario y lo libera. Un pez sin acuario disponible ocupará el último hueco de espera."
+      },
+      "fly-home": {
+        "worldTitle": "Diez bosques de camino al nido",
+        "world": "Los 210 puzles atraviesan diez bosques pintados. Tras el bambú llegan las hojas de otoño, la nieve y las flores, hasta alcanzar las glicinas.",
+        "collectionTitle": "De las estrellas al vestuario",
+        "collection": "Puedes ganar hasta tres estrellas por nivel con pocos movimientos. Las estrellas abren cofres de recompensa; en el aviario puedes probar los atuendos de tu colección.",
+        "tacticTitle": "Cuando una rama casi está llena",
+        "tactic": "Compara los extremos de dos ramas. El grupo puede pasar si hay sitio y un pájaro de su misma clase en el extremo. Reserva la rama vacía hasta saber quién la necesita más."
+      }
+    },
+    "faq": [
+      {
+        "question": "¿Dónde se guarda la partida?",
+        "answer": "Ambos juegos guardan el progreso en el dispositivo. En la web, vuelve con el mismo perfil del navegador. Borrar los datos del sitio o eliminar la app de iOS puede borrar la partida."
+      },
+      {
+        "question": "¿Cómo comunico un fallo?",
+        "answer": "Indica el juego, nivel, dispositivo y qué tocaste justo antes del fallo. Añade la versión si la conoces. No envíes contraseñas ni documentos de identidad."
+      },
+      {
+        "question": "¿Puedo reutilizar un cartel o una ilustración?",
+        "answer": "Puedes compartir enlaces a las páginas públicas. Para uso comercial o una colección de imágenes, envía por correo la URL y explica el uso previsto."
+      }
+    ],
+    "studio": {
+      "title": "Un momento para pensar",
+      "text": "En el mar, el siguiente pez de la fila puede cambiar tus planes. En el bosque basta una rama vacía. Ambos juegos te dejan parar, observar y elegir una jugada."
+    },
+    "preview": {
+      "open": "Ampliar imagen",
+      "close": "Cerrar vista previa",
+      "previous": "Imagen anterior",
+      "next": "Imagen siguiente"
+    }
+  }
+}

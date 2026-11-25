@@ -1,0 +1,133 @@
+{
+  "privacy": {
+    "intro": "This policy covers games published by Littlejoy Games, shopkivoo.com and our player support services. It explains what stays on your device, what may be sent elsewhere and how to contact the developer about your data.",
+    "sections": [
+      [
+        "operator",
+        "About Us",
+        [
+          "Littlejoy Games operates shopkivoo.com. We are a game development team of university students based in Los Angeles, United States. Use the email address on this page to ask about, correct or request deletion of your personal information."
+        ]
+      ],
+      [
+        "game-data",
+        "Game data and device features",
+        [
+          "Offline editions with local saves do not require a login. Progress, inventory, achievements and preferences are stored in app or browser storage to resume play. Offline play does not send those records to the studio.",
+          "If you use system sharing, you choose the content, receiving app and recipient, and may cancel before sending. A platform or host delivering game assets receives the IP address and requested file path needed for delivery. Before using an online feature that handles additional personal data, we explain the data, purpose and recipients and obtain consent where required.",
+          "Mobile editions of Bird Sort that include Firebase Analytics send Google an app-instance ID, approximate location derived from a masked IP address, screen views, sessions, and gameplay events such as the start or completion of a level. Littlejoy Games uses this information to understand how people play and improve the game. The analytics data is encrypted in transit, and advertising ID collection is disabled for Firebase Analytics."
+        ]
+      ],
+      [
+        "advertising",
+        "Advertising and privacy choices",
+        [
+          "Some mobile editions display ads through Google AdMob. When an edition uses AdMob, Google may collect or receive your IP address and approximate location, device or app identifiers (including the advertising ID when available), app interactions (such as launches or taps), ad impressions and interactions, and crash or performance data. Google and its advertising partners may use or share this information to deliver and measure ads, diagnose issues, and prevent fraud. It may also be used to personalize ads where permitted.",
+          "Where consent is required, the game presents an advertising privacy prompt. If available, open Privacy Options in the game settings to review or change your choices, including withdrawing consent. On iOS, you can manage tracking permission under Settings → Privacy & Security → Tracking. If you deny tracking, the app cannot access the iOS advertising ID (IDFA). On Android, open the device’s Ads settings to manage or delete its advertising ID. Depending on your choices and region, you may still see non-personalized ads."
+        ]
+      ],
+      [
+        "website",
+        "Visiting this website",
+        [
+          "Cloudflare delivers the pages and images. To return a page, protect the site and diagnose failures, its network may process your IP address, requested path, timestamp, browser information and response status. Its global network may process requests outside your country.",
+          "You can browse our games and open artwork previews without an account. The site has no contact forms, checkout, advertising tags or studio analytics. Email links open your mail app, and we receive a message only after you send it. The site does not read your game saves.",
+          "At a link without a language prefix, the server reads the browser’s preferred languages to choose a page. A language in the URL takes precedence. This feature does not use a cookie."
+        ]
+      ],
+      [
+        "email",
+        "When you email us",
+        [
+          "We receive the sender address, the message and any attachments you choose to send. We use them to reply, investigate the issue or act on your privacy request. Google provides the Gmail mailbox used for support. Please leave out passwords, identity documents and unnecessary personal details.",
+          "We keep correspondence only as long as needed to resolve the request, handle a related dispute or meet a legal obligation, then delete it. Hosting providers manage technical logs under their own retention policies. We may provide information when legally required."
+        ]
+      ],
+      [
+        "security",
+        "Service providers and security",
+        [
+          "Our site and images are served over HTTPS. Access to support correspondence is limited to people handling the request. Providers acting on our behalf must use personal data only for the agreed purposes and provide the same level of protection described here. We disclose personal information in support messages only to provide the service you choose or when legally required."
+        ]
+      ],
+      [
+        "choices",
+        "Your choices and deletion",
+        [
+          "Use Delete App in iOS Settings to remove local app data. Offloading keeps documents and data. On Android, clear the app’s storage in device settings. For a browser game, clear the relevant site data. These actions may permanently erase progress. Manage system or cloud backups separately in the platform settings.",
+          "To request access, a copy, correction, restriction or deletion of information you sent us, or to withdraw consent where applicable, email us from the address you used. Identify the game or message so we can locate it. We may ask for the minimum information needed to verify the request and will reply within the period required by applicable law.",
+          "You may also contact your local data-protection authority. The studio cannot remotely retrieve or erase a save that exists only on your device."
+        ]
+      ],
+      [
+        "children",
+        "Children and families",
+        [
+          "Offline play does not require a child’s name, date of birth or contact details. If a child sends us personal information by email, a guardian may request access or deletion. Please leave identity documents out of an initial request. We seek parental consent before enabling features where the law requires it."
+        ]
+      ],
+      [
+        "platforms",
+        "Platforms and policy updates",
+        [
+          "Apple, Google Play and device platforms separately handle store accounts, downloads, backups and any diagnostics you choose to share, under their policies and your settings. Other distribution platforms, including WeChat, and game asset hosts may handle platform or delivery requests. Read any additional notice provided with your edition.",
+          "Littlejoy Games operates this site and handles privacy requests at the email below. We will update this page and its effective date when these practices change, and request consent where required."
+        ]
+      ]
+    ]
+  },
+  "terms": {
+    "intro": "These terms apply to games published by Littlejoy Games, our official website, portfolio and player support. Distribution platform terms and any license supplied with an edition also apply.",
+    "sections": [
+      [
+        "scope",
+        "Using the website",
+        [
+          "You may browse our site, explore and download available games, and contact the studio. Obtain games through authorized channels. App Store and Google Play editions are also subject to the applicable store terms and any additional license supplied with that edition."
+        ]
+      ],
+      [
+        "game-license",
+        "Game license and saves",
+        [
+          "Subject to the applicable terms, you may play for personal, noncommercial enjoyment on your compatible devices. The games and materials remain the property of their rights holders. Do not redistribute installers without permission, impersonate an official release or interfere with other players or services. Clearing data, deleting an app or changing devices may result in lost progress. Your rights under applicable law remain intact."
+        ]
+      ],
+      [
+        "rights",
+        "Game art and fair use",
+        [
+          "The studio and its licensors retain rights in the games, artwork, characters, screenshots, names and website content. You may link to the site and share its public pages. Personal viewing, lawful quotation, review and other uses permitted by law remain available. For commercial reuse, merchandise or republication of an asset collection, request permission by email. Third-party works remain subject to their own licences."
+        ]
+      ],
+      [
+        "conduct",
+        "Acceptable use",
+        [
+          "Use the website lawfully. Do not impersonate the studio, distribute altered downloads as official releases, interfere with the site, or send material that infringes another person’s rights. Please send rights concerns privately with the relevant URL and enough detail for us to identify the material."
+        ]
+      ],
+      [
+        "games",
+        "Game previews and availability",
+        [
+          "Projects labeled “Game concept” are design explorations. Their design, release plans and timing may change. See the relevant store listing for availability in your region. The website does not process game transactions."
+        ]
+      ],
+      [
+        "responsibility",
+        "Service and your rights",
+        [
+          "Access may be interrupted by maintenance or network failures. We aim to correct significant errors reported to us. Nothing in these terms limits mandatory consumer protections, statutory remedies or liability that cannot lawfully be excluded. Minors should involve a parent or guardian when permission is required."
+        ]
+      ],
+      [
+        "contact",
+        "Updates and questions",
+        [
+          "The effective date identifies this version. Material changes will be published on this page. For permission requests, questions or complaints, contact Littlejoy Games using the email below. You retain access to the courts and remedies available under applicable law."
+        ]
+      ]
+    ]
+  }
+}

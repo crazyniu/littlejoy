@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Games",
+    "studio": "Studio",
+    "support": "Contact",
+    "privacy": "Privacy Policy",
+    "terms": "User Agreement",
+    "skip": "Skip to content",
+    "navigation": "Main navigation",
+    "language": "Language",
+    "indie": "Independent game studio",
+    "heroLead": "An independent game studio making colorful puzzle games for the little breaks in your day.",
+    "browse": "Explore our games",
+    "works": "Our games",
+    "about": "Inside Littlejoy",
+    "aboutBody": "We build small worlds around one simple move. A tap frees a fish, a bird hops to the next branch, and a puzzle begins to unfold.",
+    "art": "Studio artwork",
+    "puzzleArt": "A study of branching paths",
+    "workshopArt": "Workshop concept art",
+    "contactBody": "For game support, artwork permissions or privacy requests, write to Littlejoy Games.",
+    "gallery": "App Store artwork",
+    "back": "All games",
+    "how": "How to play",
+    "next": "Next game",
+    "policyNav": "Contents",
+    "privacyContact": "Privacy contact",
+    "termsContact": "Contact Littlejoy Games",
+    "policies": "Player information",
+    "date": "Effective November 18, 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Ocean puzzle",
+      "note": "Tap a bubble and guide the fish to its tank before the waiting spots fill up.",
+      "guide": [
+        {
+          "title": "Make room for three",
+          "text": "Send three fish of the same kind to the matching tank. A full tank clears the way for the next group."
+        },
+        {
+          "title": "Read the queue",
+          "text": "Only the first fish in a bubble can leave. Look at the fish behind it before using your last waiting spot."
+        }
+      ],
+      "captions": [
+        "Rescue the fish",
+        "Fill the tanks",
+        "Think ahead",
+        "Explore the seas",
+        "Collect sea creatures"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Forest puzzle",
+      "note": "Move birds between branches, gather matching flocks and guide them home through ten woodland worlds.",
+      "guide": [
+        {
+          "title": "Gather a flock",
+          "text": "Look for birds of the same color. Move them between branches, keeping a spare perch for the next move."
+        },
+        {
+          "title": "Beyond the branches",
+          "text": "Plan around sleeping birds and eggs. Stars earned in the levels open reward chests, and collected outfits dress up your flock."
+        }
+      ],
+      "captions": [
+        "Sort the flock",
+        "Bring them home",
+        "Explore the forests",
+        "Dress your birds",
+        "Open star chests"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Game library",
+      "worlds": "Worlds",
+      "guide": "Field guide",
+      "help": "Player support",
+      "open": "Explore",
+      "levels": "Levels",
+      "seas": "Seas",
+      "creatures": "Sea creatures",
+      "forests": "Forests",
+      "stars": "Stars per level"
+    },
+    "intros": {
+      "games": "Two puzzle games with different rhythms. Make space for the next fish underwater, or choose the branch that brings a flock together.",
+      "worlds": "Travel from the shallows to a clockwork bay, then from bamboo groves to wisteria. Each journey has its own collection.",
+      "guide": "A closer look at the decisions behind a good move. Use these situations to plan your next rescue or homecoming.",
+      "support": "Find out where your progress is kept, what to include in a bug report, and how to request permission to use our artwork."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "From shore to open sea",
+        "world": "The 360 levels span 18 seas, from Sunrise Shore and Coral Garden to Clockwork Bay and Melody Cove. The waters change as you work through the puzzles.",
+        "collectionTitle": "An album for every sea",
+        "collection": "The collection has 18 albums with 705 sea creatures in all. Return to the albums between levels to see which creatures you have already found.",
+        "tacticTitle": "When only one waiting spot is left",
+        "tactic": "Look at the open tanks before tapping. A third fish of the right kind completes a tank immediately. Choosing a fish with no matching tank uses the last waiting spot instead."
+      },
+      "fly-home": {
+        "worldTitle": "Ten forests, one way home",
+        "world": "Follow 210 puzzles through ten painted forests. Bamboo gives way to autumn leaves, snow and blossom before the flock reaches the wisteria trees.",
+        "collectionTitle": "From stars to outfits",
+        "collection": "Careful moves earn up to three stars per level. Stars open reward chests. Back at the aviary, try outfits on the birds you have collected.",
+        "tacticTitle": "When a branch is almost full",
+        "tactic": "Check the birds at the tips of two branches. A matching group can land on a branch with room and the same kind at its tip. Keep an empty branch free until you know which group needs it most."
+      }
+    },
+    "faq": [
+      {
+        "question": "Where is my progress saved?",
+        "answer": "Both games save progress on the device. For a browser game, return in the same browser profile. Clearing its site data or deleting the iOS app can erase that progress."
+      },
+      {
+        "question": "What should I include in a bug report?",
+        "answer": "Tell us the game, level, device and what you tapped just before the issue. Add the app version if you know it. Please leave out passwords and personal documents."
+      },
+      {
+        "question": "May I use a poster or illustration?",
+        "answer": "You may share links to our public pages. For commercial use or a collection of images, send us the page address and explain how you would like to use the art."
+      }
+    ],
+    "studio": {
+      "title": "A different kind of pause",
+      "text": "In the ocean, the next fish in a queue can change your plan. In the forest, an empty branch does the same. Both games give you room to pause, look at the board and choose one move."
+    },
+    "preview": {
+      "open": "Open image",
+      "close": "Close preview",
+      "previous": "Previous image",
+      "next": "Next image"
+    }
+  }
+}

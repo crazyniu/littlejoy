@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Giochi",
+    "studio": "Studio",
+    "support": "Contatti",
+    "privacy": "Informativa sulla privacy",
+    "terms": "Condizioni d’uso",
+    "skip": "Vai al contenuto",
+    "navigation": "Navigazione principale",
+    "language": "Lingua",
+    "indie": "Studio di giochi indipendente",
+    "heroLead": "Creiamo rompicapi pieni di colore per le piccole pause della giornata.",
+    "browse": "Scopri i giochi",
+    "works": "I nostri giochi",
+    "about": "Lo studio Littlejoy",
+    "aboutBody": "Scoppia una bolla e un pesce torna a casa. Un uccellino cambia ramo e ritrova lo stormo. I nostri giochi nascono da piccoli gesti come questi.",
+    "art": "Illustrazioni dello studio",
+    "puzzleArt": "Studio di percorsi ramificati",
+    "workshopArt": "Bozzetto del laboratorio",
+    "contactBody": "Per assistenza, permessi d’uso delle immagini o domande sulla privacy, scrivi a Littlejoy Games.",
+    "gallery": "Immagini dell’App Store",
+    "back": "Tutti i giochi",
+    "how": "Come si gioca",
+    "next": "Gioco successivo",
+    "policyNav": "Indice",
+    "privacyContact": "Contatto per la privacy",
+    "termsContact": "Contatta Littlejoy Games",
+    "policies": "Informazioni per i giocatori",
+    "date": "In vigore dal 18 novembre 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Rompicapo marino",
+      "note": "Tocca una bolla e guida il pesce nella sua vasca prima che finiscano i posti in attesa.",
+      "guide": [
+        {
+          "title": "Raggruppane tre",
+          "text": "Porta tre pesci della stessa specie nella vasca giusta. Una vasca piena parte e lascia spazio al gruppo seguente."
+        },
+        {
+          "title": "Osserva la fila",
+          "text": "Solo il primo pesce di ogni bolla può uscire. Guarda chi ha dietro prima di occupare l’ultimo posto."
+        }
+      ],
+      "captions": [
+        "Salva i pesci",
+        "Riempi le vasche",
+        "Pensa alla prossima mossa",
+        "Esplora i mari",
+        "Colleziona creature marine"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Rompicapo nella foresta",
+      "note": "Sposta gli uccellini di ramo in ramo e riuniscili per colore per riportarli al nido attraverso dieci foreste.",
+      "guide": [
+        {
+          "title": "Raduna lo stormo",
+          "text": "Individua gli uccelli dello stesso colore e lascia un posatoio libero per la mossa successiva."
+        },
+        {
+          "title": "Oltre i rami",
+          "text": "Uova e uccellini addormentati cambiano l’ordine delle mosse. Con le stelle dei livelli apri i forzieri e con i costumi vesti lo stormo."
+        }
+      ],
+      "captions": [
+        "Ordina lo stormo",
+        "Torna al nido",
+        "Esplora le foreste",
+        "Vesti gli uccelli",
+        "Apri i forzieri di stelle"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Catalogo giochi",
+      "worlds": "Mondi",
+      "guide": "Guida di gioco",
+      "help": "Assistenza",
+      "open": "Esplora",
+      "levels": "Livelli",
+      "seas": "Mari",
+      "creatures": "Creature marine",
+      "forests": "Foreste",
+      "stars": "Stelle per livello"
+    },
+    "intros": {
+      "games": "Due rompicapi con ritmi diversi. Sott’acqua fai posto al prossimo pesce, mentre tra gli alberi scegli il ramo che riunirà lo stormo.",
+      "worlds": "Dai bassi fondali alla baia degli ingranaggi, dai boschetti di bambù ai glicini. Ogni viaggio ha la sua collezione.",
+      "guide": "A chi riservare l’ultimo posto? Quando usare un ramo vuoto? Due situazioni concrete per ragionare sulla prossima mossa.",
+      "support": "Scopri dove vengono salvati i progressi, cosa scrivere per segnalare un problema e come chiedere il permesso di usare le illustrazioni."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "Dalla riva al mare aperto",
+        "world": "I 360 livelli attraversano 18 mari. Dalla spiaggia all’alba e dal giardino dei coralli si prosegue verso la baia degli ingranaggi e l’insenatura delle melodie.",
+        "collectionTitle": "Un album per ogni mare",
+        "collection": "I 18 album raccolgono in tutto 705 creature marine. Sfogliali tra un livello e l’altro per vedere chi hai già salvato e quali spazi rimangono liberi.",
+        "tacticTitle": "Quando resta un solo posto",
+        "tactic": "Guarda prima le vasche. Se ce ne sono già due della stessa specie, il terzo pesce completa la vasca e la fa partire. Un pesce senza una vasca adatta occuperà invece l’ultimo posto in attesa."
+      },
+      "fly-home": {
+        "worldTitle": "Dieci foreste per tornare al nido",
+        "world": "I 210 rompicapi attraversano dieci foreste dipinte. Dopo il bambù arrivano foglie autunnali, neve e alberi in fiore, fino ai glicini.",
+        "collectionTitle": "Dalle stelle ai costumi",
+        "collection": "Con poche mosse puoi ottenere fino a tre stelle per livello. Le stelle aprono i forzieri e in voliera puoi provare i costumi sugli uccelli della collezione.",
+        "tacticTitle": "Quando un ramo è quasi pieno",
+        "tactic": "Confronta gli uccelli in punta a due rami. Un gruppo può spostarsi sul ramo con spazio a sufficienza e un uccello della stessa specie in punta. Conserva il ramo vuoto finché non sai chi ne ha più bisogno."
+      }
+    },
+    "faq": [
+      {
+        "question": "Dove vengono salvati i progressi?",
+        "answer": "Entrambi i giochi salvano sul dispositivo. Per la versione web torna nello stesso profilo del browser. Eliminare i dati del sito o l’app iOS può cancellare i progressi."
+      },
+      {
+        "question": "Cosa serve per segnalare un problema?",
+        "answer": "Indica gioco, livello, dispositivo e l’ultima azione prima del problema. Aggiungi la versione dell’app se la conosci. Non inviare password o documenti."
+      },
+      {
+        "question": "Posso usare un poster o un’illustrazione?",
+        "answer": "Puoi condividere i link alle pagine pubbliche. Per uso commerciale o per una raccolta di immagini, scrivici indicando la pagina e l’utilizzo previsto."
+      }
+    ],
+    "studio": {
+      "title": "Il tempo di una mossa",
+      "text": "In mare basta il prossimo pesce in fila per cambiare il piano. Nella foresta può bastare un ramo vuoto. In entrambi i giochi puoi fermarti, osservare e scegliere la tua mossa."
+    },
+    "preview": {
+      "open": "Ingrandisci immagine",
+      "close": "Chiudi anteprima",
+      "previous": "Immagine precedente",
+      "next": "Immagine successiva"
+    }
+  }
+}

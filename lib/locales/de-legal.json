@@ -1,0 +1,133 @@
+{
+  "privacy": {
+    "intro": "Diese Erklärung gilt für die von Littlejoy Games veröffentlichten Spiele, shopkivoo.com und den Spielersupport. Sie erläutert, welche Daten auf dem Gerät bleiben, welche übertragen werden können und wie du den Entwickler erreichst.",
+    "sections": [
+      [
+        "operator",
+        "Über uns",
+        [
+          "Littlejoy Games betreibt shopkivoo.com. Wir sind ein Entwicklerteam aus Studierenden mit Sitz in Los Angeles, USA. Anfragen zur Auskunft, Berichtigung oder Löschung deiner personenbezogenen Daten kannst du an die E-Mail-Adresse auf dieser Seite senden."
+        ]
+      ],
+      [
+        "game-data",
+        "Spieldaten und Gerätefunktionen",
+        [
+          "Offline-Ausgaben mit lokalen Spielständen benötigen kein Konto. Fortschritt, Inventar, Erfolge und Einstellungen bleiben zum Weiterspielen im App- oder Browserspeicher. Beim Offline-Spiel werden diese Daten nicht an das Studio übermittelt.",
+          "Beim Teilen über das System wählst du Inhalt, App und Empfänger selbst und kannst vor dem Senden abbrechen. Beim Abruf von Ressourcen erhält der Host die für die Auslieferung nötige IP-Adresse und den Dateipfad. Vor Nutzung einer Online-Funktion mit weiterer Datenverarbeitung nennen wir Daten, Zwecke und Empfänger und holen erforderliche Einwilligungen ein.",
+          "Mobilversionen von Bird Sort mit Firebase Analytics übermitteln Google eine App-Instanz-ID, einen aus einer maskierten IP-Adresse abgeleiteten ungefähren Standort, Bildschirmaufrufe, Sitzungen und Spielereignisse wie den Beginn oder Abschluss eines Levels. Littlejoy Games nutzt diese Informationen, um das Spielverhalten zu verstehen und das Spiel zu verbessern. Analysedaten werden bei der Übertragung verschlüsselt und die Erfassung der Werbe-ID ist für Firebase Analytics deaktiviert."
+        ]
+      ],
+      [
+        "advertising",
+        "Werbung und Datenschutzeinstellungen",
+        [
+          "Einige Mobilversionen zeigen Werbung über Google AdMob an. Wenn eine Version AdMob nutzt, kann Google Ihre IP-Adresse und den ungefähren Standort, Geräte- oder App-Kennungen (einschließlich der Werbe-ID, sofern verfügbar), App-Interaktionen wie Starts oder Berührungen, Anzeigenimpressionen und Interaktionen mit Anzeigen sowie Absturz- und Leistungsdaten erfassen oder erhalten. Google und seine Werbepartner können diese Daten verwenden oder weitergeben, um Werbung bereitzustellen und ihre Leistung zu messen, Fehler zu diagnostizieren und Betrug zu verhindern. Soweit zulässig, können die Daten auch zur Personalisierung von Werbung verwendet werden.",
+          "Wenn eine Einwilligung erforderlich ist, erscheint im Spiel ein Datenschutzhinweis zur Werbung. Sind in den Spieleinstellungen Datenschutzoptionen verfügbar, können Sie dort Ihre Auswahl einsehen oder ändern und Ihre Einwilligung widerrufen. Unter iOS verwalten Sie die Tracking-Berechtigung über Einstellungen → Datenschutz & Sicherheit → Tracking. Wenn Sie Tracking ablehnen, kann die App nicht auf die iOS-Werbekennung (IDFA) zugreifen. Unter Android können Sie die Werbe-ID in den Werbeeinstellungen des Geräts verwalten oder löschen. Je nach Einstellung und Region können weiterhin nicht personalisierte Anzeigen erscheinen."
+        ]
+      ],
+      [
+        "website",
+        "Besuch der Website",
+        [
+          "Cloudflare liefert Seiten und Bilder aus. Für die Auslieferung, den Schutz der Website und die Fehlersuche kann das Netzwerk IP-Adresse, angeforderten Pfad, Zeitpunkt, Browserinformationen und Antwortstatus verarbeiten, auch außerhalb deines Landes.",
+          "Du kannst Spiele und Bildvorschauen ohne Konto ansehen. Die Website hat keine Kontaktformulare, Kaufabwicklung, Werbe-Tags oder eigene Reichweitenmessung. Kontaktlinks öffnen deine Mail-App. Wir erhalten erst dann eine Nachricht, wenn du sie sendest. Die Website liest keine Spielstände.",
+          "Bei URLs ohne Sprachangabe wählt der Server die Seite anhand der vom Browser gesendeten Sprachpräferenzen. Eine Sprache in der URL hat Vorrang. Dafür wird kein Cookie verwendet."
+        ]
+      ],
+      [
+        "email",
+        "E-Mails an uns",
+        [
+          "Wir erhalten die Absenderadresse, die Nachricht und freiwillige Anhänge, um zu antworten, Fehler zu untersuchen oder Datenschutzanfragen zu bearbeiten. Unser Postfach nutzt Gmail von Google. Bitte sende keine Passwörter, Ausweisdokumente oder unnötigen persönlichen Angaben.",
+          "Wir speichern den Schriftverkehr nur so lange, wie es für die Anfrage, damit verbundene Streitigkeiten oder gesetzliche Pflichten erforderlich ist, und löschen ihn dann. Hostinganbieter verwalten technische Protokolle nach ihren eigenen Speicherfristen. Gesetzlich vorgeschriebene Auskünfte sind möglich."
+        ]
+      ],
+      [
+        "security",
+        "Dienstleister und Sicherheit",
+        [
+          "Website und Bilder werden über HTTPS übertragen. Nur die Bearbeitenden haben Zugang zu Supportnachrichten. Beauftragte Dienstleister müssen Daten auf vereinbarte Zwecke beschränken und gleichwertig schützen. Persönliche Angaben aus E-Mails geben wir nur für den gewählten Dienst oder aufgrund gesetzlicher Pflicht weiter."
+        ]
+      ],
+      [
+        "choices",
+        "Deine Rechte und Löschung",
+        [
+          "Unter iOS entfernt „App löschen“ die lokalen App-Daten. Beim Auslagern bleiben Dokumente und Daten erhalten. Unter Android kannst du den App-Speicher leeren, im Browser die Daten der Spielwebsite. Fortschritt kann endgültig verloren gehen. Geräte- und Cloud-Backups verwaltest du separat.",
+          "Für Auskunft, Kopie, Berichtigung, Einschränkung oder Löschung eingesandter Daten oder zum Widerruf einer Einwilligung schreib uns von deiner ursprünglichen Adresse und nenne das Spiel oder die Nachricht. Zur Prüfung fragen wir höchstens die notwendigen Angaben ab und antworten innerhalb der gesetzlichen Frist.",
+          "Du kannst dich auch an deine örtliche Datenschutzbehörde wenden. Spielstände, die nur auf deinem Gerät liegen, kann das Studio nicht aus der Ferne abrufen oder löschen."
+        ]
+      ],
+      [
+        "children",
+        "Kinder und Familien",
+        [
+          "Offline-Spielen erfordert weder Namen noch Geburtsdatum oder Kontaktdaten eines Kindes. Hat ein Kind Daten per E-Mail gesendet, können Sorgeberechtigte Auskunft oder Löschung verlangen. Sende bei der ersten Anfrage keine Ausweisdokumente. Erforderliche elterliche Einwilligungen holen wir vorab ein."
+        ]
+      ],
+      [
+        "platforms",
+        "Plattformen und Änderungen",
+        [
+          "Apple, Google Play und Geräteplattformen verarbeiten Store-Konten, Downloads, Backups und gewählte Diagnosedaten nach eigenen Regeln und Einstellungen. Andere Plattformen wie WeChat oder Ressourcenhosts können Auslieferungsanfragen verarbeiten. Beachte die ergänzenden Hinweise deiner Ausgabe.",
+          "Littlejoy Games betreibt die Website und bearbeitet Datenschutzanfragen unter der unten genannten Adresse. Bei Änderungen aktualisieren wir diese Seite und das Gültigkeitsdatum und holen, soweit erforderlich, eine Einwilligung ein."
+        ]
+      ]
+    ]
+  },
+  "terms": {
+    "intro": "Diese Bedingungen gelten für die von Littlejoy Games veröffentlichten Spiele, die offizielle Website, das Portfolio und den Support. Ergänzend gelten die Plattformbedingungen und die mitgelieferte Lizenz.",
+    "sections": [
+      [
+        "scope",
+        "Nutzung der Website",
+        [
+          "Du kannst die Website besuchen, verfügbare Spiele ansehen und herunterladen oder das Studio kontaktieren. Nutze autorisierte Bezugsquellen. Für App-Store- und Google-Play-Ausgaben gelten auch die Store-Bedingungen und die jeweilige Lizenz."
+        ]
+      ],
+      [
+        "game-license",
+        "Spiellizenz und Spielstände",
+        [
+          "Nach den geltenden Bedingungen kannst du auf eigenen kompatiblen Geräten privat und nicht kommerziell spielen. Die Rechte verbleiben bei den Rechteinhabern. Verbreite keine Installationsdateien ohne Erlaubnis, täusche keine offizielle Ausgabe vor und störe weder Spieler noch Dienst. Löschen von Daten oder App und Gerätewechsel können Spielstände kosten. Deine gesetzlichen Rechte bleiben unberührt."
+        ]
+      ],
+      [
+        "rights",
+        "Rechte an Spielmaterial",
+        [
+          "Rechte an Spielen, Grafiken, Figuren, Screenshots, Namen und Inhalten verbleiben beim Studio oder seinen Lizenzgebern. Links auf öffentliche Seiten dürfen geteilt werden. Private Betrachtung, rechtmäßige Zitate, Rezensionen und andere gesetzlich zulässige Nutzungen bleiben möglich. Für kommerzielle Nutzung, Fanartikel oder die erneute Veröffentlichung ganzer Sammlungen bitte per E-Mail um Erlaubnis fragen. Für fremde Werke gelten deren eigene Lizenzen."
+        ]
+      ],
+      [
+        "conduct",
+        "Zulässige Nutzung",
+        [
+          "Nutze die Website rechtmäßig. Gib dich nicht als Studio aus, verbreite bearbeitete Fassungen nicht als offizielle Downloads, störe den Betrieb nicht und sende kein rechtsverletzendes Material. Melde mögliche Rechtsverletzungen vertraulich mit URL und Angaben zum betroffenen Inhalt."
+        ]
+      ],
+      [
+        "games",
+        "Vorschauen und Verfügbarkeit",
+        [
+          "Als „Spielkonzept“ gekennzeichnete Projekte sind Entwürfe. Gestaltung, Veröffentlichungspläne und Termine können sich ändern. Informationen zur Verfügbarkeit in deiner Region findest du im jeweiligen Store. Diese Website wickelt keine Spielkäufe ab."
+        ]
+      ],
+      [
+        "responsibility",
+        "Dienst und Rechte",
+        [
+          "Wartung oder Netzstörungen können den Zugriff unterbrechen. Wir bemühen uns, gemeldete erhebliche Fehler zu beheben. Zwingender Verbraucherschutz, gesetzliche Rechtsbehelfe und gesetzlich nicht ausschließbare Haftung bleiben unberührt. Minderjährige benötigen die Zustimmung ihrer Erziehungsberechtigten, soweit dies vorgeschrieben ist."
+        ]
+      ],
+      [
+        "contact",
+        "Änderungen und Kontakt",
+        [
+          "Das Gültigkeitsdatum kennzeichnet die Fassung. Wesentliche Änderungen werden hier veröffentlicht. Erlaubnisanfragen, Fragen oder Beschwerden kannst du an die unten genannte Adresse senden. Der Rechtsweg und die Rechtsbehelfe nach geltendem Recht stehen dir offen."
+        ]
+      ]
+    ]
+  }
+}

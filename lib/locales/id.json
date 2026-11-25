@@ -1,0 +1,139 @@
+{
+  "ui": {
+    "games": "Gim",
+    "studio": "Studio",
+    "support": "Kontak",
+    "privacy": "Kebijakan Privasi",
+    "terms": "Ketentuan Penggunaan",
+    "skip": "Lewati ke konten",
+    "navigation": "Navigasi utama",
+    "language": "Bahasa",
+    "indie": "Studio gim independen",
+    "heroLead": "Kami membuat gim teka-teki penuh warna untuk menemani waktu senggang Anda.",
+    "browse": "Jelajahi gim kami",
+    "works": "Gim kami",
+    "about": "Tentang Littlejoy",
+    "aboutBody": "Satu gelembung pecah dan seekor ikan menemukan jalan pulang. Seekor burung berpindah dahan lalu bertemu kawanannya. Gim kami berawal dari gerakan kecil seperti ini.",
+    "art": "Ilustrasi studio",
+    "puzzleArt": "Sketsa jalur bercabang",
+    "workshopArt": "Konsep bengkel",
+    "contactBody": "Untuk bantuan gim, izin penggunaan gambar, atau pertanyaan privasi, hubungi Littlejoy Games melalui email.",
+    "gallery": "Gambar promosi App Store",
+    "back": "Semua gim",
+    "how": "Cara bermain",
+    "next": "Gim berikutnya",
+    "policyNav": "Daftar isi",
+    "privacyContact": "Kontak privasi",
+    "termsContact": "Hubungi Littlejoy Games",
+    "policies": "Informasi pemain",
+    "date": "Berlaku sejak 18 November 2026"
+  },
+  "games": {
+    "bubble-fish": {
+      "name": "Bubble Fish",
+      "genre": "Teka-teki laut",
+      "note": "Ketuk gelembung dan antar ikan ke akuarium sebelum tempat tunggu penuh.",
+      "guide": [
+        {
+          "title": "Kumpulkan tiga ikan",
+          "text": "Masukkan tiga ikan sejenis ke akuarium yang sesuai. Akuarium penuh akan pergi dan memberi tempat bagi kelompok berikutnya."
+        },
+        {
+          "title": "Perhatikan antrean",
+          "text": "Hanya ikan terdepan yang bisa keluar dari gelembung. Lihat ikan di belakangnya sebelum memakai tempat tunggu terakhir."
+        }
+      ],
+      "captions": [
+        "Selamatkan ikan",
+        "Isi akuarium",
+        "Rencanakan langkah",
+        "Jelajahi lautan",
+        "Koleksi makhluk laut"
+      ]
+    },
+    "fly-home": {
+      "name": "Fly Home",
+      "genre": "Teka-teki hutan",
+      "note": "Pindahkan burung antardahan, kelompokkan sesuai warna, lalu antar mereka pulang melintasi sepuluh hutan.",
+      "guide": [
+        {
+          "title": "Satukan kawanan",
+          "text": "Cari burung sewarna dan pindahkan ke dahan yang sesuai. Sisakan satu tempat hinggap untuk langkah berikutnya."
+        },
+        {
+          "title": "Di balik dahan",
+          "text": "Telur dan burung yang tidur mengubah urutan langkah. Buka peti dengan bintang dari level dan dandani burung dengan kostum koleksi."
+        }
+      ],
+      "captions": [
+        "Susun kawanan",
+        "Pulang ke sarang",
+        "Jelajahi hutan",
+        "Dandani burung",
+        "Buka peti bintang"
+      ]
+    }
+  },
+  "explore": {
+    "labels": {
+      "catalog": "Katalog gim",
+      "worlds": "Dunia gim",
+      "guide": "Panduan bermain",
+      "help": "Bantuan pemain",
+      "open": "Jelajahi",
+      "levels": "Level",
+      "seas": "Laut",
+      "creatures": "Spesies laut",
+      "forests": "Hutan",
+      "stars": "Bintang per level"
+    },
+    "intros": {
+      "games": "Dua teka-teki dengan irama berbeda. Di laut, sisakan ruang untuk ikan berikutnya. Di hutan, pilih dahan yang mempertemukan kawanan burung.",
+      "worlds": "Dari perairan dangkal ke teluk roda gigi, dari rumpun bambu ke hutan wisteria. Setiap perjalanan punya koleksi tersendiri.",
+      "guide": "Siapa yang perlu tempat tunggu terakhir? Kapan sebaiknya memakai dahan kosong? Pelajari dua situasi sebelum menentukan langkah.",
+      "support": "Cari tahu lokasi simpanan gim, rincian yang berguna saat melaporkan masalah, dan cara meminta izin memakai ilustrasi."
+    },
+    "features": {
+      "bubble-fish": {
+        "worldTitle": "Dari pantai ke laut lepas",
+        "world": "Ada 360 level di 18 laut. Dari pantai saat fajar dan taman karang, perjalanan berlanjut ke teluk roda gigi dan teluk melodi.",
+        "collectionTitle": "Satu album untuk tiap laut",
+        "collection": "Sebanyak 705 spesies laut mengisi 18 album. Buka koleksi di sela level untuk melihat siapa yang sudah diselamatkan dan bagian mana yang masih kosong.",
+        "tacticTitle": "Saat tinggal satu tempat tunggu",
+        "tactic": "Periksa akuarium. Jika sudah ada dua ikan sejenis, ikan ketiga akan melengkapi akuarium dan membuatnya pergi. Ikan yang belum punya akuarium justru akan menempati tempat tunggu terakhir."
+      },
+      "fly-home": {
+        "worldTitle": "Pulang melintasi sepuluh hutan",
+        "world": "210 teka-teki terbentang di sepuluh hutan bergambar tangan. Setelah rumpun bambu, kawanan melewati daun musim gugur, salju, dan bunga sebelum sampai di wisteria.",
+        "collectionTitle": "Dari bintang ke kostum",
+        "collection": "Selesaikan level dengan sedikit langkah untuk mendapat hingga tiga bintang. Bintang membuka peti hadiah. Di kandang burung, coba kostum pada burung yang telah dikoleksi.",
+        "tacticTitle": "Saat dahan hampir penuh",
+        "tactic": "Bandingkan burung di ujung dua dahan. Kawanan dapat pindah ke dahan dengan cukup ruang dan burung sejenis di ujungnya. Simpan dahan kosong sampai jelas kelompok mana yang paling membutuhkannya."
+      }
+    },
+    "faq": [
+      {
+        "question": "Di mana kemajuan gim disimpan?",
+        "answer": "Kedua gim menyimpan kemajuan di perangkat. Untuk versi web, gunakan kembali profil peramban yang sama. Menghapus data situs atau aplikasi iOS dapat menghapus kemajuan."
+      },
+      {
+        "question": "Apa yang perlu dicantumkan saat melaporkan masalah?",
+        "answer": "Sebutkan gim, level, perangkat, dan apa yang diketuk tepat sebelum masalah terjadi. Sertakan versi aplikasi jika diketahui. Jangan kirim kata sandi atau dokumen identitas."
+      },
+      {
+        "question": "Bolehkah saya menggunakan poster atau ilustrasi?",
+        "answer": "Anda boleh membagikan tautan ke halaman publik. Untuk penggunaan komersial atau kumpulan gambar, kirim email berisi alamat halaman dan tujuan penggunaan."
+      }
+    ],
+    "studio": {
+      "title": "Jeda sebelum melangkah",
+      "text": "Di laut, ikan berikutnya dalam antrean dapat mengubah rencana. Di hutan, satu dahan kosong juga bisa mengubah langkah. Kedua gim memberi waktu untuk mengamati dan memilih."
+    },
+    "preview": {
+      "open": "Perbesar gambar",
+      "close": "Tutup pratinjau",
+      "previous": "Gambar sebelumnya",
+      "next": "Gambar berikutnya"
+    }
+  }
+}
