@@ -5,9 +5,13 @@ import { routes } from "../../lib/routes.mjs";
 import editorial from "../../lib/editorial.json";
 import { StudioHome, About, ContactPage } from "../StudioPages";
 import siteCopy from "../../lib/site-copy.json";
+import showcase from "../../lib/showcase.json";
 import PageBanner from "../PageBanner";
 import LanguagePicker from "../LanguagePicker";
 import Portfolio from "../Portfolio";
+import SiteHeader from "../SiteHeader";
+import Effects from "../Effects";
+import { PixelSprite } from "../Pixel";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -62,66 +66,131 @@ export async function generateMetadata({ params }) {
   };
 }
 
-function Wordmark() {
-  return (
-    <span className="wordmark">
-      <span className="joy-mark" aria-hidden="true">
-        <i />
-      </span>
-      littlejoy
-    </span>
-  );
-}
-
-function Header({ lang, section, t, labels }) {
+function Header({ lang, section, t, labels, show }) {
   const links = [
     ["", labels.home],
     ["about", labels.about],
     ["games", editorial[lang].work],
     ["contact", labels.contact],
-  ];
+  ].map(([target, label]) => ({
+    href: address(lang, target),
+    label,
+    current: section === target,
+  }));
   return (
-    <header className="mast">
-      <div className="shell mast-inner">
-        <a className="brand" href={address(lang)} aria-label="Littlejoy Games">
-          <Wordmark />
-        </a>
-        <nav className="site-nav" aria-label={t.navigation}>
-          <ul>
-            {links.map(([target, label]) => (
-              <li key={target}>
-                <a
-                  href={address(lang, target)}
-                  aria-current={section === target ? "page" : undefined}
-                >
-                  {label}
-                </a>
-              </li>
-            ))}
-          </ul>
-        </nav>
-        <LanguagePicker lang={lang} section={section} label={t.language} />
-      </div>
-    </header>
+    <SiteHeader
+      home={address(lang)}
+      links={links}
+      navLabel={t.navigation}
+      menuLabel={show.menu}
+      closeLabel={show.close}
+      email={contact}
+    >
+      <LanguagePicker lang={lang} section={section} label={t.language} />
+    </SiteHeader>
   );
 }
 
-function Footer({ lang, t, labels }) {
+function Footer({ lang, t, labels, show }) {
+  const story = editorial[lang];
+  const columns = [
+    [
+      "Littlejoy Games",
+      [
+        [address(lang), labels.home],
+        [address(lang, "about"), labels.about],
+        [address(lang, "games"), story.work],
+        [address(lang, "contact"), labels.contact],
+      ],
+    ],
+    [
+      t.policies,
+      [
+        [address(lang, "support"), labels.support],
+        [address(lang, "privacy"), t.privacy],
+        [address(lang, "terms"), t.terms],
+      ],
+    ],
+  ];
   return (
     <footer className="site-footer">
-      <div className="shell foot-inner">
-        <span className="copyright">© 2026 Littlejoy Games</span>
-        <nav aria-label={t.policies}>
-          <a href={address(lang, "support")}>{labels.support}</a>
-          <a href={address(lang, "privacy")}>{t.privacy}</a>
-          <a href={address(lang, "terms")}>{t.terms}</a>
-        </nav>
+      <div className="footer-marquee" aria-hidden="true">
+        <div className="footer-marquee-track">
+          {[0, 1].map((k) => (
+            <span key={k}>
+              LITTLEJOY <PixelSprite name="heart" size={6} /> GAMES{" "}
+              <PixelSprite name="star" size={6} /> PRESS START{" "}
+              <PixelSprite name="coin" size={6} />{" "}
+            </span>
+          ))}
+        </div>
       </div>
+      <div className="shell footer-grid">
+        <div className="footer-brand">
+          <a className="brand" href={address(lang)} aria-label="Littlejoy Games">
+            <PixelSprite name="logo" size={4} />
+            <span className="wordmark">
+              littlejoy<span className="wordmark-games">games</span>
+            </span>
+          </a>
+          <p>{t.heroLead}</p>
+          <a className="footer-mail" href={"mailto:" + contact}>
+            <PixelSprite name="mail" size={3} />
+            {contact}
+          </a>
+        </div>
+        {columns.map(([heading, items]) => (
+          <nav className="footer-col" key={heading} aria-label={heading}>
+            <h2>{heading}</h2>
+            <ul>
+              {items.map(([href, label]) => (
+                <li key={href}>
+                  <a href={href}>{label}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        ))}
+        <div className="footer-col">
+          <h2>{labels.hq}</h2>
+          <p className="footer-place">
+            <PixelSprite name="pin" size={3} />
+            {labels.location}
+          </p>
+          <p className="footer-crafted">{show.crafted}</p>
+        </div>
+      </div>
+      <div className="shell footer-bottom">
+        <span>© 2026 Littlejoy Games</span>
+        <span className="footer-ver" aria-hidden="true">
+          v2.0 · <span className="blink">▮</span>
+        </span>
+      </div>
+      <a className="to-top" href="#top" aria-label={show.top}>
+        <PixelSprite name="up" size={3} />
+      </a>
     </footer>
   );
 }
 
-async function DocumentPage({ lang, section, t, labels }) {
+function BootScreen() {
+  return (
+    <div className="boot" aria-hidden="true">
+      <div className="boot-inner">
+        <PixelSprite name="logo" size={9} />
+        <p className="boot-title">LITTLEJOY GAMES</p>
+        <div className="boot-bar">
+          {Array.from({ length: 14 }, (_, i) => (
+            <i key={i} style={{ "--i": i }} />
+          ))}
+        </div>
+        <p className="boot-press">PRESS START</p>
+      </div>
+    </div>
+  );
+}
+
+async function DocumentPage({ lang, section, t, labels, show }) {
   const policyUpdated = section === "privacy" ? "2026-11-25" : "2026-11-19";
   const date = new Intl.DateTimeFormat(languages[lang].tag, {
     dateStyle: "long",
@@ -129,48 +198,75 @@ async function DocumentPage({ lang, section, t, labels }) {
   }).format(new Date(policyUpdated));
   const doc = await legalDocument(lang, section);
   const other = section === "privacy" ? "terms" : "privacy";
+  const glance = section === "privacy" ? show.privacyGlance : show.termsGlance;
+  const glanceIcons =
+    section === "privacy"
+      ? ["phone", "coin", "globe", "mail"]
+      : ["pad", "heart", "pencil", "bulb"];
   const contents = (
-    <nav aria-label={t.policyNav}>
-      {doc.sections.map(([id, title]) => (
-        <a key={id} href={"#" + id}>
-          {title}
-        </a>
+    <ol>
+      {doc.sections.map(([id, title], i) => (
+        <li key={id}>
+          <a href={"#" + id}>
+            <span className="toc-no">{String(i + 1).padStart(2, "0")}</span>
+            {title}
+          </a>
+        </li>
       ))}
-    </nav>
+    </ol>
   );
   return (
     <div className="document">
-      <PageBanner title={t[section]} intro={doc.intro} compact>
-        <div className="doc-meta">
-          <p className="effective">
-            {labels.updated} <time dateTime={policyUpdated}>{date}</time>
-          </p>
-          <a href="#policy-contact">
-            {section === "privacy" ? t.privacyContact : t.termsContact}
-          </a>
-        </div>
+      <PageBanner
+        lang={lang}
+        kicker={t.policies}
+        title={t[section]}
+        intro={doc.intro}
+        sprite={section === "privacy" ? "lock" : "star"}
+        compact
+      >
+        <p className="banner-chip">
+          {labels.updated} <time dateTime={policyUpdated}>{date}</time>
+        </p>
       </PageBanner>
+      <section className="glance">
+        <div className="shell">
+          <h2 className="glance-title">{show.glanceTitle}</h2>
+          <ul className="glance-grid" data-stagger>
+            {glance.map((item, i) => (
+              <li key={item} data-reveal>
+                <PixelSprite name={glanceIcons[i]} size={4} />
+                <p>{item}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
       <div className="shell doc-grid">
-        <aside>
-          <div className="toc-desktop">
+        <aside className="doc-aside">
+          <nav className="toc" aria-label={t.policyNav} data-spy>
             <h2>{t.policyNav}</h2>
             {contents}
-          </div>
+          </nav>
           <details className="toc-mobile">
             <summary>{t.policyNav}</summary>
-            {contents}
+            <nav aria-label={t.policyNav}>{contents}</nav>
           </details>
         </aside>
         <article className="doc-copy">
-          {doc.sections.map(([id, title, paragraphs]) => (
+          {doc.sections.map(([id, title, paragraphs], i) => (
             <section id={id} key={id}>
-              <h2>{title}</h2>
+              <h2>
+                <span className="doc-no">{String(i + 1).padStart(2, "0")}</span>
+                {title}
+              </h2>
               {paragraphs.map((p) => (
                 <p key={p}>{p}</p>
               ))}
             </section>
           ))}
           <div className="contact-box" id="policy-contact">
+            <PixelSprite name="mail" size={4} />
             <strong>
               {section === "privacy" ? t.privacyContact : t.termsContact}
             </strong>
@@ -191,7 +287,8 @@ async function DocumentPage({ lang, section, t, labels }) {
             </div>
           )}
           <a className="related-doc" href={address(lang, other)}>
-            {t[other]} ↗
+            <span>{t[other]}</span>
+            <PixelSprite name="arrow" size={4} />
           </a>
         </article>
       </div>
@@ -206,48 +303,36 @@ export default async function Page({ params }) {
   const t = copy.ui;
   const labels = siteCopy[lang];
   const story = editorial[lang];
+  const show = showcase[lang];
+  const props = { lang, copy, labels, story, show };
   let content;
   if (!section) {
-    content = (
-      <StudioHome lang={lang} copy={copy} labels={labels} story={story} />
-    );
+    content = <StudioHome {...props} />;
   } else if (section === "games") {
-    content = <Portfolio lang={lang} copy={copy} story={story} />;
+    content = <Portfolio {...props} />;
   } else if (section === "about") {
-    content = <About lang={lang} labels={labels} copy={copy} story={story} />;
+    content = <About {...props} />;
   } else if (section === "contact" || section === "support") {
-    content = (
-      <ContactPage
-        lang={lang}
-        labels={labels}
-        story={story}
-        copy={copy}
-        support={section === "support"}
-      />
-    );
+    content = <ContactPage {...props} support={section === "support"} />;
   } else {
     content = (
-      <DocumentPage lang={lang} section={section} t={t} labels={labels} />
+      <DocumentPage lang={lang} section={section} t={t} labels={labels} show={show} />
     );
   }
 
   return (
     <>
+      <div id="top" />
+      {!section && <BootScreen />}
       <a className="skip" href="#content">
         {t.skip}
       </a>
-      <Header lang={lang} section={section} t={t} labels={labels} />
-      <main
-        id="content"
-        className={
-          section === "privacy" || section === "terms"
-            ? "reading-page"
-            : undefined
-        }
-      >
+      <Header lang={lang} section={section} t={t} labels={labels} show={show} />
+      <main id="content" className={"page-" + (section || "home")}>
         {content}
       </main>
-      <Footer lang={lang} t={t} labels={labels} />
+      <Footer lang={lang} t={t} labels={labels} show={show} />
+      <Effects />
     </>
   );
 }
