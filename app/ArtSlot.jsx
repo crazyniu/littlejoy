@@ -3,7 +3,8 @@ import { join } from "node:path";
 import { PixelSprite } from "./Pixel";
 
 // Reserved spot for artwork that has not been drawn yet. Drop a file at `src`
-// (under /public) and the next build shows it instead of the placeholder.
+// (under /public) and the next build shows it. Until then production builds
+// render `children` (a fallback scene); the dev server shows a labelled frame.
 export default function ArtSlot({
   src,
   width,
@@ -11,21 +12,17 @@ export default function ArtSlot({
   alt = "",
   className = "",
   priority = false,
+  children,
 }) {
   const ready = existsSync(join(process.cwd(), "public", src));
   if (ready) {
     return (
       <div className={"art-frame " + className} data-reveal="wipe">
-        <img
-          src={src}
-          alt={alt}
-          width={width}
-          height={height}
-          loading={priority ? "eager" : "lazy"}
-        />
+        <img src={src} alt={alt} width={width} height={height} loading={priority ? "eager" : "lazy"} />
       </div>
     );
   }
+  if (children && process.env.NODE_ENV === "production") return children;
   return (
     <div
       className={"art-frame art-slot " + className}

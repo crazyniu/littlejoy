@@ -1,81 +1,161 @@
+import { createHash } from "node:crypto";
+import { readFileSync } from "node:fs";
+import { join } from "node:path";
 import { notFound } from "next/navigation";
 import { contact, dictionary, legalDocument } from "../../lib/catalog";
 import { address, languages, readPath } from "../../lib/languages";
+import { games } from "../../lib/portfolio.mjs";
 import { routes } from "../../lib/routes.mjs";
 import editorial from "../../lib/editorial.json";
+import arcadeCopy from "../../lib/arcade.json";
 import { StudioHome, About, ContactPage } from "../StudioPages";
 import siteCopy from "../../lib/site-copy.json";
 import showcase from "../../lib/showcase.json";
+import { LostPage, PlayPage } from "../Arcade";
+import GamePage from "../GamePage";
+import { Lightbox } from "../ImageGallery";
 import PageBanner from "../PageBanner";
 import LanguagePicker from "../LanguagePicker";
 import Portfolio from "../Portfolio";
 import SiteHeader from "../SiteHeader";
-import Effects from "../Effects";
 import { PixelSprite } from "../Pixel";
+
+const SITE = "https://shopkivoo.com";
+// "lost" renders the 404 page; scripts/postbuild.mjs moves it to /404.html.
+const LOST = "lost";
+const known = (section) => routes.includes(section) || section === LOST;
+const gameOf = (section) => games.find((g) => section === "games/" + g.slug);
+
+// Cache-busting query for scripts in public/.
+const version = (file) =>
+  createHash("sha256")
+    .update(readFileSync(join(process.cwd(), "public", file)))
+    .digest("hex")
+    .slice(0, 10);
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return Object.keys(languages).flatMap((lang) =>
-    routes.map((section) => ({
-      path: section ? [lang, section] : [lang],
-    })),
-  );
+  return [
+    ...Object.keys(languages).flatMap((lang) =>
+      routes.map((section) => ({
+        path: [lang, ...section.split("/").filter(Boolean)],
+      })),
+    ),
+    { path: [LOST] },
+  ];
 }
 
 export async function generateMetadata({ params }) {
   const { lang, section } = readPath((await params).path);
-  if (!routes.includes(section)) notFound();
-  const { ui } = await dictionary(lang);
-  const policy = section === "privacy" || section === "terms";
+  if (!known(section)) notFound();
+  const { ui, games: gameCopy, explore } = await dictionary(lang);
   const labels = siteCopy[lang];
-  const title = section
-    ? (section === "games"
-        ? editorial[lang].work
-        : labels[section] || ui[section]) + " | Littlejoy Games"
-    : "Littlejoy Games — " + ui.indie;
-  const description = policy
-    ? (await legalDocument(lang, section)).intro
-    : section === "about"
-      ? [labels.team, labels.location].join(" ")
-      : section === "games"
-        ? editorial[lang].catalog
-        : labels[section + "Intro"] || editorial[lang].lead;
+  const story = editorial[lang];
+  const arcade = arcadeCopy[lang];
+  const game = gameOf(section);
+  const policy = section === "privacy" || section === "terms";
+  let title;
+  let description;
+  if (!section) {
+    title = "Littlejoy Games — " + ui.indie;
+    description = story.lead;
+  } else if (section === LOST) {
+    title = arcade.lostTitle;
+    description = arcade.lostText;
+  } else if (game) {
+    const info = gameCopy[game.slug];
+    title = info.name + " — " + info.genre;
+    description = info.note + " " + explore.features[game.slug].world;
+  } else if (section === "play") {
+    title = arcade.playTitle + " — " + arcade.playKicker;
+    description = arcade.playIntro;
+  } else if (section === "games") {
+    title = story.work;
+    description = story.catalog;
+  } else if (policy) {
+    title = ui[section];
+    description = (await legalDocument(lang, section)).intro;
+  } else {
+    title = labels[section] || ui[section];
+    description =
+      section === "about" ? [labels.team, labels.location].join(" ") : labels[section + "Intro"];
+  }
+  if (section) title += " | Littlejoy Games";
+  if (section === LOST) return { title, description, robots: { index: false } };
   const alternates = Object.fromEntries(
-    Object.entries(languages).map(([key, locale]) => [
-      locale.tag,
-      address(key, section),
-    ]),
+    Object.entries(languages).map(([key, locale]) => [locale.tag, address(key, section)]),
   );
+  const image = { url: "/og.jpg", width: 1200, height: 630, alt: "Littlejoy Games" };
   return {
     title,
     description,
     alternates: {
       canonical: address(lang, section),
-      languages: {
-        ...alternates,
-        "x-default": section ? "/" + section + "/" : "/",
-      },
+      languages: { ...alternates, "x-default": section ? "/" + section + "/" : "/" },
     },
     openGraph: {
       title,
       description,
       url: address(lang, section),
       siteName: "Littlejoy Games",
-      images: ["/art/site/island.webp"],
+      locale: languages[lang].tag.replace("-", "_"),
+      type: "website",
+      images: [image],
     },
+    twitter: { card: "summary_large_image", title, description, images: [image.url] },
   };
 }
 
-function Header({ lang, section, t, labels, show }) {
+// schema.org data: the studio on the home page, the game on game pages.
+function structuredData({ lang, section, copy }) {
+  const org = {
+    "@type": "Organization",
+    "@id": SITE + "/#studio",
+    name: "Littlejoy Games",
+    url: SITE + "/",
+    logo: SITE + "/icon.png",
+    email: contact,
+    address: { "@type": "PostalAddress", addressLocality: "Los Angeles", addressRegion: "CA", addressCountry: "US" },
+  };
+  const game = gameOf(section);
+  if (!section) {
+    return {
+      "@context": "https://schema.org",
+      "@graph": [
+        org,
+        { "@type": "WebSite", name: "Littlejoy Games", url: SITE + "/", inLanguage: languages[lang].tag },
+      ],
+    };
+  }
+  if (game) {
+    const info = copy.games[game.slug];
+    return {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      name: info.name,
+      genre: info.genre,
+      description: info.note,
+      image: SITE + "/art/covers/" + game.slug + ".webp",
+      url: SITE + address(lang, section),
+      inLanguage: languages[lang].tag,
+      gamePlatform: ["iOS", "Android"],
+      publisher: { "@id": SITE + "/#studio", ...org },
+    };
+  }
+  return null;
+}
+
+function Header({ lang, section, t, labels, show, arcade }) {
   const links = [
     ["", labels.home],
     ["about", labels.about],
     ["games", editorial[lang].work],
+    ["play", arcade.play],
     ["contact", labels.contact],
   ].map(([target, label]) => ({
     href: address(lang, target),
     label,
-    current: section === target,
+    current: section === target || (target === "games" && Boolean(gameOf(section))),
   }));
   return (
     <SiteHeader
@@ -86,12 +166,12 @@ function Header({ lang, section, t, labels, show }) {
       closeLabel={show.close}
       email={contact}
     >
-      <LanguagePicker lang={lang} section={section} label={t.language} />
+      <LanguagePicker lang={lang} section={section === LOST ? "" : section} label={t.language} />
     </SiteHeader>
   );
 }
 
-function Footer({ lang, t, labels, show }) {
+function Footer({ lang, t, labels, show, arcade, copy }) {
   const story = editorial[lang];
   const columns = [
     [
@@ -99,8 +179,15 @@ function Footer({ lang, t, labels, show }) {
       [
         [address(lang), labels.home],
         [address(lang, "about"), labels.about],
-        [address(lang, "games"), story.work],
         [address(lang, "contact"), labels.contact],
+      ],
+    ],
+    [
+      story.work,
+      [
+        [address(lang, "games"), t.works],
+        ...games.map((g) => [address(lang, "games/" + g.slug), copy.games[g.slug].name]),
+        [address(lang, "play"), arcade.playTitle],
       ],
     ],
     [
@@ -163,30 +250,13 @@ function Footer({ lang, t, labels, show }) {
       <div className="shell footer-bottom">
         <span>© 2026 Littlejoy Games</span>
         <span className="footer-ver" aria-hidden="true">
-          v2.0 · <span className="blink">▮</span>
+          v3.0 · <span className="blink">▮</span>
         </span>
       </div>
       <a className="to-top" href="#top" aria-label={show.top}>
         <PixelSprite name="up" size={3} />
       </a>
     </footer>
-  );
-}
-
-function BootScreen() {
-  return (
-    <div className="boot" aria-hidden="true">
-      <div className="boot-inner">
-        <PixelSprite name="logo" size={9} />
-        <p className="boot-title">LITTLEJOY GAMES</p>
-        <div className="boot-bar">
-          {Array.from({ length: 14 }, (_, i) => (
-            <i key={i} style={{ "--i": i }} />
-          ))}
-        </div>
-        <p className="boot-press">PRESS START</p>
-      </div>
-    </div>
   );
 }
 
@@ -299,41 +369,47 @@ async function DocumentPage({ lang, section, t, labels, show }) {
 
 export default async function Page({ params }) {
   const { lang, section } = readPath((await params).path);
-  if (!routes.includes(section)) notFound();
+  if (!known(section)) notFound();
   const copy = await dictionary(lang);
   const t = copy.ui;
   const labels = siteCopy[lang];
   const story = editorial[lang];
   const show = showcase[lang];
-  const props = { lang, copy, labels, story, show };
+  const arcade = arcadeCopy[lang];
+  const props = { lang, copy, labels, story, show, arcade };
+  const game = gameOf(section);
   let content;
-  if (!section) {
-    content = <StudioHome {...props} />;
-  } else if (section === "games") {
-    content = <Portfolio {...props} />;
-  } else if (section === "about") {
-    content = <About {...props} />;
-  } else if (section === "contact" || section === "support") {
+  if (!section) content = <StudioHome {...props} />;
+  else if (section === LOST) content = <LostPage arcade={arcade} copy={copy} />;
+  else if (game) content = <GamePage slug={game.slug} {...props} />;
+  else if (section === "games") content = <Portfolio {...props} />;
+  else if (section === "play") content = <PlayPage {...props} />;
+  else if (section === "about") content = <About {...props} />;
+  else if (section === "contact" || section === "support")
     content = <ContactPage {...props} support={section === "support"} />;
-  } else {
-    content = (
-      <DocumentPage lang={lang} section={section} t={t} labels={labels} show={show} />
-    );
-  }
+  else content = <DocumentPage lang={lang} section={section} t={t} labels={labels} show={show} />;
 
+  const data = structuredData({ lang, section, copy });
+  const page = section === LOST ? "lost" : game ? "game" : (section || "home").replace("/", "-");
   return (
     <>
       <div id="top" />
-      {!section && <BootScreen />}
       <a className="skip" href="#content">
         {t.skip}
       </a>
-      <Header lang={lang} section={section} t={t} labels={labels} show={show} />
-      <main id="content" className={"page-" + (section || "home")}>
+      <Header lang={lang} section={section} t={t} labels={labels} show={show} arcade={arcade} />
+      <main id="content" className={"page-" + page}>
         {content}
       </main>
-      <Footer lang={lang} t={t} labels={labels} show={show} />
-      <Effects />
+      <Footer lang={lang} t={t} labels={labels} show={show} arcade={arcade} copy={copy} />
+      <Lightbox controls={copy.explore.preview} />
+      {data && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(data).replace(/</g, "\\u003c") }}
+        />
+      )}
+      {section === "play" && <script defer src={"/play.js?v=" + version("play.js")} />}
     </>
   );
 }

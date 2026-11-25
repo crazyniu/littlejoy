@@ -1,19 +1,22 @@
 import { palette, sprites } from "../lib/sprites";
 
-// Merge each row into runs of one colour so a sprite stays a handful of <rect>s.
-function runs(rows) {
-  const rects = [];
+// One <path> per colour per frame: each row is merged into runs, so even a
+// large sprite is a handful of DOM nodes.
+function paths(rows) {
+  const byColor = new Map();
   rows.forEach((row, y) => {
     let x = 0;
     while (x < row.length) {
       const c = row[x];
       let end = x + 1;
       while (end < row.length && row[end] === c) end++;
-      if (c !== ".") rects.push([x, y, end - x, palette[c]]);
+      if (c !== ".") {
+        byColor.set(c, (byColor.get(c) || "") + `M${x} ${y}h${end - x}v1H${x}z`);
+      }
       x = end;
     }
   });
-  return rects;
+  return [...byColor].map(([c, d]) => [palette[c], d]);
 }
 
 export function PixelSprite({ name, size = 4, className = "", title }) {
@@ -37,13 +40,16 @@ export function PixelSprite({ name, size = 4, className = "", title }) {
       aria-hidden={title ? undefined : "true"}
       focusable="false"
     >
-      {frames.map((frame, i) => (
-        <g key={i} className={frames.length > 1 ? "frame" : undefined}>
-          {runs(frame).map(([x, y, w, fill]) => (
-            <rect key={x + "-" + y} x={x} y={y} width={w} height="1" fill={fill} />
-          ))}
-        </g>
-      ))}
+      {frames.map((frame, i) => {
+        const shapes = paths(frame).map(([fill, d]) => <path key={fill} fill={fill} d={d} />);
+        return frames.length > 1 ? (
+          <g key={i} className="frame">
+            {shapes}
+          </g>
+        ) : (
+          shapes
+        );
+      })}
     </svg>
   );
 }
@@ -96,7 +102,9 @@ export function Kicker({ children, index }) {
   return (
     <p className="kicker" data-reveal>
       {index && <span className="kicker-index">{index}</span>}
-      <span className="kicker-text">{children}</span>
+      <span className="kicker-text" data-scramble>
+        {children}
+      </span>
     </p>
   );
 }

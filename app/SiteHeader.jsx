@@ -1,33 +1,7 @@
-"use client";
-import { useEffect, useState } from "react";
 import { PixelSprite } from "./Pixel";
 
-export default function SiteHeader({
-  home,
-  links,
-  navLabel,
-  menuLabel,
-  closeLabel,
-  email,
-  children,
-}) {
-  const [open, setOpen] = useState(false);
-
-  useEffect(() => {
-    const root = document.documentElement;
-    root.classList.toggle("menu-open", open);
-    if (open) root.classList.remove("header-hidden");
-    const onKey = (e) => e.key === "Escape" && setOpen(false);
-    const onWide = (e) => e.matches && setOpen(false);
-    const wide = matchMedia("(min-width: 960px)");
-    addEventListener("keydown", onKey);
-    wide.addEventListener("change", onWide);
-    return () => {
-      removeEventListener("keydown", onKey);
-      wide.removeEventListener("change", onWide);
-    };
-  }, [open]);
-
+// Header + full-screen mobile menu. The menu button is wired up in site.js.
+export default function SiteHeader({ home, links, navLabel, menuLabel, closeLabel, email, children }) {
   return (
     <header className="mast">
       <div className="scroll-meter" aria-hidden="true" />
@@ -57,10 +31,12 @@ export default function SiteHeader({
           <button
             type="button"
             className="menu-toggle"
-            aria-expanded={open}
+            aria-expanded="false"
             aria-controls="mobile-menu"
-            aria-label={open ? closeLabel : menuLabel}
-            onClick={() => setOpen((v) => !v)}
+            aria-label={menuLabel}
+            data-menu
+            data-open={menuLabel}
+            data-close={closeLabel}
           >
             <span className="burger" aria-hidden="true">
               <i />
@@ -70,21 +46,12 @@ export default function SiteHeader({
           </button>
         </div>
       </div>
-      <div
-        id="mobile-menu"
-        className="mobile-menu"
-        data-open={open}
-        inert={!open}
-      >
+      <div id="mobile-menu" className="mobile-menu" data-open="false" inert>
         <nav aria-label={navLabel}>
           <ol>
             {links.map(({ href, label, current }, i) => (
               <li key={href} style={{ "--i": i }}>
-                <a
-                  href={href}
-                  aria-current={current ? "page" : undefined}
-                  onClick={() => setOpen(false)}
-                >
+                <a href={href} aria-current={current ? "page" : undefined}>
                   <span className="mm-index">0{i + 1}</span>
                   {label}
                 </a>

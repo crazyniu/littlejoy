@@ -1,9 +1,14 @@
 #!/usr/bin/env python3
-"""Rebuild public/fonts/littlejoy-display.woff2 from the full Fusion Pixel font.
+"""Rebuild the Littlejoy Display pixel font from the full Fusion Pixel font.
 
-The site serves a subset containing only the characters that appear in the
+The site serves subsets containing only the characters that appear in the
 copy (lib/**/*.json, app/**/*.jsx). Run this after adding or editing text in
 any language, otherwise new CJK/Korean glyphs fall back to a system font.
+
+Two files are written, split at U+2E80 so Latin/Cyrillic/Vietnamese pages never
+download the CJK glyphs (site.css declares matching unicode-range values):
+  public/fonts/littlejoy-display.woff2      U+0000-2E7F
+  public/fonts/littlejoy-display-cjk.woff2  U+2E80-FFFF
 
 Usage:
   pip install fonttools brotli
@@ -23,7 +28,8 @@ from fontTools import subset
 from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parent.parent
-OUT = ROOT / "public" / "fonts" / "littlejoy-display.woff2"
+FONTS = ROOT / "public" / "fonts"
+SPLIT = 0x2E80
 FAMILY = "Littlejoy Display"
 
 
@@ -46,6 +52,8 @@ def collect_text():
         chars.update(Path(path).read_text(encoding="utf-8"))
     for path in glob.glob(str(ROOT / "lib" / "*.js")):
         chars.update(Path(path).read_text(encoding="utf-8"))
+    for path in glob.glob(str(ROOT / "public" / "*.js")):
+        chars.update(Path(path).read_text(encoding="utf-8"))
     # Printable ASCII, Latin-1 and punctuation commonly used in copy.
     chars.update(chr(c) for c in range(0x20, 0x7F))
     chars.update(chr(c) for c in range(0xA0, 0x180))
@@ -53,8 +61,7 @@ def collect_text():
     return "".join(sorted(c for c in chars if c.isprintable() or c == " "))
 
 
-def main(source):
-    text = collect_text()
+def build(source, text, out):
     options = subset.Options()
     options.flavor = "woff2"
     options.layout_features = ["*"]
@@ -74,9 +81,15 @@ def main(source):
         elif record.nameID == 2:
             record.string = "Regular"
     font.flavor = "woff2"
-    font.save(OUT)
+    font.save(out)
     cmap = font.getBestCmap()
-    print(f"{OUT.relative_to(ROOT)}: {len(cmap)} glyphs, {OUT.stat().st_size // 1024} KiB")
+    print(f"{out.relative_to(ROOT)}: {len(cmap)} glyphs, {out.stat().st_size // 1024} KiB")
+
+
+def main(source):
+    text = collect_text()
+    build(source, "".join(c for c in text if ord(c) < SPLIT), FONTS / "littlejoy-display.woff2")
+    build(source, "".join(c for c in text if ord(c) >= SPLIT), FONTS / "littlejoy-display-cjk.woff2")
 
 
 if __name__ == "__main__":

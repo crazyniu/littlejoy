@@ -1,0 +1,516 @@
+{
+ "/art/bluebird.webp": {
+  "w": 300,
+  "h": 290
+ },
+ "/art/clownfish.webp": {
+  "w": 192,
+  "h": 170
+ },
+ "/art/concepts/bubble-garden.webp": {
+  "w": 512,
+  "h": 512
+ },
+ "/art/concepts/fresh-coat.webp": {
+  "w": 512,
+  "h": 512
+ },
+ "/art/concepts/perfect-slices.webp": {
+  "w": 512,
+  "h": 512
+ },
+ "/art/concepts/sand-lines.webp": {
+  "w": 512,
+  "h": 512
+ },
+ "/art/concepts/sorting-studio.webp": {
+  "w": 512,
+  "h": 512
+ },
+ "/art/concepts/tiny-tidy.webp": {
+  "w": 512,
+  "h": 512
+ },
+ "/art/covers/bubble-fish.webp": {
+  "w": 720,
+  "h": 1080,
+  "set": [
+   [
+    360,
+    "/art/r/covers/bubble-fish-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwN4BvARgD7AXZXvHgGPlMDeEb1ZeOHoAA/IuaPyKbn1NYPaSqQUkasIorxy9kOBXtCrrypg6dlduLzYy7F4jfWVbp7/1eJWtN+HxqWser3I9/us/BXvZ0nQG7LXvUP7oflD/PkanF/C6nTJ00TeOqO60L83v0AulXHSSOXo9jLvBfWx2hmv3BfWxsaA+uzhPpOGl9dnCe8AAA"
+ },
+ "/art/covers/bubble-garden.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/bubble-garden-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRp4AAABXRUJQVlA4IJIAAAAQBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdAYuuyZYqzzZoVEky8AD9spiKF/VoEo5ZSVOpsA8VKtdK5ASdcA8gvYE4JdyAGAfiLgCbFj7Xs72u0pR4ZsjG41K3rFAog3Buzx7A/qUEc4xcPQky6pZsb6p/icuTvvCZg5giZIuA16dyT5ZyT5fqloHm/IAAAA=="
+ },
+ "/art/covers/capybara-springs.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/capybara-springs-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRroAAABXRUJQVlA4IK4AAACQBACdASoMABIAPrVInkmnJCKhMAgA4BaJagCdMoAlqhl88S48MBixPbUSzAAA/kipat1jv80yAEX4AtAIp+jrGlvUxLZSgkWxYVFFKUxM4d1t9sopCR0EeWKJj/p4xvG8Un9Ly58orieivzY6QlUdaCtihCB5w07y3lQ0FQhnLfxx65ATDvtm/+AlYP5Vrw15MmyOm799iuftsHfsVwi//1Nt6zov/9Tbes4AAAA="
+ },
+ "/art/covers/fly-home.webp": {
+  "w": 720,
+  "h": 1080,
+  "set": [
+   [
+    360,
+    "/art/r/covers/fly-home-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRs4AAABXRUJQVlA4IMIAAAAwBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwIsBwoGSAAVZbFEEc6sIa2cPOAAD+BW3mOwUaScuEQ4HqR6TkcqoQGu2zREwXK+boVDN2VzdoGk4lEHpkP0feV094pLQKNm5BH3ku05lFUwYXLVWCdpPW9uCY9HIW+XAZqfBRO18DfObJXue68QrjET3p6YybeyBhvcut7YIRuC89U5ii0TnMh1obdcAJ0A+8SpS6T7aYN+sOp9lFnBvyzwVAAA=="
+ },
+ "/art/covers/fresh-coat.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/fresh-coat-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAABwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwACZi8icNRQRypQO/gAD+yJMamxu9tHcijmEW0bGKkS2JyTEBUXuRRgU/rT3vK4qf4YH1dfmx2AiCSLXhuO3mi+QB/v4DnRIAF1dAFQh8GCPWXkuse1BA27mg2pglYzvmmW+U2xYxIn3q47uo6xaihbvLwPh+vB9LOmwJT42xhcAAAAA="
+ },
+ "/art/covers/hedgehog-tailor.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/hedgehog-tailor-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAwBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwHaA//4gwRjKxKC9sybWjbSIo/AD9nQKRV2zhIXvVwyGQb+OetEljdSlitl/gKT+wGDwiUBG0yZgldQsxTyN2JgPnLZXtM4tVCrYZsLNqV6XrQAMDhjPG85EmgLgBumhHRIwGUA/vjaSgFbImrN/oikSu5kUMMGRd64bgYrv06n8XpxjiiAAA"
+ },
+ "/art/covers/melody-lanterns.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/melody-lanterns-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAADQBACdASoMABIAPrVInkmnJCKhMAgA4BaJaACdMoR4LfVC161rgJNe66iY8xe68AD9tfDIsFELXd/9Ey8Adqfd1WtySsFtutNoJvNCODfVhwFEZ/uuXh7BmNH8/NxH3r6wR55dRzHXVgbh41AmSseZmh6x314RnsCfAcAREX53ml6uBEARp0ln7z51B1IO726uEPwZG5O2bDz8ads2HnpgIz3FYk2AAAA="
+ },
+ "/art/covers/moonlit-kiln.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/moonlit-kiln-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoMgg0ZZYXhvJvooTHAA/uTgbbF5/yyS8V07p71Ifj4Tw96nzScmq+nhctXRVJuUi92I4by6sFTdjL2jWethuEsbiPny7LaDqGmcxK8akArT9bvnIKUlYN0CACO1JgIby/ff75Ta2lKPZj9SU1NG7cNfic5Rzkd+lrbC24F+sDZ2YntUJCniEAAA"
+ },
+ "/art/covers/moss-jar-cottage.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/moss-jar-cottage-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRqAAAABXRUJQVlA4IJQAAACwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwAkgPcgZV2o83GPBlmotwAP4KAN4+7eVjzt80eFKjqfnmiSFNJW80e42lKpBdB0xKp3OaVdirYrMrlusWxHXCHLILU3vfuBIh+vmdUfhC9F6QWANuO9tKtKQm+TGOyrLkI4aVAMa3myhZ8s+A6XkpeFu4cAAA"
+ },
+ "/art/covers/otter-post.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/otter-post-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAACwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoMYA0glc+Mbqcvki3Ml/0NAAP34QVABMqX9yLbcp/eEYkYlUjOo5FJxO2J5eUX7vE56bwrDZqpPrZFiTf0uVpDwtDWNk6/YFLMwl2aodAV1c92g7wEmueghaUTgcxgeWDSWe1/zVqtnaM89WVmvsxzIW/PTIivmckSdbppyfOYnQPwe4+ojp5zf9kqmC4AA"
+ },
+ "/art/covers/paperwing-harbor.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/paperwing-harbor-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAACwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoMnPWlkRQJm+weq3o7awpGAAP6TlSYXbAqwedEfwJoemF7Cv/hVlYxYR2AJatnOmvVrlmrmKghU+nNGRkL0kFg4WgduVeJB0b6eFrrWRc5xU37nrZl4u/PMpjKWC0n9qgjSvndQwhnkR6umDj6sma3kCJpbubzhBgqLgAAA"
+ },
+ "/art/covers/perfect-slices.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/perfect-slices-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADQBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR3IsBvgGWAAUFC6AV4qhxGcAD+P4Vs3vlcMuDkVkzsfBLOm9/uvI8tx9OMbBVrIv2hn9FMfXDY0KHtq0AIL3AybUjqWSAAEPhlIzzI5jXMriWj/GWgNOUztTATV63EMy27pfIQSitQjVRu2J8yh5NkcqX81J/jbW49cwV/wb9t9EuKdBWfwb9t9EtW1PrPy0gVwPA0AAA="
+ },
+ "/art/covers/rainy-teahouse.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/rainy-teahouse-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRqoAAABXRUJQVlA4IJ4AAACwBACdASoMABIAPrVInkmnJCKhMAgA4BaJagCdMoR3AdBBA2NW36uWJKntBhPAAP68iRfc7tOCl3oKtHWHRVuTkQP5MZxHjdzzzp2viHz3+P9uzEvLDOyvji9RQoJslUONj8AzqWkdeXqaKgx1YeK6xyYmiqtFBbtC7HnjzW9ZaYlJiuuvR7BjruH2E798wEYx9qXRZ1lQvNDabFAAAA=="
+ },
+ "/art/covers/sand-lines.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/sand-lines-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRqQAAABXRUJQVlA4IJgAAAAwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwAc/4+3UJEFmEIbgA/odNCOf/YCDjs+htc8mkPuieCvtro5Dz1t+fAIp81wUCTFz16u1yckDceq1zknRBd49ctI8vNvKDEHErimBfPxl7IzXZk54wTiyYldxSF/vf09yphDEdqnolCxMg/QbZFsinRKHZop0SegAAAA=="
+ },
+ "/art/covers/sea-glass-mosaic.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/sea-glass-mosaic-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAAAwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoMYA0dJc54KkSA6K8AA4dgPxy8Wzk0mCPlgxwA8Yh8srnPJczQnW2PKJ3nvWqPpmbHdc8L08JvbieYN7lWrnaqYhRIdYMpc1ryOIn71F6JsF5YoxSWFIJ7zpxrIyKkEvld+A8b1YUcf/eWu8UAHU/FExKC6frDVsmlpPxTK97Ze0zuSrZe0ztiAAAA="
+ },
+ "/art/covers/sorting-studio.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/sorting-studio-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrgAAABXRUJQVlA4IKwAAABwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR3EGZjk8GkNuK9oQGPoAD9d1uOZibk4yUFN6KLGq4KxlZzLW42mqv8CXY6/0dlRIpZVlYTUC8WFRJ/Ux3Lkg8hk87qV372t1S8tmTs+MjSnHWGWLHyRp1FikqZ5K/Zj1oO2uv+YyavnXRE/o+NdK2wrLyNixTWPnSFNpgr/+gx88JlOgx88C/wbv2UyAAA"
+ },
+ "/art/covers/squirrel-breadhouse.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/squirrel-breadhouse-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRqgAAABXRUJQVlA4IJwAAABQBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR3Ac+89G+54IJU81IAAP7EXSLLA1WqsxChv6gHYPDUFlWEl2mgk0nh08D+OnnU0Z6dQwe3+tbz3WzQq/DR8N9gqLESt2dy1dr48cwIK28/Bh5FU5Aldx/zaSCKtXdyq39b/+/U0ZZf7LeNNKXVyrUkvH945JSd0SqFo/8AAAA="
+ },
+ "/art/covers/star-isle-railway.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/star-isle-railway-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrQAAABXRUJQVlA4IKgAAACQBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR3Ac+NDp3wpweKUqQ/4oAA/cU9z2SiKSvntR1zi3hmwkyI1+SlMaVuacuQbpcb4fDVUfHyFJ9bj+N9/HAPhEnKLw7HV5KmQIEJ1R9U2OrUw0hqkWBpLfpk8emJSeGNC7amfLz9ZkU82wqEPn9oHzy25QClwAM2Q4p6GzeHLh8trDUayT68YD8HAAA="
+ },
+ "/art/covers/tiny-tidy.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/tiny-tidy-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRqYAAABXRUJQVlA4IJoAAABQBACdASoMABIAPrVInkmnJCKhMAgA4BaJaACxGwAVde7LsPDyZWzSqsOYAP5ItyLWWT/A1crqozz+oiGmfPVuXzEkF1rCRzJayZBNF22ySRoAJfI3xXItMN51rCU72skVQuuTYsq7hHwBif2Tl46wlJEfI0fIN0MY/h0ZDtcDX6XssmwHowpG6TNJ2smD9RrzoUdWmUiSwAAA"
+ },
+ "/art/covers/woodland-loom.webp": {
+  "w": 418,
+  "h": 627,
+  "set": [
+   [
+    360,
+    "/art/r/covers/woodland-loom-360.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRq4AAABXRUJQVlA4IKIAAACwBACdASoMABIAPrVInkmnJCKhMAgA4BaJagCdLwAVek5vX4MQ5bEBiowrKzgAAP6o6aBl+OaEi6QqzDFhjQuIyUvApqaWaK6LfZ7d0FOD0u6SfYqEHVChn1lVscIx/3GjswG0beu81qv/LG8m3pjHrSZxKmutf1OxPNjssAKVvEYB5VW04ULxCd/RCKzGU+DmtyTDkDknLqw2xf22T77IAAA="
+ },
+ "/art/jungle.webp": {
+  "w": 647,
+  "h": 1150,
+  "set": [
+   [
+    640,
+    "/art/r/jungle-640.webp"
+   ]
+  ]
+ },
+ "/art/little-fish.webp": {
+  "w": 192,
+  "h": 158
+ },
+ "/art/ocean-lagoon.webp": {
+  "w": 667,
+  "h": 1000,
+  "set": [
+   [
+    640,
+    "/art/r/ocean-lagoon-640.webp"
+   ]
+  ]
+ },
+ "/art/ocean.webp": {
+  "w": 767,
+  "h": 1150,
+  "set": [
+   [
+    640,
+    "/art/r/ocean-640.webp"
+   ]
+  ]
+ },
+ "/art/site/island.webp": {
+  "w": 1080,
+  "h": 720,
+  "set": [
+   [
+    640,
+    "/art/r/site/island-640.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADQAQCdASoMAAgAAoBCJbACdADZochRkAD+k9mfRkGDbvl9Z6Eqe9ZIDh1ievYjc2mWZwq0M+2407eV5fsC92n/A1i7IBfgTN+1Lz0eShxWHHZhfoVjcYAA"
+ },
+ "/art/site/post-desk.webp": {
+  "w": 1199,
+  "h": 656,
+  "set": [
+   [
+    640,
+    "/art/r/site/post-desk-640.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRmIAAABXRUJQVlA4IFYAAAAQAgCdASoMAAcAAoBCJbACdAD7FSVRaQgAAMs5PJtznzWClNcCeEXfV9RJW3TziCrcELq55nRZTJqdimySakhISx0BXnTT79q2DhuLMVIM/c26XAAAAA=="
+ },
+ "/art/site/sketch-desk.webp": {
+  "w": 1199,
+  "h": 656,
+  "set": [
+   [
+    640,
+    "/art/r/site/sketch-desk-640.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoMAAcAAoBCJbACdADdjRvrOAAA/NTrlFAda0EWjvysBaGZIb9DUi2SKGvOF8fkWXNY4RcNDR5u9tfLG2Ek+f10EvVQATPyG76glgAA"
+ },
+ "/art/site/workroom.webp": {
+  "w": 1152,
+  "h": 768,
+  "set": [
+   [
+    640,
+    "/art/r/site/workroom-640.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMAAgAAoBCJbACdADcgCYnhgAAzh91dibAc7hr1igjF7stnu4nSDhY6WQKhy+BFJjvQqPx8/UMDcwRQZxLCU8B0fxgwsdiz1Y/ouI5sH7lAAAA"
+ },
+ "/art/store/bubble-fish-1.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/bubble-fish-1-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/bubble-fish-1-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRsQAAABXRUJQVlA4ILgAAACwBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwN4BvARgD7AXZXvHQGPlMDeEb1ZeOHoAA/IuaPyKbn1NYPaSqQUkasIorxy9kOBXtCrrypg6dlduLzYy7F4jfWVbp7/zxqoKdeHiEWVYu/OPqb12esLu7UHphEeEwZ7/VD9PkanF+FKnTJ00TeOqO60L83v0AulXHSSOXo9jLvBfWx2hmv3BfWxsaA+uzhPouyP9dnCe8AAAA"
+ },
+ "/art/store/bubble-fish-2.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/bubble-fish-2-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/bubble-fish-2-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrIAAABXRUJQVlA4IKYAAAAQBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR3N6TTAcAABe+FelY1xVbfXOloAP36GcGOjG7rR9B3tmu0PlOb8WgqZMW9E4RnmEbBTqZ3Iqh0+zm2Aro6TeaWI7AWyftuT6AQlJUFWH91i5i1Yb4RdkGuCkgVb7vq+1kVwW2vYUQXh406+6HrJyA986l8dfTCkL/b8dqrhyvVhzrj/VhzqsAA"
+ },
+ "/art/store/bubble-fish-3.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/bubble-fish-3-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/bubble-fish-3-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRsYAAABXRUJQVlA4ILoAAABQBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRiumAepXvLQGHBqwHGRsj555+WasAA/NadT/kPmKMlNWX5AL2Sd5eLJYTu9yLpXUX8VUjP8o3huNNA9CAox0JPqdmhRPwt2FqxzmUUjxGSx2xBHGcB2o/ntH9F93x5OQXB4ZagG7331rIsY7tD9tANSzGd4PPadMqK3G8GZROCep7j8JXKazkpi5f/1QiTwY+f1XuY69imfn7+AAA="
+ },
+ "/art/store/bubble-fish-4.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/bubble-fish-4-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/bubble-fish-4-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRsAAAABXRUJQVlA4ILQAAADQBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoMYPYCZAByqEI+OTnBYNYLJgAD43ImJMcbnCdEb3Zyn9UReCBaU8MUKkyLPaqXF/mugHoMbjFtwsOnLEBt9Yh78s9tbTCLQ3VNKY9PqtQfqkxXXMD9CDecvzZEEhDYqnoZ+h+8M0U4g2gKTSr/T1M+GNuV53PyteS9/Yxvt60Aff2Mb7vS/+Du/PLP6CP/wd355Z+uAAAA="
+ },
+ "/art/store/bubble-fish-5.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/bubble-fish-5-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/bubble-fish-5-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRqwAAABXRUJQVlA4IKAAAAAQBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR3IsBbJPoAAWHrj+pEK5uGVnVgAP3anKVCxIBxLKiWDxygaU7o2mPCJWK225Gqg2eFy/8bN2QVJqPAwhnBBVH/hrENZZ39f+ETX7vbGLd7AeT2zkI6Ii2SklQcxQfq/g4PZTLnjJxL/kuIS8mclxC1OdROwaz+C7Lrn3sGc021QAAA"
+ },
+ "/art/store/fly-home-chest.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/fly-home-chest-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/fly-home-chest-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrYAAABXRUJQVlA4IKoAAADQBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR3IsBbAA5RRpm03eW4sOoewAD+wbaEcrIQJ+NI7OFHBINP7K10a1FqCguLWhAvIdXAwDujjKoyXKsDrO8dxJuf7yN19ii0Z+Hh+nM3+z7jwNorGe/aNlk4WqtLydf34c9Sa1iu7KcTPVla9PQl98Ag/wlxxcDxmUjhWRlk6gYKsajl9owv805ZboAAAA=="
+ },
+ "/art/store/fly-home-flock.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/fly-home-flock-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/fly-home-flock-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRtAAAABXRUJQVlA4IMQAAAAwBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR4OsBwoGSAAVZbFEEc6sIa2cQawAD+BW3mOwUaScuEQ4HqR6TkcqoQGu2zREwXK+boVDN2VzdoGk4lEHpkP0feV094pLQKNm5BH3ku05lFUwa9gTxk+B61edtg3XIW+XAZqf0lH8uaj2TFF4UBQMnqSPJRjR2Ln2CU4ckSgmDmL5AYcrxiJDRgcP9RLFpO3LG/6MraJTo9vn9HBuKOcEPuDcUc2gAA"
+ },
+ "/art/store/fly-home-forests.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/fly-home-forests-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/fly-home-forests-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAABwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoFWAANmfXqFtcObursugADOPYjbgJy8K3oMI6MIQ3PKK5uL43t2iJ5gCYY8rTRbmA0FWOOkZuDyW2TIRKdYFErzdkGif5kGzUDZJuF6BWV1xJl5DQOifIkcSQyHSptMpl+uu52ynHP9qhn39wRurjzCwHVsL8K59Kyg3G28NEjxxWWDuiZ9Ce9i+f2Bp78ugx8/fwAA"
+ },
+ "/art/store/fly-home-homecoming.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/fly-home-homecoming-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/fly-home-homecoming-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRrwAAABXRUJQVlA4ILAAAACwBACdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoR4GdAQ+sn8eQeZUrolBhGAAPk7Fq6j1PEaNAhf3q1oZLD2dnIuILtuK6VKZ/jl0f+mPtEnSE+i4a8rclR5PqRh/CnfnXjdXH8Sj0Uab4EjThumyAUVhFBqMPYDQ9zI7WCPogYqd9fHrXoTwPpV3kszOiNhCMqiK8IkCc7J/fAcu8nv5N/OZMu7/oP8m/nMmXX4AA=="
+ },
+ "/art/store/fly-home-outfits.webp": {
+  "w": 1080,
+  "h": 1620,
+  "set": [
+   [
+    480,
+    "/art/r/store/fly-home-outfits-480.webp"
+   ],
+   [
+    720,
+    "/art/r/store/fly-home-outfits-720.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRr4AAABXRUJQVlA4ILIAAAAwBQCdASoMABIAPrVInkmnJCKhMAgA4BaJbACdMoRwN6BTACDA1hSL0Ap4oeboa1YtAAD+mEFMjbp2mHz7cSYoCP+9S50gjjwTb2FA6sVKNGfZZUHKIyIOr2QlJhd2/tapvb6pn1blpzibj7ZN2PfL5EQ0tBoruWuiylHPsS/Yqj4mqwV1Jt2aReNkF2aUjs9edltrPXvBm48ffro3Ha9QCbWHzXE5pTs2Kpz9stYYgAAA"
+ },
+ "/art/studio-puzzle.webp": {
+  "w": 850,
+  "h": 567,
+  "set": [
+   [
+    640,
+    "/art/r/studio-puzzle-640.webp"
+   ]
+  ]
+ },
+ "/art/studio-workshop.webp": {
+  "w": 850,
+  "h": 567,
+  "set": [
+   [
+    640,
+    "/art/r/studio-workshop-640.webp"
+   ]
+  ]
+ },
+ "/art/studio-world.webp": {
+  "w": 1450,
+  "h": 816,
+  "set": [
+   [
+    640,
+    "/art/r/studio-world-640.webp"
+   ]
+  ]
+ },
+ "/art/sunbird.webp": {
+  "w": 310,
+  "h": 315
+ }
+}

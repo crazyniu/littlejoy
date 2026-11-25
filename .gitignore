@@ -4,3 +4,4 @@ out/
 .DS_Store
 .playwright-mcp/
 deploy/
+__pycache__/

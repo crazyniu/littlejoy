@@ -1,17 +1,20 @@
+import { address } from "../lib/languages";
 import { storePoster } from "../lib/catalog";
-import { artSlots } from "../lib/portfolio.mjs";
-import ArtSlot from "./ArtSlot";
 import ImageGallery from "./ImageGallery";
-import { PixelSprite, SplitText } from "./Pixel";
+import { PixelArrow, PixelSprite, SplitText } from "./Pixel";
+
+// Store posters for a game, captioned, first one with its cover thumbnail.
+export function posterItems(game, info) {
+  return game.posters.map((_, j) => storePoster(game, j, info.captions[j] || info.name));
+}
 
 // One game, presented like a level-select screen: backdrop, poster fan,
-// animated stats, and (in the full variant) the how-to-play notes.
-export default function GameFeature({ game, index, lang, copy, full = false }) {
+// animated stats and a link to the game's own page.
+export default function GameFeature({ game, index, lang, copy, heading = "h3" }) {
   const info = copy.games[game.slug];
-  const feature = copy.explore.features[game.slug];
   const labels = copy.explore.labels;
-  const posters = game.posters.map((_, j) => storePoster(game, j, info.name));
-  posters.forEach((poster, j) => (poster.caption = info.captions[j] || info.name));
+  const Name = heading;
+  const href = address(lang, "games/" + game.slug);
   return (
     <article className={"game game--" + game.color} id={game.slug}>
       <div className="game-backdrop" aria-hidden="true">
@@ -23,9 +26,11 @@ export default function GameFeature({ game, index, lang, copy, full = false }) {
             <span>0{index + 1}</span>
             {info.genre}
           </p>
-          <h3 className="game-name display">
-            <SplitText text={info.name} lang={lang} />
-          </h3>
+          <Name className="game-name display">
+            <a href={href}>
+              <SplitText text={info.name} lang={lang} />
+            </a>
+          </Name>
           <p className="game-note" data-reveal>
             {info.note}
           </p>
@@ -37,76 +42,76 @@ export default function GameFeature({ game, index, lang, copy, full = false }) {
               </div>
             ))}
           </dl>
+          <a className="game-more" href={href} data-reveal>
+            <span>
+              {labels.open} · {info.name}
+            </span>
+            <PixelArrow />
+          </a>
         </div>
         <div className="game-media" data-reveal>
           <ImageGallery
-            items={posters}
+            items={posterItems(game, info)}
             limit={3}
             className="poster-fan"
-            title={info.name}
             controls={copy.explore.preview}
             captions={false}
+            sizes="(max-width: 720px) 46vw, 300px"
             tilt
           />
-          <img
-            className="mascot mascot-a"
-            src={game.mascots[0]}
-            alt=""
-            loading="lazy"
-            aria-hidden="true"
-          />
-          <img
-            className="mascot mascot-b"
-            src={game.mascots[1]}
-            alt=""
-            loading="lazy"
-            aria-hidden="true"
-          />
+          <img className="mascot mascot-a" src={game.mascots[0]} alt="" loading="lazy" />
+          <img className="mascot mascot-b" src={game.mascots[1]} alt="" loading="lazy" />
         </div>
       </div>
-      <div className="shell game-world">
-        <ArtSlot {...artSlots[game.slug]} alt={feature.worldTitle} />
-        <div className="world-copy" data-stagger>
-          <div data-reveal>
-            <h4>
-              <PixelSprite name="globe" size={3} />
-              {feature.worldTitle}
-            </h4>
-            <p>{feature.world}</p>
-          </div>
-          <div data-reveal>
-            <h4>
-              <PixelSprite name="star" size={3} />
-              {feature.collectionTitle}
-            </h4>
-            <p>{feature.collection}</p>
-          </div>
-        </div>
-      </div>
-      {full && (
-        <div className="shell game-guide">
-          <h4 className="guide-title" data-reveal>
-            <PixelSprite name={game.sprite} size={3} />
-            {copy.ui.how}
-          </h4>
-          <ol className="guide-cards" data-stagger>
-            {info.guide.map(({ title, text }, i) => (
-              <li key={title} data-reveal data-tilt>
-                <span className="guide-step">0{i + 1}</span>
-                <strong>{title}</strong>
-                <p>{text}</p>
-              </li>
-            ))}
-            <li data-reveal data-tilt className="guide-tactic">
-              <span className="guide-step">
-                <PixelSprite name="bulb" size={3} />
-              </span>
-              <strong>{feature.tacticTitle}</strong>
-              <p>{feature.tactic}</p>
-            </li>
-          </ol>
-        </div>
-      )}
     </article>
+  );
+}
+
+// Fallback for the key-art slot: the game's backdrop with a level-select map
+// drawn over it in pixels, and the mascot standing on the current level.
+export function GameScene({ game, title }) {
+  const count = 7;
+  const nodes = Array.from({ length: count }, (_, i) => [
+    Math.round(14 + (i * 132) / (count - 1)),
+    Math.round(48 + Math.sin(i * 1.25 + 0.4) * 20),
+  ]);
+  const dots = [];
+  nodes.slice(1).forEach(([x2, y2], i) => {
+    const [x1, y1] = nodes[i];
+    const steps = Math.round(Math.hypot(x2 - x1, y2 - y1) / 4);
+    for (let s = 1; s < steps; s++) {
+      dots.push([Math.round(x1 + ((x2 - x1) * s) / steps), Math.round(y1 + ((y2 - y1) * s) / steps)]);
+    }
+  });
+  const current = 3;
+  const [mx, my] = nodes[current];
+  return (
+    <div className={"art-frame game-scene game--" + game.color} data-reveal="wipe">
+      <img className="game-scene-bg" src={game.backdrop} alt="" loading="lazy" />
+      <svg className="game-scene-map" viewBox="0 0 160 90" shapeRendering="crispEdges" aria-hidden="true">
+        <path
+          fill="#ffffff"
+          fillOpacity="0.75"
+          d={dots.map(([x, y], i) => (i % 2 ? "" : `M${x} ${y}h2v2h-2z`)).join("")}
+        />
+        {nodes.map(([x, y], i) => (
+          <g key={i} className={i < current ? "node done" : i === current ? "node now" : "node"}>
+            <rect x={x - 4} y={y - 4} width="8" height="8" fill="#1a1230" />
+            <rect x={x - 3} y={y - 3} width="6" height="6" />
+          </g>
+        ))}
+      </svg>
+      <img
+        className="game-scene-mascot"
+        src={game.mascots[0]}
+        alt=""
+        loading="lazy"
+        style={{ left: (mx / 160) * 100 + "%", top: (my / 90) * 100 + "%" }}
+      />
+      <p className="game-scene-chip">
+        <PixelSprite name={game.sprite} size={2} />
+        {title}
+      </p>
+    </div>
   );
 }
