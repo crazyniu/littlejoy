@@ -56,6 +56,17 @@ function segment(text, lang, granularity) {
   return [...segmenters.get(key).segment(text)].map((s) => s.segment);
 }
 
+// Length in graphemes of the longest word, so long single words (German,
+// Russian) can scale the heading down instead of overflowing on phones.
+export function longestWord(text, lang = "en") {
+  return Math.max(
+    1,
+    ...segment(text, lang, "word")
+      .filter((w) => !/^\s+$/.test(w))
+      .map((w) => segment(w, lang, "grapheme").length),
+  );
+}
+
 // Animated headline: words stay unbroken, each grapheme gets its own delay index.
 export function SplitText({ text, lang = "en", start = 0, className = "" }) {
   let index = start;

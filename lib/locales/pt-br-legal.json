@@ -1,77 +1,104 @@
 {
   "privacy": {
-    "intro": "Esta política abrange os jogos publicados pela Littlejoy Games, o site shopkivoo.com e o suporte aos jogadores. Ela explica os dados que ficam no dispositivo, o que pode ser transmitido e como contatar a desenvolvedora.",
+    "intro": "Esta Política de Privacidade se aplica aos jogos para celular e web publicados pela Littlejoy Games, ao site shopkivoo.com e ao nosso suporte aos jogadores. Ela explica quais informações são coletadas enquanto você joga, quais serviços de publicidade e análise nossos jogos usam e quais escolhas você tem. Nem todos os jogos ou edições usam todos os serviços descritos aqui. A página da loja e os avisos dentro do jogo mostram o que cada edição usa.",
     "sections": [
       [
         "operator",
-        "Sobre nós",
+        "Quem somos",
         [
-          "A Littlejoy Games administra shopkivoo.com. Somos uma equipe de desenvolvimento formada por estudantes universitários com sede em Los Angeles, nos Estados Unidos. Para consultar, corrigir ou pedir a exclusão de dados pessoais, use o e-mail desta página."
+          "A Littlejoy Games é uma equipe de desenvolvimento de jogos formada por estudantes universitários, sediada em Los Angeles, nos Estados Unidos. Publicamos os jogos e mantemos este site. Para qualquer dúvida ou solicitação sobre seus dados pessoais, fale conosco pelo e-mail informado nesta página."
         ]
       ],
       [
-        "game-data",
-        "Dados do jogo e funções do dispositivo",
+        "collect",
+        "Informações que coletamos",
         [
-          "Edições offline com salvamento local não exigem login. Progresso, inventário, conquistas e preferências ficam no armazenamento do aplicativo ou navegador para retomar a partida. Jogar offline não envia esses registros ao estúdio.",
-          "No compartilhamento do sistema, você escolhe o conteúdo, o aplicativo e o destinatário e pode cancelar antes de enviar. Ao baixar recursos, o servidor recebe o IP e o caminho de arquivo necessários para a entrega. Antes do uso de uma função online que trate dados adicionais, explicamos os dados, a finalidade e os destinatários e pedimos consentimento quando exigido.",
-          "As versões móveis de Bird Sort que incluem o Firebase Analytics enviam ao Google um identificador da instância do app, a localização aproximada inferida de um endereço IP mascarado, visualizações de tela, sessões e eventos do jogo, como o início ou a conclusão de uma fase. A Littlejoy Games usa essas informações para entender como as pessoas jogam e melhorar o jogo. Os dados de análise são criptografados em trânsito e a coleta do ID de publicidade está desativada no Firebase Analytics."
+          "Dados do jogo no seu dispositivo: progresso, fases, itens, conquistas e configurações ficam salvos no armazenamento do app ou do navegador para que você continue de onde parou. Você não precisa de conta para jogar.",
+          "Informações coletadas automaticamente: quando um jogo inclui serviços de publicidade ou de análise, esses serviços podem coletar informações do dispositivo e do app (como modelo do aparelho, sistema operacional, idioma e versão do app), identificadores (como um ID de instância do app, o ID de publicidade quando permitido e o ID de fornecedor no iOS), seu endereço IP e a localização aproximada obtida a partir dele, dados de uso (como sessões, telas vistas, fases iniciadas ou concluídas, impressões e cliques em anúncios) e dados de falhas ou de desempenho.",
+          "Informações que você nos envia: se você nos mandar um e-mail, recebemos seu endereço de e-mail, sua mensagem e os anexos que enviar.",
+          "Compras: se um jogo oferece compras no app, o pagamento é processado pela Apple ou pelo Google. Recebemos apenas a confirmação do que foi comprado, nunca os dados do seu cartão.",
+          "Nossos jogos não pedem seu nome, sua localização exata, seus contatos, suas fotos ou acesso ao microfone. Se algum recurso futuro precisar desses dados, explicaremos o motivo e pediremos sua permissão antes."
+        ]
+      ],
+      [
+        "use",
+        "Como usamos as informações",
+        [
+          "Usamos as informações para executar e salvar seus jogos; exibir anúncios, limitar a frequência com que aparecem e entregar as recompensas dos anúncios opcionais; medir o desempenho da publicidade e do marketing; entender como as pessoas jogam para melhorar as fases e corrigir problemas; detectar fraudes e abusos; responder a pedidos de suporte; e cumprir obrigações legais.",
+          "Onde se aplicam a LGPD, o GDPR ou leis semelhantes, nos baseamos na execução do nosso contrato com você (oferecer o jogo), em nossos interesses legítimos (análise, segurança e anúncios não personalizados), no seu consentimento (publicidade personalizada e outros usos que exigem consentimento) e no cumprimento de obrigações legais."
         ]
       ],
       [
         "advertising",
-        "Publicidade e opções de privacidade",
+        "Publicidade",
         [
-          "Algumas versões para dispositivos móveis exibem anúncios pelo Google AdMob. Quando uma versão usa o AdMob, o Google pode coletar ou receber seu endereço IP e localização aproximada, identificadores do dispositivo ou do app (incluindo o ID de publicidade, quando disponível), interações com o app, como aberturas ou toques, impressões e interações com anúncios, além de dados sobre falhas e desempenho. O Google e seus parceiros de publicidade podem usar ou compartilhar essas informações para veicular anúncios, medir seu desempenho, diagnosticar problemas e prevenir fraudes. Quando permitido, as informações também podem ser usadas para personalizar anúncios.",
-          "Quando for necessário obter consentimento, o jogo exibirá um aviso de privacidade sobre os anúncios. Se as opções de privacidade estiverem disponíveis nas configurações do jogo, você pode consultar ou alterar suas escolhas e retirar seu consentimento. No iOS, gerencie essa permissão em Ajustes → Privacidade e Segurança → Rastreamento. Se você recusar o rastreamento, o app não poderá acessar o identificador de publicidade do iOS (IDFA). No Android, é possível gerenciar ou excluir o ID de publicidade nas configurações de anúncios do dispositivo. Dependendo das escolhas e da região, você ainda poderá ver anúncios não personalizados."
+          "Muitos dos nossos jogos são gratuitos e mantidos por anúncios. Atualmente usamos o Google AdMob. Também podemos exibir anúncios de outras redes, diretamente ou pela mediação do AdMob, incluindo os serviços de publicidade do TikTok, como o Pangle. As redes de anúncios usadas em um jogo podem coletar as informações descritas acima para veicular e medir anúncios, evitar fraudes e, quando permitido, personalizar os anúncios. Essas redes tratam as informações como controladoras independentes, de acordo com suas próprias políticas de privacidade.",
+          "Quando divulgamos nossos jogos em plataformas como TikTok ou Google, um jogo pode usar o kit de desenvolvimento de software (SDK) da plataforma para enviar eventos de instalação e do jogo, junto com o ID de publicidade do dispositivo quando permitido. A plataforma usa isso para medir quais campanhas geram instalações.",
+          "No Espaço Econômico Europeu, no Reino Unido, na Suíça e em outras regiões onde o consentimento é exigido, o jogo pede sua escolha antes de mostrar anúncios personalizados. Você pode alterar ou retirar essa escolha a qualquer momento nas Opções de privacidade das configurações do jogo, quando disponíveis. Se você não consentir, ainda poderá ver anúncios não personalizados baseados no contexto, como o jogo que está jogando."
+        ]
+      ],
+      [
+        "analytics",
+        "Análise e relatórios de falhas",
+        [
+          "Nossos jogos usam o Google Firebase. O Firebase Analytics registra um ID de instância do app, eventos como início e conclusão de fases e compras no app, impressões e receita de anúncios, informações do dispositivo e localização aproximada. Alguns jogos usam o Firebase Crashlytics, que coleta os registros da falha e o estado do dispositivo no momento em que ela ocorre. Os dados do Firebase podem ser vinculados ao AdMob e às plataformas de anúncios que usamos em campanhas, para sabermos quais anúncios e campanhas funcionam. Quando permitido, isso inclui o ID de publicidade.",
+          "Usamos esses relatórios de forma agregada para entender como as pessoas jogam, equilibrar a dificuldade e corrigir bugs, e não para identificar você pelo nome. Os dados de análise no nível do usuário ficam guardados por no máximo 14 meses."
+        ]
+      ],
+      [
+        "sharing",
+        "Com quem compartilhamos informações",
+        [
+          "Compartilhamos informações apenas com prestadores de serviços e parceiros que nos ajudam a manter nossos jogos e nosso site. Entre eles estão o Google (AdMob, Firebase e Gmail); outras redes de anúncios ou parceiros de mensuração usados em um jogo, como TikTok ou Pangle; a Apple e o Google Play, para distribuição e compras; e a Cloudflare, para este site. Também podemos divulgar informações quando a lei exigir, para proteger os jogadores, a nós ou outras pessoas, ou em caso de fusão ou aquisição.",
+          "Não vendemos dados pessoais em troca de dinheiro. No entanto, pelas leis de privacidade de alguns estados dos EUA, permitir que parceiros de publicidade coletem identificadores para anúncios personalizados pode ser considerado “venda” ou “compartilhamento” de dados pessoais. Para recusar, desative os anúncios personalizados nas Opções de privacidade do jogo, limite o rastreamento de anúncios no seu dispositivo (veja abaixo) ou mande um e-mail para nós."
         ]
       ],
       [
         "website",
-        "Visita ao site",
+        "Ao visitar este site",
         [
-          "A Cloudflare entrega as páginas e imagens. Para exibir o conteúdo, proteger o site e diagnosticar falhas, a rede pode tratar seu IP, caminho solicitado, data e hora, informações do navegador e status da resposta. O tratamento pode ocorrer fora do seu país.",
-          "Você pode ver os jogos e ampliar as imagens sem criar conta. O site não tem formulário de contato, pagamento, tags de publicidade ou ferramenta própria de análise. Os links de e-mail abrem seu aplicativo de correio e só recebemos a mensagem depois que você a envia. O site não lê seus jogos salvos.",
-          "Quando o endereço não indica um idioma, o servidor escolhe a página conforme as preferências de idioma enviadas pelo navegador. O idioma indicado no endereço tem prioridade. Esse recurso não usa cookies."
+          "A Cloudflare entrega as páginas e imagens deste site. Para retornar uma página, proteger o site e diagnosticar falhas, ela pode tratar seu endereço IP, a página solicitada, o horário da solicitação, informações do navegador e o status da resposta. A rede global dela pode processar solicitações fora do seu país.",
+          "Este site não tem tags de anúncios, ferramentas de análise do estúdio, formulários de contato nem pagamentos, e não lê seus jogos salvos. Se você abrir um link sem prefixo de idioma, o servidor escolhe o idioma da página com base nos idiomas preferidos do seu navegador. Esse recurso não usa cookies."
         ]
       ],
       [
         "email",
-        "E-mails de suporte",
+        "Quando você nos manda um e-mail",
         [
-          "Recebemos seu endereço, a mensagem e os anexos que você enviar para responder, investigar o problema ou atender a um pedido sobre privacidade. Usamos o Gmail, do Google. Não envie senhas, documentos de identidade ou dados pessoais desnecessários.",
-          "Mantemos a correspondência apenas pelo tempo necessário para resolver a solicitação, tratar disputas relacionadas ou cumprir obrigações legais. Depois, ela é excluída. Os provedores de hospedagem gerenciam os registros técnicos segundo suas próprias regras. Podemos fornecer dados quando exigido por lei."
+          "Usamos seu endereço de e-mail, sua mensagem e seus anexos para responder, investigar o problema ou atender à sua solicitação. Nossa caixa de suporte é fornecida pelo Google (Gmail). Por favor, não envie senhas, documentos de identidade ou outros dados pessoais de que não precisamos.",
+          "Guardamos os e-mails somente pelo tempo necessário para resolver a solicitação, tratar uma disputa relacionada ou cumprir uma obrigação legal. Depois, eles são excluídos."
         ]
       ],
       [
         "security",
-        "Prestadores de serviço e segurança",
+        "Segurança, retenção e transferências internacionais",
         [
-          "O site e as imagens usam HTTPS. Somente as pessoas que tratam da solicitação acessam as mensagens de suporte. Os prestadores que atuam em nosso nome devem limitar o uso às finalidades acordadas e oferecer proteção equivalente. Só divulgamos dados pessoais de mensagens para prestar o serviço escolhido ou por exigência legal."
+          "Nosso site é servido por HTTPS, e os dados enviados pelos SDKs dos nossos jogos são criptografados durante a transmissão. Somente quem cuida de uma solicitação pode acessar os e-mails de suporte. Guardamos dados pessoais apenas pelo tempo necessário para as finalidades desta política. Os parceiros guardam os dados que coletam de acordo com suas próprias políticas de retenção.",
+          "Nossa equipe e nossos prestadores de serviços estão nos Estados Unidos e em outros países, então suas informações podem ser tratadas fora do seu país. Quando exigido, essas transferências são protegidas por salvaguardas como as cláusulas contratuais-padrão da Comissão Europeia."
         ]
       ],
       [
         "choices",
-        "Suas escolhas e a exclusão de dados",
+        "Seus direitos e escolhas",
         [
-          "No iOS, apagar o app remove os dados locais. Desinstalar preservando documentos e dados mantém a partida. No Android, limpe o armazenamento do aplicativo; no navegador, os dados do site do jogo. O progresso pode ser perdido definitivamente. Gerencie backups do sistema e da nuvem separadamente.",
-          "Para acessar, copiar, corrigir, restringir o tratamento ou excluir informações enviadas, ou revogar o consentimento quando aplicável, escreva do endereço original e identifique o jogo ou a mensagem. Podemos solicitar o mínimo necessário para verificar o pedido e responderemos no prazo legal.",
-          "Você também pode procurar a autoridade de proteção de dados local. O estúdio não consegue recuperar ou excluir de forma remota um jogo salvo apenas no seu aparelho."
+          "Anúncios: no iOS, você pode permitir ou negar o rastreamento em Ajustes → Privacidade e Segurança → Rastreamento. Se negar, os apps não conseguem acessar o ID de publicidade (IDFA). No Android, acesse Configurações → Privacidade → Anúncios para redefinir ou excluir seu ID de publicidade. No jogo, abra as Opções de privacidade, quando disponíveis, para alterar seu consentimento.",
+          "Dados do jogo: exclua o app ou, no Android, limpe o armazenamento dele para remover os dados locais. Em um jogo de navegador, limpe os dados do site. Isso apaga o progresso de forma permanente. Não conseguimos recuperar nem apagar um jogo salvo que existe apenas no seu dispositivo.",
+          "Dependendo de onde você mora, você pode ter o direito de acessar, corrigir, excluir, restringir ou portar seus dados pessoais; de se opor ao tratamento; de retirar o consentimento; e de recusar a venda ou o compartilhamento das suas informações e a publicidade direcionada. Exercer esses direitos não resultará em nenhuma discriminação. Para fazer uma solicitação, mande um e-mail para nós informando o jogo em questão. Os dados coletados por um SDK ficam vinculados a identificadores do seu dispositivo, não ao seu nome. Se as configurações do jogo mostrarem um ID de jogador, inclua-o. Caso contrário, ajudaremos você a usar as ferramentas do próprio parceiro. Podemos pedir o mínimo de informações necessárias para verificar a solicitação e responderemos no prazo exigido por lei. Você também pode apresentar uma reclamação à autoridade de proteção de dados do seu país, como a ANPD no Brasil."
         ]
       ],
       [
         "children",
-        "Crianças e famílias",
+        "Crianças",
         [
-          "Jogar offline não requer nome, data de nascimento ou contato de crianças. Se uma criança enviar dados por e-mail, o responsável pode pedir acesso ou exclusão. Não envie documentos no primeiro contato. Solicitamos consentimento do responsável quando exigido."
+          "Nossos jogos são feitos para o público em geral. Não coletamos intencionalmente dados pessoais de crianças menores de 13 anos, ou abaixo da idade mínima definida pela lei do seu país. Se um jogo for voltado para crianças ou fizer parte de um programa para famílias, como o Google Play para a família, configuramos a publicidade e a análise de acordo: sem anúncios personalizados, sem coleta do ID de publicidade e apenas com redes de anúncios certificadas para esse programa. Se você acredita que uma criança nos forneceu dados pessoais, entre em contato e nós os excluiremos."
         ]
       ],
       [
         "platforms",
-        "Plataformas e atualizações",
+        "Plataformas e mudanças nesta política",
         [
-          "Apple, Google Play e plataformas de dispositivos tratam separadamente contas de loja, downloads, backups e diagnósticos que você escolhe compartilhar, segundo suas políticas e configurações. Outras plataformas, como WeChat, e servidores de recursos podem processar pedidos de distribuição. Leia os avisos da edição utilizada.",
-          "A Littlejoy Games opera o site e atende pedidos pelo e-mail abaixo. Se as práticas mudarem, atualizaremos a página e a data de vigência e solicitaremos consentimento quando necessário."
+          "A Apple, o Google Play e outras plataformas de distribuição cuidam das contas da loja, dos downloads, dos backups e dos pagamentos de acordo com suas próprias políticas. Leia também qualquer aviso adicional que acompanhe a sua edição do jogo.",
+          "Atualizaremos esta política e a data no topo da página quando nossas práticas mudarem, por exemplo, quando um jogo adicionar uma nova rede de anúncios ou um novo serviço de análise. Quando a lei exigir, pediremos seu consentimento novamente."
         ]
       ]
     ]

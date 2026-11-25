@@ -1,77 +1,104 @@
 {
   "privacy": {
-    "intro": "Chính sách này áp dụng cho các trò chơi do Littlejoy Games phát hành, shopkivoo.com và dịch vụ hỗ trợ. Chính sách giải thích dữ liệu lưu trên thiết bị, dữ liệu có thể được gửi đi và cách liên hệ với nhà phát triển.",
+    "intro": "Chính sách quyền riêng tư này áp dụng cho các trò chơi di động và trò chơi web do Littlejoy Games phát hành, cho shopkivoo.com và cho dịch vụ hỗ trợ người chơi. Chính sách giải thích những thông tin được thu thập khi bạn chơi, các dịch vụ quảng cáo và phân tích mà trò chơi của chúng tôi sử dụng, cũng như các lựa chọn của bạn. Không phải trò chơi hay phiên bản nào cũng dùng tất cả các dịch vụ được nêu ở đây. Trang cửa hàng và thông báo trong trò chơi của từng phiên bản cho biết phiên bản đó sử dụng những gì.",
     "sections": [
       [
         "operator",
         "Về chúng tôi",
         [
-          "Littlejoy Games vận hành shopkivoo.com. Chúng tôi là nhóm phát triển game gồm các sinh viên đại học, có trụ sở tại Los Angeles, Hoa Kỳ. Để hỏi về dữ liệu cá nhân hoặc yêu cầu sửa hay xóa dữ liệu, hãy dùng email trên trang này."
+          "Littlejoy Games là một nhóm phát triển trò chơi gồm các sinh viên đại học, đặt tại Los Angeles, Hoa Kỳ. Chúng tôi phát hành các trò chơi và vận hành trang web này. Nếu có câu hỏi hoặc yêu cầu về thông tin cá nhân của bạn, hãy liên hệ với chúng tôi qua địa chỉ email trên trang này."
         ]
       ],
       [
-        "game-data",
-        "Dữ liệu trò chơi và tính năng thiết bị",
+        "collect",
+        "Thông tin chúng tôi thu thập",
         [
-          "Bản ngoại tuyến lưu cục bộ không cần đăng nhập. Tiến trình, vật phẩm, thành tích và tùy chọn được lưu trong ứng dụng hoặc trình duyệt để chơi tiếp. Chơi ngoại tuyến không gửi các bản ghi đó về studio.",
-          "Nếu dùng tính năng chia sẻ của hệ thống, bạn chọn nội dung, ứng dụng và người nhận, hoặc hủy trước khi gửi. Máy chủ phân phối tài nguyên nhận địa chỉ IP và đường dẫn cần thiết để gửi tệp. Nếu tính năng trực tuyến cần xử lý thêm dữ liệu, chúng tôi sẽ nêu rõ loại dữ liệu, mục đích, bên nhận và xin sự đồng ý khi cần trước khi dùng.",
-          "Các phiên bản di động của Bird Sort có Firebase Analytics gửi cho Google mã nhận dạng phiên bản cài đặt ứng dụng, vị trí gần đúng suy ra từ địa chỉ IP đã che, lượt xem màn hình, phiên sử dụng và các sự kiện chơi như bắt đầu hoặc hoàn thành cấp độ. Littlejoy Games dùng thông tin này để hiểu cách người chơi sử dụng và cải thiện trò chơi. Dữ liệu phân tích được mã hóa khi truyền và Firebase Analytics đã tắt tính năng thu thập mã nhận dạng quảng cáo."
+          "Dữ liệu trò chơi trên thiết bị: tiến trình, màn chơi, vật phẩm, thành tích và cài đặt được lưu trong bộ nhớ của ứng dụng hoặc trình duyệt để bạn chơi tiếp từ chỗ đã dừng. Bạn không cần tài khoản để chơi.",
+          "Thông tin được thu thập tự động: khi trò chơi có tích hợp dịch vụ quảng cáo hoặc phân tích, các dịch vụ đó có thể thu thập thông tin về thiết bị và ứng dụng (như kiểu thiết bị, hệ điều hành, ngôn ngữ và phiên bản ứng dụng), các mã nhận dạng (như mã phiên bản ứng dụng, mã quảng cáo khi được phép và mã nhà cung cấp trên iOS), địa chỉ IP và vị trí gần đúng suy ra từ địa chỉ đó, dữ liệu sử dụng (như phiên chơi, màn hình đã xem, màn chơi đã bắt đầu hoặc hoàn thành, lượt hiển thị và lượt nhấp quảng cáo) cùng dữ liệu về sự cố hoặc hiệu năng.",
+          "Thông tin bạn cung cấp: nếu bạn gửi email cho chúng tôi, chúng tôi nhận được địa chỉ email, nội dung thư và mọi tệp đính kèm.",
+          "Giao dịch mua: nếu trò chơi có mua hàng trong ứng dụng, Apple hoặc Google sẽ xử lý thanh toán. Chúng tôi chỉ nhận được xác nhận về món hàng đã mua, không bao giờ nhận thông tin thẻ của bạn.",
+          "Trò chơi của chúng tôi không yêu cầu tên, vị trí chính xác, danh bạ, ảnh hay quyền dùng micrô của bạn. Nếu sau này một tính năng cần dữ liệu như vậy, chúng tôi sẽ giải thích lý do và xin phép bạn trước."
+        ]
+      ],
+      [
+        "use",
+        "Cách chúng tôi sử dụng thông tin",
+        [
+          "Chúng tôi dùng thông tin để chạy và lưu trò chơi của bạn; hiển thị quảng cáo, giới hạn tần suất quảng cáo và trao phần thưởng khi bạn tự chọn xem quảng cáo có thưởng; đo lường hiệu quả quảng cáo và tiếp thị; hiểu cách người chơi sử dụng trò chơi để cải thiện màn chơi và sửa lỗi; phát hiện gian lận và lạm dụng; trả lời yêu cầu hỗ trợ; và thực hiện nghĩa vụ pháp lý.",
+          "Ở nơi áp dụng GDPR hoặc luật tương tự, chúng tôi dựa trên việc thực hiện hợp đồng với bạn (cung cấp trò chơi), lợi ích hợp pháp của chúng tôi (phân tích, bảo mật và quảng cáo không cá nhân hóa), sự đồng ý của bạn (quảng cáo cá nhân hóa và các mục đích khác cần đồng ý) và nghĩa vụ pháp lý."
         ]
       ],
       [
         "advertising",
-        "Quảng cáo và lựa chọn quyền riêng tư",
+        "Quảng cáo",
         [
-          "Một số phiên bản dành cho thiết bị di động hiển thị quảng cáo qua Google AdMob. Khi phiên bản sử dụng AdMob, Google có thể thu thập hoặc nhận địa chỉ IP và vị trí gần đúng, mã nhận dạng thiết bị hoặc ứng dụng (bao gồm mã quảng cáo nếu có), tương tác với ứng dụng (như mở ứng dụng hoặc nhấn), lượt hiển thị và tương tác với quảng cáo, cùng dữ liệu về sự cố và hiệu suất. Google và các đối tác quảng cáo có thể sử dụng hoặc chia sẻ thông tin này để phân phối và đo lường quảng cáo, chẩn đoán sự cố và ngăn chặn gian lận. Thông tin này cũng có thể được dùng để cá nhân hóa quảng cáo khi được phép.",
-          "Khi cần sự đồng ý, trò chơi sẽ hiển thị thông báo về quyền riêng tư đối với quảng cáo. Nếu có mục Tùy chọn quyền riêng tư trong phần cài đặt trò chơi, bạn có thể xem hoặc thay đổi lựa chọn, kể cả rút lại sự đồng ý. Trên iOS, bạn có thể quản lý quyền trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Nếu từ chối theo dõi, ứng dụng không thể truy cập mã nhận dạng quảng cáo iOS (IDFA). Trên Android, hãy dùng phần cài đặt quảng cáo của thiết bị để quản lý hoặc xóa mã quảng cáo. Tùy vào lựa chọn và khu vực, bạn vẫn có thể thấy quảng cáo không được cá nhân hóa."
+          "Nhiều trò chơi của chúng tôi miễn phí và được duy trì nhờ quảng cáo. Hiện chúng tôi sử dụng Google AdMob. Chúng tôi cũng có thể hiển thị quảng cáo từ các mạng khác, trực tiếp hoặc thông qua dàn xếp (mediation) của AdMob, trong đó có thể bao gồm các dịch vụ quảng cáo của TikTok như Pangle. Các mạng quảng cáo dùng trong trò chơi có thể thu thập những thông tin nêu trên để phân phát và đo lường quảng cáo, ngăn chặn gian lận và, khi được phép, cá nhân hóa quảng cáo. Các mạng này xử lý thông tin với tư cách bên kiểm soát độc lập theo chính sách quyền riêng tư của riêng họ.",
+          "Khi chúng tôi quảng bá trò chơi trên các nền tảng như TikTok hoặc Google, trò chơi có thể dùng bộ công cụ phát triển phần mềm (SDK) của nền tảng đó để gửi sự kiện cài đặt và sự kiện trong trò chơi, kèm mã quảng cáo của thiết bị khi được phép. Nền tảng dùng dữ liệu này để đo lường chiến dịch nào mang lại lượt cài đặt.",
+          "Tại Khu vực Kinh tế Châu Âu, Vương quốc Anh, Thụy Sĩ và các khu vực khác cần có sự đồng ý, trò chơi sẽ hỏi lựa chọn của bạn trước khi hiển thị quảng cáo cá nhân hóa. Bạn có thể thay đổi hoặc rút lại lựa chọn bất cứ lúc nào trong mục Tùy chọn quyền riêng tư ở phần cài đặt của trò chơi (nếu có). Nếu bạn không đồng ý, bạn vẫn có thể thấy quảng cáo không cá nhân hóa dựa trên ngữ cảnh, chẳng hạn trò chơi bạn đang chơi."
+        ]
+      ],
+      [
+        "analytics",
+        "Phân tích và báo cáo sự cố",
+        [
+          "Trò chơi của chúng tôi sử dụng Google Firebase. Firebase Analytics ghi lại mã phiên bản ứng dụng, các sự kiện như bắt đầu màn chơi, hoàn thành màn chơi và mua hàng trong ứng dụng, lượt hiển thị và doanh thu quảng cáo, thông tin thiết bị và vị trí gần đúng. Một số trò chơi dùng Firebase Crashlytics để thu thập dấu vết lỗi và trạng thái thiết bị tại thời điểm xảy ra sự cố. Dữ liệu Firebase có thể được liên kết với AdMob và với các nền tảng quảng cáo chúng tôi dùng cho chiến dịch để biết quảng cáo và chiến dịch nào hiệu quả. Khi được phép, dữ liệu này bao gồm cả mã quảng cáo.",
+          "Chúng tôi sử dụng các báo cáo này ở dạng tổng hợp để hiểu cách chơi, cân bằng độ khó và sửa lỗi, không dùng để xác định tên của bạn. Dữ liệu phân tích ở cấp người dùng được lưu tối đa 14 tháng."
+        ]
+      ],
+      [
+        "sharing",
+        "Chúng tôi chia sẻ thông tin với ai",
+        [
+          "Chúng tôi chỉ chia sẻ thông tin với các nhà cung cấp dịch vụ và đối tác giúp vận hành trò chơi và trang web. Họ bao gồm Google (AdMob, Firebase và Gmail); các mạng quảng cáo hoặc đối tác đo lường khác dùng trong trò chơi, như TikTok hoặc Pangle; Apple và Google Play cho việc phân phối và thanh toán; và Cloudflare cho trang web này. Chúng tôi cũng có thể tiết lộ thông tin khi pháp luật yêu cầu, để bảo vệ người chơi, chúng tôi hoặc người khác, hoặc trong trường hợp sáp nhập hay mua lại.",
+          "Chúng tôi không bán thông tin cá nhân để lấy tiền. Theo luật quyền riêng tư của một số bang ở Hoa Kỳ, việc cho phép đối tác quảng cáo thu thập mã nhận dạng để cá nhân hóa quảng cáo có thể được coi là “bán” hoặc “chia sẻ” thông tin cá nhân. Để từ chối, hãy tắt quảng cáo cá nhân hóa trong Tùy chọn quyền riêng tư của trò chơi, giới hạn theo dõi quảng cáo trên thiết bị (xem bên dưới) hoặc gửi email cho chúng tôi."
         ]
       ],
       [
         "website",
-        "Truy cập trang web",
+        "Khi truy cập trang web này",
         [
-          "Cloudflare phân phối trang và hình ảnh. Để trả về nội dung, bảo vệ trang và chẩn đoán lỗi, mạng của họ có thể xử lý địa chỉ IP, đường dẫn yêu cầu, thời điểm, thông tin trình duyệt và trạng thái phản hồi, kể cả tại quốc gia khác.",
-          "Bạn không cần tài khoản để xem trò chơi và ảnh. Website không có biểu mẫu liên hệ, thanh toán, thẻ quảng cáo hay công cụ phân tích riêng. Liên kết email mở ứng dụng thư của bạn và chúng tôi chỉ nhận được thư sau khi bạn gửi. Website không đọc bản lưu trò chơi.",
-          "Với URL không ghi ngôn ngữ, máy chủ chọn trang theo danh sách ngôn ngữ ưu tiên mà trình duyệt gửi. Ngôn ngữ ghi trong URL được ưu tiên. Tính năng này không dùng cookie."
+          "Cloudflare phân phối các trang và hình ảnh của trang web này. Để trả về trang, bảo vệ trang web và chẩn đoán sự cố, Cloudflare có thể xử lý địa chỉ IP, trang được yêu cầu, thời gian yêu cầu, thông tin trình duyệt và trạng thái phản hồi. Mạng lưới toàn cầu của họ có thể xử lý yêu cầu bên ngoài quốc gia của bạn.",
+          "Trang web này không có thẻ quảng cáo, công cụ phân tích của studio, biểu mẫu liên hệ hay chức năng thanh toán, và không đọc dữ liệu lưu trò chơi của bạn. Khi bạn mở liên kết không có tiền tố ngôn ngữ, máy chủ dựa vào ngôn ngữ ưu tiên của trình duyệt để chọn ngôn ngữ cho trang. Tính năng này không dùng cookie."
         ]
       ],
       [
         "email",
-        "Khi bạn gửi email",
+        "Khi bạn gửi email cho chúng tôi",
         [
-          "Chúng tôi nhận địa chỉ người gửi, nội dung và tệp bạn tự đính kèm để trả lời, điều tra sự cố hoặc giải quyết yêu cầu về quyền riêng tư. Hộp thư hỗ trợ dùng Gmail của Google. Vui lòng không gửi mật khẩu, giấy tờ tùy thân hoặc dữ liệu cá nhân không cần thiết.",
-          "Thư chỉ được lưu trong thời gian cần để giải quyết yêu cầu, tranh chấp liên quan hoặc nghĩa vụ pháp lý, sau đó được xóa. Nhà cung cấp dịch vụ lưu trữ quản lý nhật ký kỹ thuật theo chính sách riêng. Chúng tôi có thể cung cấp thông tin khi pháp luật yêu cầu."
+          "Chúng tôi dùng địa chỉ email, nội dung thư và tệp đính kèm của bạn để trả lời, tìm hiểu vấn đề hoặc xử lý yêu cầu. Hộp thư hỗ trợ của chúng tôi do Google (Gmail) cung cấp. Vui lòng không gửi mật khẩu, giấy tờ tùy thân hoặc thông tin cá nhân khác mà chúng tôi không cần.",
+          "Chúng tôi chỉ giữ email trong thời gian cần thiết để giải quyết yêu cầu, xử lý tranh chấp liên quan hoặc thực hiện nghĩa vụ pháp lý, sau đó sẽ xóa."
         ]
       ],
       [
         "security",
-        "Nhà cung cấp và bảo mật",
+        "Bảo mật, thời gian lưu giữ và chuyển dữ liệu quốc tế",
         [
-          "Trang web và hình ảnh được truyền qua HTTPS. Chỉ người xử lý yêu cầu mới truy cập thư hỗ trợ. Bên xử lý thay mặt chúng tôi phải giới hạn việc sử dụng đúng mục đích đã thỏa thuận và bảo vệ tương đương chính sách này. Chúng tôi chỉ cung cấp dữ liệu trong thư để thực hiện dịch vụ bạn chọn hoặc khi luật yêu cầu."
+          "Trang web của chúng tôi được phục vụ qua HTTPS, và dữ liệu do SDK trong trò chơi gửi đi được mã hóa khi truyền. Chỉ những người xử lý yêu cầu mới có thể xem email hỗ trợ. Chúng tôi chỉ giữ thông tin cá nhân trong thời gian cần thiết cho các mục đích nêu trong chính sách này. Các đối tác lưu dữ liệu họ thu thập theo chính sách lưu giữ của riêng họ.",
+          "Đội ngũ và các nhà cung cấp dịch vụ của chúng tôi ở Hoa Kỳ và các quốc gia khác, nên thông tin của bạn có thể được xử lý bên ngoài quốc gia của bạn. Khi pháp luật yêu cầu, việc chuyển dữ liệu được bảo vệ bằng các biện pháp như Điều khoản hợp đồng tiêu chuẩn của Ủy ban Châu Âu."
         ]
       ],
       [
         "choices",
-        "Lựa chọn và xóa dữ liệu",
+        "Quyền và lựa chọn của bạn",
         [
-          "Trên iOS, chọn Xóa ứng dụng để xóa dữ liệu cục bộ. Gỡ bỏ mà giữ tài liệu và dữ liệu sẽ giữ bản lưu. Trên Android hãy xóa bộ nhớ của ứng dụng. Bản trình duyệt có thể xóa dữ liệu của trang. Tiến trình có thể mất vĩnh viễn. Quản lý bản sao lưu riêng trong cài đặt hệ thống hoặc đám mây.",
-          "Để yêu cầu truy cập, nhận bản sao, chỉnh sửa, hạn chế xử lý, xóa thông tin đã gửi hoặc rút lại sự đồng ý khi áp dụng, hãy viết từ địa chỉ email ban đầu và nêu trò chơi hay thư liên quan. Chúng tôi có thể yêu cầu thông tin tối thiểu để xác minh và sẽ trả lời trong thời hạn luật định.",
-          "Bạn cũng có thể liên hệ cơ quan bảo vệ dữ liệu tại địa phương. Studio không thể lấy hoặc xóa từ xa bản lưu chỉ tồn tại trên thiết bị của bạn."
+          "Quảng cáo: trên iOS, bạn có thể cho phép hoặc từ chối theo dõi trong Cài đặt → Quyền riêng tư & Bảo mật → Theo dõi. Nếu bạn từ chối, ứng dụng không thể truy cập mã quảng cáo (IDFA). Trên Android, vào Cài đặt → Quyền riêng tư → Quảng cáo để đặt lại hoặc xóa mã quảng cáo. Trong trò chơi, hãy mở Tùy chọn quyền riêng tư (nếu có) để thay đổi sự đồng ý của bạn.",
+          "Dữ liệu trò chơi: xóa ứng dụng, hoặc trên Android xóa bộ nhớ của ứng dụng, để xóa dữ liệu trên thiết bị. Với trò chơi trên trình duyệt, hãy xóa dữ liệu trang web. Thao tác này xóa vĩnh viễn tiến trình. Chúng tôi không thể khôi phục hay xóa dữ liệu lưu chỉ có trên thiết bị của bạn.",
+          "Tùy nơi bạn sống, bạn có thể có quyền truy cập, chỉnh sửa, xóa, hạn chế xử lý hoặc chuyển thông tin cá nhân; phản đối việc xử lý; rút lại sự đồng ý; và từ chối việc bán hoặc chia sẻ thông tin cũng như quảng cáo nhắm mục tiêu. Việc thực hiện các quyền này sẽ không khiến bạn bị phân biệt đối xử. Để gửi yêu cầu, hãy email cho chúng tôi và cho biết trò chơi liên quan. Dữ liệu do SDK thu thập được gắn với mã nhận dạng trên thiết bị của bạn, không phải với tên của bạn. Nếu phần cài đặt của trò chơi hiển thị mã người chơi, hãy gửi kèm mã đó. Nếu không, chúng tôi sẽ hướng dẫn bạn dùng công cụ của chính đối tác. Chúng tôi có thể yêu cầu thông tin tối thiểu cần thiết để xác minh yêu cầu và sẽ trả lời trong thời hạn pháp luật quy định. Bạn cũng có thể khiếu nại với cơ quan bảo vệ dữ liệu tại nơi bạn sống."
         ]
       ],
       [
         "children",
-        "Trẻ em và gia đình",
+        "Trẻ em",
         [
-          "Chơi ngoại tuyến không cần tên, ngày sinh hay liên hệ của trẻ. Nếu trẻ gửi dữ liệu qua email, người giám hộ có thể yêu cầu xem hoặc xóa. Không gửi giấy tờ tùy thân trong lần đầu liên hệ. Chúng tôi xin phép người giám hộ khi pháp luật yêu cầu."
+          "Trò chơi của chúng tôi dành cho mọi đối tượng. Chúng tôi không cố ý thu thập thông tin cá nhân của trẻ dưới 13 tuổi, hoặc dưới độ tuổi tối thiểu theo luật của quốc gia bạn. Nếu một trò chơi hướng đến trẻ em hoặc tham gia chương trình dành cho gia đình như Google Play Families, chúng tôi sẽ thiết lập quảng cáo và phân tích phù hợp: không hiển thị quảng cáo cá nhân hóa, không thu thập mã quảng cáo và chỉ dùng các mạng quảng cáo được chương trình đó chứng nhận. Nếu bạn cho rằng một trẻ em đã cung cấp thông tin cá nhân cho chúng tôi, hãy liên hệ và chúng tôi sẽ xóa thông tin đó."
         ]
       ],
       [
         "platforms",
-        "Nền tảng và cập nhật",
+        "Nền tảng và thay đổi chính sách",
         [
-          "Apple, Google Play và hệ thống thiết bị xử lý riêng tài khoản cửa hàng, tải xuống, sao lưu và chẩn đoán bạn chọn chia sẻ theo chính sách và cài đặt tương ứng. Các nền tảng như WeChat hoặc máy chủ tài nguyên có thể xử lý yêu cầu phân phối. Xem thông báo bổ sung của phiên bản đang dùng.",
-          "Littlejoy Games vận hành trang và nhận yêu cầu về quyền riêng tư qua email bên dưới. Khi cách xử lý thay đổi, chúng tôi sẽ cập nhật trang, ngày hiệu lực và xin sự đồng ý khi cần."
+          "Apple, Google Play và các nền tảng phân phối khác xử lý tài khoản cửa hàng, việc tải xuống, sao lưu và thanh toán theo chính sách của riêng họ. Hãy đọc thêm mọi thông báo đi kèm phiên bản trò chơi của bạn.",
+          "Chúng tôi sẽ cập nhật chính sách này và ngày ở đầu trang khi cách làm của chúng tôi thay đổi, chẳng hạn khi một trò chơi thêm mạng quảng cáo hoặc dịch vụ phân tích mới. Khi pháp luật yêu cầu, chúng tôi sẽ xin lại sự đồng ý của bạn."
         ]
       ]
     ]

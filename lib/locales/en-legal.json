@@ -1,77 +1,104 @@
 {
   "privacy": {
-    "intro": "This policy covers games published by Littlejoy Games, shopkivoo.com and our player support services. It explains what stays on your device, what may be sent elsewhere and how to contact the developer about your data.",
+    "intro": "This Privacy Policy applies to the mobile and web games published by Littlejoy Games, to shopkivoo.com and to our player support. It explains what information is collected when you play, which advertising and analytics services our games use, and the choices you have. Not every game or edition uses every service described here. The store listing and in-game notices for each edition show what it uses.",
     "sections": [
       [
         "operator",
-        "About Us",
+        "About us",
         [
-          "Littlejoy Games operates shopkivoo.com. We are a game development team of university students based in Los Angeles, United States. Use the email address on this page to ask about, correct or request deletion of your personal information."
+          "Littlejoy Games is a game development team of university students based in Los Angeles, United States. We publish the games and operate this website. For any question or request about your personal information, contact us at the email address on this page."
         ]
       ],
       [
-        "game-data",
-        "Game data and device features",
+        "collect",
+        "Information we collect",
         [
-          "Offline editions with local saves do not require a login. Progress, inventory, achievements and preferences are stored in app or browser storage to resume play. Offline play does not send those records to the studio.",
-          "If you use system sharing, you choose the content, receiving app and recipient, and may cancel before sending. A platform or host delivering game assets receives the IP address and requested file path needed for delivery. Before using an online feature that handles additional personal data, we explain the data, purpose and recipients and obtain consent where required.",
-          "Mobile editions of Bird Sort that include Firebase Analytics send Google an app-instance ID, approximate location derived from a masked IP address, screen views, sessions, and gameplay events such as the start or completion of a level. Littlejoy Games uses this information to understand how people play and improve the game. The analytics data is encrypted in transit, and advertising ID collection is disabled for Firebase Analytics."
+          "Game data on your device: progress, levels, items, achievements and settings are saved in app or browser storage so you can continue where you left off. Playing does not require an account.",
+          "Information collected automatically: when a game includes advertising or analytics services, those services may collect device and app information (such as device model, operating system, language and app version), identifiers (such as an app-instance ID, the advertising ID where permitted, and the vendor ID on iOS), your IP address and the approximate location derived from it, usage data (such as sessions, screens viewed, levels started or completed, and ad impressions and clicks) and crash or performance data.",
+          "Information you give us: if you email us, we receive your email address, your message and any attachments.",
+          "Purchases: if a game offers in-app purchases, Apple or Google processes the payment. We receive only a confirmation of what was bought, never your card details.",
+          "Our games do not ask for your name, precise location, contacts, photos or microphone. If a future feature needs such data, we will explain why and ask for your permission first."
+        ]
+      ],
+      [
+        "use",
+        "How we use information",
+        [
+          "We use information to run and save your games; show ads, limit how often you see them and grant rewards for watching optional ads; measure ad and marketing performance; understand how players use the games so we can improve levels and fix problems; detect fraud and abuse; answer support requests; and meet legal obligations.",
+          "Where the GDPR or a similar law applies, we rely on performance of our contract with you (providing the game), our legitimate interests (analytics, security and non-personalized ads), your consent (personalized advertising and other uses that require consent) and legal obligations."
         ]
       ],
       [
         "advertising",
-        "Advertising and privacy choices",
+        "Advertising",
         [
-          "Some mobile editions display ads through Google AdMob. When an edition uses AdMob, Google may collect or receive your IP address and approximate location, device or app identifiers (including the advertising ID when available), app interactions (such as launches or taps), ad impressions and interactions, and crash or performance data. Google and its advertising partners may use or share this information to deliver and measure ads, diagnose issues, and prevent fraud. It may also be used to personalize ads where permitted.",
-          "Where consent is required, the game presents an advertising privacy prompt. If available, open Privacy Options in the game settings to review or change your choices, including withdrawing consent. On iOS, you can manage tracking permission under Settings → Privacy & Security → Tracking. If you deny tracking, the app cannot access the iOS advertising ID (IDFA). On Android, open the device’s Ads settings to manage or delete its advertising ID. Depending on your choices and region, you may still see non-personalized ads."
+          "Many of our games are free and supported by ads. We currently use Google AdMob. We may also show ads from other networks, either directly or through AdMob mediation. These may include TikTok’s advertising services, such as Pangle. The ad networks used in a game may collect the information described above to serve and measure ads, prevent fraud and, where permitted, personalize ads. These networks process this information as independent controllers under their own privacy policies.",
+          "When we promote our games on platforms such as TikTok or Google, a game may use the platform’s software development kit (SDK) to send install and in-game events, together with the device advertising ID where permitted. The platform uses this to measure which campaigns lead to installs.",
+          "In the European Economic Area, the United Kingdom, Switzerland and other regions where consent is required, the game asks for your choice before personalized ads are shown. You can change or withdraw that choice at any time in Privacy Options in the game’s settings, where available. If you do not consent, you may still see non-personalized ads based on context, such as the game you are playing."
+        ]
+      ],
+      [
+        "analytics",
+        "Analytics and crash reports",
+        [
+          "Our games use Google Firebase. Firebase Analytics records an app-instance ID, events such as level starts, level completions and in-app purchases, ad impressions and ad revenue, device information and approximate location. Some games use Firebase Crashlytics, which collects crash traces and device state at the time of a crash. Firebase data may be linked with AdMob and with the ad platforms we use for campaigns, so that we can understand which ads and campaigns work. Where permitted, this includes the advertising ID.",
+          "We use these reports in aggregate to understand gameplay, balance difficulty and fix bugs. We do not use them to identify you by name. User-level analytics data is kept for no more than 14 months."
+        ]
+      ],
+      [
+        "sharing",
+        "Who we share information with",
+        [
+          "We share information only with service providers and partners that help us run our games and website. These include Google (AdMob, Firebase and Gmail); any additional ad networks or measurement partners used in a game, such as TikTok or Pangle; Apple and Google Play for distribution and purchases; and Cloudflare for this website. We may also disclose information when the law requires it, to protect players, us or others, or as part of a merger or acquisition.",
+          "We do not sell personal information for money. Under some US state privacy laws, letting ad partners collect identifiers for personalized advertising can count as a “sale” or “sharing” of personal information. To opt out, turn off personalized ads in the game’s Privacy Options, limit ad tracking on your device (see below) or email us."
         ]
       ],
       [
         "website",
         "Visiting this website",
         [
-          "Cloudflare delivers the pages and images. To return a page, protect the site and diagnose failures, its network may process your IP address, requested path, timestamp, browser information and response status. Its global network may process requests outside your country.",
-          "You can browse our games and open artwork previews without an account. The site has no contact forms, checkout, advertising tags or studio analytics. Email links open your mail app, and we receive a message only after you send it. The site does not read your game saves.",
-          "At a link without a language prefix, the server reads the browser’s preferred languages to choose a page. A language in the URL takes precedence. This feature does not use a cookie."
+          "Cloudflare delivers this website’s pages and images. To return a page, protect the site and diagnose failures, it may process your IP address, the page requested, the time of the request, browser information and the response status. Its global network may process requests outside your country.",
+          "This website has no advertising tags, studio analytics, contact forms or checkout, and it does not read your game saves. If you open a link without a language prefix, the server uses your browser’s preferred languages to choose the page language. This does not use a cookie."
         ]
       ],
       [
         "email",
         "When you email us",
         [
-          "We receive the sender address, the message and any attachments you choose to send. We use them to reply, investigate the issue or act on your privacy request. Google provides the Gmail mailbox used for support. Please leave out passwords, identity documents and unnecessary personal details.",
-          "We keep correspondence only as long as needed to resolve the request, handle a related dispute or meet a legal obligation, then delete it. Hosting providers manage technical logs under their own retention policies. We may provide information when legally required."
+          "We use your email address, message and any attachments to reply, investigate the issue or act on your request. Our support mailbox is hosted by Google (Gmail). Please do not send passwords, identity documents or other personal details we do not need.",
+          "We keep emails only as long as needed to resolve the request, handle a related dispute or meet a legal obligation. Then we delete them."
         ]
       ],
       [
         "security",
-        "Service providers and security",
+        "Security, retention and international transfers",
         [
-          "Our site and images are served over HTTPS. Access to support correspondence is limited to people handling the request. Providers acting on our behalf must use personal data only for the agreed purposes and provide the same level of protection described here. We disclose personal information in support messages only to provide the service you choose or when legally required."
+          "Our website is served over HTTPS, and data sent by our games’ SDKs is encrypted in transit. Only the people handling a request can access support emails. We keep personal information only as long as needed for the purposes in this policy. Partners keep the data they collect under their own retention policies.",
+          "Our team and service providers are located in the United States and other countries, so your information may be processed outside your country. Where required, transfers are protected by safeguards such as the European Commission’s Standard Contractual Clauses."
         ]
       ],
       [
         "choices",
-        "Your choices and deletion",
+        "Your rights and choices",
         [
-          "Use Delete App in iOS Settings to remove local app data. Offloading keeps documents and data. On Android, clear the app’s storage in device settings. For a browser game, clear the relevant site data. These actions may permanently erase progress. Manage system or cloud backups separately in the platform settings.",
-          "To request access, a copy, correction, restriction or deletion of information you sent us, or to withdraw consent where applicable, email us from the address you used. Identify the game or message so we can locate it. We may ask for the minimum information needed to verify the request and will reply within the period required by applicable law.",
-          "You may also contact your local data-protection authority. The studio cannot remotely retrieve or erase a save that exists only on your device."
+          "Ads: on iOS, you can allow or deny tracking under Settings → Privacy & Security → Tracking. If you deny tracking, apps cannot access the advertising ID (IDFA). On Android, go to Settings → Privacy → Ads to reset or delete your advertising ID. In the game, open Privacy Options, where available, to change your consent.",
+          "Game data: delete the app, or on Android clear its storage, to remove local data. For a browser game, clear the site data. This permanently erases progress. We cannot restore or erase a save that exists only on your device.",
+          "Depending on where you live, you may have the right to access, correct, delete, restrict or port your personal information; to object to processing; to withdraw consent; and to opt out of the sale or sharing of your information and of targeted advertising. Using these rights will not lead to any discrimination against you. To make a request, email us and tell us which game it concerns. Data collected by an SDK is linked to identifiers on your device, not to your name. If the game’s settings show a player ID, please include it. Otherwise we will help you use the partner’s own tools. We may ask for the minimum information needed to verify your request, and we will reply within the time required by law. You may also complain to your local data protection authority."
         ]
       ],
       [
         "children",
-        "Children and families",
+        "Children",
         [
-          "Offline play does not require a child’s name, date of birth or contact details. If a child sends us personal information by email, a guardian may request access or deletion. Please leave identity documents out of an initial request. We seek parental consent before enabling features where the law requires it."
+          "Our games are made for a general audience. We do not knowingly collect personal information from children under 13, or under the minimum age set by the law in your country. If a game is directed at children or is part of a family program such as Google Play Families, we set up its ads and analytics accordingly. This means no personalized ads, no collection of the advertising ID, and only ad networks certified for that program. If you believe a child has given us personal information, contact us and we will delete it."
         ]
       ],
       [
         "platforms",
-        "Platforms and policy updates",
+        "Platforms and changes to this policy",
         [
-          "Apple, Google Play and device platforms separately handle store accounts, downloads, backups and any diagnostics you choose to share, under their policies and your settings. Other distribution platforms, including WeChat, and game asset hosts may handle platform or delivery requests. Read any additional notice provided with your edition.",
-          "Littlejoy Games operates this site and handles privacy requests at the email below. We will update this page and its effective date when these practices change, and request consent where required."
+          "Apple, Google Play and other distribution platforms handle store accounts, downloads, backups and payments under their own policies. Read any additional notice provided with your edition of a game.",
+          "We will update this policy when our practices change, for example when a game adds a new ad network or analytics service. We will also update the date at the top of the page. Where the law requires it, we will ask for your consent again."
         ]
       ]
     ]

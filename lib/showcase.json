@@ -15,7 +15,7 @@
     "glanceTitle": "At a glance",
     "privacyGlance": [
       "Offline play needs no account, and saves stay on your device.",
-      "Some mobile editions use Google AdMob and Firebase Analytics.",
+      "Free games show ads (Google AdMob and partners) and use Firebase Analytics.",
       "This website has no studio analytics, ad tags or contact forms.",
       "Email us anytime to access, correct or delete your information."
     ],
@@ -49,7 +49,7 @@
     "glanceTitle": "要点速览",
     "privacyGlance": [
       "离线游玩无需注册账号，进度保存在你自己的设备上。",
-      "部分移动版本使用 Google AdMob 广告与 Firebase Analytics 统计。",
+      "免费游戏会展示广告（Google AdMob 及合作伙伴），并使用 Firebase Analytics 统计。",
       "本网站没有工作室统计代码、广告标签或联系表单。",
       "随时发邮件给我们，即可查阅、更正或删除你的信息。"
     ],
@@ -83,7 +83,7 @@
     "glanceTitle": "重點速覽",
     "privacyGlance": [
       "離線遊玩無需註冊帳號，進度保存在你自己的裝置上。",
-      "部分行動版本使用 Google AdMob 廣告與 Firebase Analytics 統計。",
+      "免費遊戲會顯示廣告（Google AdMob 及合作夥伴），並使用 Firebase Analytics 分析。",
       "本網站沒有工作室統計程式碼、廣告標籤或聯絡表單。",
       "隨時寄信給我們，即可查閱、更正或刪除你的資訊。"
     ],
@@ -117,7 +117,7 @@
     "glanceTitle": "ポイントまとめ",
     "privacyGlance": [
       "オフラインプレイにアカウントは不要で、セーブデータは端末内に保存されます。",
-      "一部のモバイル版では Google AdMob と Firebase Analytics を利用しています。",
+      "無料ゲームには広告（Google AdMob とパートナー）が表示され、Firebase Analytics を利用しています。",
       "このサイトには、スタジオ独自の解析ツール、広告タグ、問い合わせフォームはありません。",
       "情報の開示・訂正・削除は、いつでもメールでご依頼いただけます。"
     ],
@@ -151,7 +151,7 @@
     "glanceTitle": "한눈에 보기",
     "privacyGlance": [
       "오프라인 플레이에는 계정이 필요 없으며, 진행 상황은 기기에 저장됩니다.",
-      "일부 모바일 버전은 Google AdMob과 Firebase Analytics를 사용합니다.",
+      "무료 게임은 광고(Google AdMob 및 파트너)를 표시하고 Firebase Analytics를 사용합니다.",
       "이 웹사이트에는 스튜디오 분석 도구, 광고 태그, 문의 양식이 없습니다.",
       "언제든 이메일로 정보 열람, 정정, 삭제를 요청할 수 있습니다."
     ],
@@ -185,7 +185,7 @@
     "glanceTitle": "Tóm tắt nhanh",
     "privacyGlance": [
       "Chơi ngoại tuyến không cần tài khoản, tiến trình được lưu trên thiết bị của bạn.",
-      "Một số phiên bản di động sử dụng Google AdMob và Firebase Analytics.",
+      "Trò chơi miễn phí hiển thị quảng cáo (Google AdMob và đối tác) và dùng Firebase Analytics.",
       "Trang web này không có công cụ phân tích của studio, thẻ quảng cáo hay biểu mẫu liên hệ.",
       "Hãy email cho chúng tôi bất cứ lúc nào để truy cập, sửa hoặc xóa thông tin của bạn."
     ],
@@ -219,7 +219,7 @@
     "glanceTitle": "สรุปสั้น ๆ",
     "privacyGlance": [
       "เล่นแบบออฟไลน์ได้โดยไม่ต้องมีบัญชี และความคืบหน้าจะบันทึกไว้ในอุปกรณ์ของคุณ",
-      "บางเวอร์ชันบนมือถือใช้ Google AdMob และ Firebase Analytics",
+      "เกมฟรีมีโฆษณา (Google AdMob และพาร์ทเนอร์) และใช้ Firebase Analytics",
       "เว็บไซต์นี้ไม่มีเครื่องมือวิเคราะห์ของสตูดิโอ แท็กโฆษณา หรือแบบฟอร์มติดต่อ",
       "ส่งอีเมลถึงเราได้ทุกเมื่อเพื่อขอเข้าถึง แก้ไข หรือลบข้อมูลของคุณ"
     ],
@@ -253,7 +253,7 @@
     "glanceTitle": "Ringkasan",
     "privacyGlance": [
       "Bermain offline tidak memerlukan akun, dan progres tersimpan di perangkatmu.",
-      "Beberapa edisi seluler menggunakan Google AdMob dan Firebase Analytics.",
+      "Game gratis menampilkan iklan (Google AdMob dan mitra) serta menggunakan Firebase Analytics.",
       "Situs ini tidak memiliki analitik studio, tag iklan, atau formulir kontak.",
       "Kirim email kapan saja untuk mengakses, memperbaiki, atau menghapus informasimu."
     ],
@@ -287,7 +287,7 @@
     "glanceTitle": "L’essentiel",
     "privacyGlance": [
       "Le jeu hors ligne ne demande aucun compte et vos sauvegardes restent sur votre appareil.",
-      "Certaines éditions mobiles utilisent Google AdMob et Firebase Analytics.",
+      "Les jeux gratuits affichent des publicités (Google AdMob et partenaires) et utilisent Firebase Analytics.",
       "Ce site n’a ni outil d’analyse du studio, ni balise publicitaire, ni formulaire de contact.",
       "Écrivez-nous à tout moment pour consulter, corriger ou supprimer vos informations."
     ],
@@ -321,7 +321,7 @@
     "glanceTitle": "Auf einen Blick",
     "privacyGlance": [
       "Offline spielen geht ohne Konto, und Spielstände bleiben auf deinem Gerät.",
-      "Einige mobile Ausgaben nutzen Google AdMob und Firebase Analytics.",
+      "Kostenlose Spiele zeigen Werbung (Google AdMob und Partner) und nutzen Firebase Analytics.",
       "Diese Website hat keine Studio-Analyse, keine Werbe-Tags und keine Kontaktformulare.",
       "Schreib uns jederzeit, um deine Daten einzusehen, zu berichtigen oder zu löschen."
     ],
@@ -355,7 +355,7 @@
     "glanceTitle": "En resumen",
     "privacyGlance": [
       "Jugar sin conexión no requiere cuenta y tu progreso se guarda en tu dispositivo.",
-      "Algunas ediciones móviles usan Google AdMob y Firebase Analytics.",
+      "Los juegos gratuitos muestran anuncios (Google AdMob y socios) y usan Firebase Analytics.",
       "Este sitio no tiene analíticas del estudio, etiquetas publicitarias ni formularios de contacto.",
       "Escríbenos cuando quieras para acceder, corregir o eliminar tu información."
     ],
@@ -389,7 +389,7 @@
     "glanceTitle": "In breve",
     "privacyGlance": [
       "Il gioco offline non richiede un account e i salvataggi restano sul tuo dispositivo.",
-      "Alcune edizioni mobili usano Google AdMob e Firebase Analytics.",
+      "I giochi gratuiti mostrano annunci (Google AdMob e partner) e usano Firebase Analytics.",
       "Questo sito non ha analisi dello studio, tag pubblicitari né moduli di contatto.",
       "Scrivici quando vuoi per accedere, correggere o cancellare le tue informazioni."
     ],
@@ -423,7 +423,7 @@
     "glanceTitle": "Em resumo",
     "privacyGlance": [
       "Jogar offline não exige conta, e seu progresso fica salvo no seu dispositivo.",
-      "Algumas edições para celular usam Google AdMob e Firebase Analytics.",
+      "Os jogos gratuitos exibem anúncios (Google AdMob e parceiros) e usam o Firebase Analytics.",
       "Este site não tem análises do estúdio, tags de anúncio nem formulários de contato.",
       "Escreva para nós a qualquer momento para acessar, corrigir ou excluir suas informações."
     ],
@@ -457,7 +457,7 @@
     "glanceTitle": "Коротко о главном",
     "privacyGlance": [
       "Для игры офлайн не нужен аккаунт, а прогресс хранится на вашем устройстве.",
-      "Некоторые мобильные версии используют Google AdMob и Firebase Analytics.",
+      "В бесплатных играх показывается реклама (Google AdMob и партнёры) и используется Firebase Analytics.",
       "На этом сайте нет аналитики студии, рекламных тегов и контактных форм.",
       "Напишите нам в любое время, чтобы получить, исправить или удалить свои данные."
     ],

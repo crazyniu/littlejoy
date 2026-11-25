@@ -279,6 +279,7 @@ async function DocumentPage({ lang, section, t, labels, show }) {
                 ["Apple", "https://www.apple.com/legal/privacy/"],
                 ["Google", "https://policies.google.com/privacy"],
                 ["Google AdMob", "https://policies.google.com/technologies/partner-sites"],
+                ["Firebase", "https://firebase.google.com/support/privacy"],
               ].map(([name, url]) => (
                 <a key={name} href={url}>
                   {name} · {t.privacy} ↗
