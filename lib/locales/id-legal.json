@@ -1,77 +1,104 @@
 {
   "privacy": {
-    "intro": "Kebijakan ini mencakup gim terbitan Littlejoy Games, shopkivoo.com, dan dukungan pemain. Kami menjelaskan data yang tetap di perangkat, data yang dapat dikirim, serta cara menghubungi pengembang.",
+    "intro": "Kebijakan Privasi ini berlaku untuk game seluler dan game web yang diterbitkan oleh Littlejoy Games, untuk shopkivoo.com, dan untuk layanan dukungan pemain. Kebijakan ini menjelaskan informasi apa yang dikumpulkan saat Anda bermain, layanan iklan dan analitik apa yang digunakan game kami, serta pilihan yang Anda miliki. Tidak semua game atau edisi menggunakan semua layanan yang dijelaskan di sini. Halaman toko dan pemberitahuan dalam game untuk setiap edisi menunjukkan layanan yang digunakan edisi tersebut.",
     "sections": [
       [
         "operator",
-        "Tentang Kami",
+        "Tentang kami",
         [
-          "Littlejoy Games mengelola shopkivoo.com. Kami adalah tim pengembangan gim yang terdiri dari mahasiswa dan berbasis di Los Angeles, Amerika Serikat. Hubungi alamat email pada halaman ini untuk meminta akses, perbaikan, atau penghapusan informasi pribadi Anda."
+          "Littlejoy Games adalah tim pengembang game yang terdiri dari mahasiswa di Los Angeles, Amerika Serikat. Kami menerbitkan game dan mengelola situs web ini. Untuk pertanyaan atau permintaan apa pun tentang informasi pribadi Anda, hubungi kami melalui alamat email di halaman ini."
         ]
       ],
       [
-        "game-data",
-        "Data gim dan fitur perangkat",
+        "collect",
+        "Informasi yang kami kumpulkan",
         [
-          "Edisi luring dengan simpanan lokal tidak memerlukan akun. Kemajuan, inventaris, pencapaian, dan preferensi disimpan pada aplikasi atau peramban untuk melanjutkan permainan. Bermain luring tidak mengirim catatan ini ke studio.",
-          "Saat memakai fitur berbagi sistem, Anda memilih isi, aplikasi dan penerima, dan dapat membatalkan sebelum mengirim. Saat sumber daya diunduh, host menerima IP dan jalur berkas yang diperlukan. Sebelum fitur daring memproses data tambahan, kami menjelaskan data, tujuan dan penerima serta meminta persetujuan bila diwajibkan.",
-          "Versi seluler Bird Sort yang menggunakan Firebase Analytics mengirimkan ID instance aplikasi, perkiraan lokasi dari alamat IP yang disamarkan, tampilan layar, sesi, dan peristiwa permainan seperti mulai atau menyelesaikan level kepada Google. Littlejoy Games menggunakan informasi ini untuk memahami cara orang bermain dan meningkatkan permainan. Data analitik dienkripsi saat dikirim, dan pengumpulan ID iklan dinonaktifkan di Firebase Analytics."
+          "Data game di perangkat Anda: progres, level, item, pencapaian, dan pengaturan disimpan di penyimpanan aplikasi atau browser agar Anda bisa melanjutkan permainan. Bermain tidak memerlukan akun.",
+          "Informasi yang dikumpulkan secara otomatis: jika game menyertakan layanan iklan atau analitik, layanan tersebut dapat mengumpulkan informasi perangkat dan aplikasi (seperti model perangkat, sistem operasi, bahasa, dan versi aplikasi), pengenal (seperti ID instans aplikasi, ID iklan jika diizinkan, dan ID vendor di iOS), alamat IP Anda dan perkiraan lokasi yang diturunkan darinya, data penggunaan (seperti sesi, layar yang dilihat, level yang dimulai atau diselesaikan, serta tayangan dan klik iklan), dan data kerusakan aplikasi atau performa.",
+          "Informasi yang Anda berikan: jika Anda mengirim email kepada kami, kami menerima alamat email, pesan, dan lampiran yang Anda kirim.",
+          "Pembelian: jika game menawarkan pembelian dalam aplikasi, pembayaran diproses oleh Apple atau Google. Kami hanya menerima konfirmasi tentang apa yang dibeli, tidak pernah detail kartu Anda.",
+          "Game kami tidak meminta nama, lokasi akurat, kontak, foto, atau akses mikrofon Anda. Jika suatu fitur di masa depan membutuhkan data seperti itu, kami akan menjelaskan alasannya dan meminta izin Anda terlebih dahulu."
+        ]
+      ],
+      [
+        "use",
+        "Cara kami menggunakan informasi",
+        [
+          "Kami menggunakan informasi untuk menjalankan dan menyimpan game Anda; menampilkan iklan, membatasi seberapa sering iklan muncul, dan memberikan hadiah saat Anda memilih menonton iklan berhadiah; mengukur performa iklan dan pemasaran; memahami cara pemain menggunakan game agar kami dapat memperbaiki level dan masalah; mendeteksi penipuan dan penyalahgunaan; menjawab permintaan dukungan; dan memenuhi kewajiban hukum.",
+          "Jika GDPR atau undang-undang serupa berlaku, kami mengandalkan pelaksanaan kontrak dengan Anda (menyediakan game), kepentingan sah kami (analitik, keamanan, dan iklan non-personalisasi), persetujuan Anda (iklan yang dipersonalisasi dan penggunaan lain yang memerlukan persetujuan), serta kewajiban hukum."
         ]
       ],
       [
         "advertising",
-        "Iklan dan pilihan privasi",
+        "Iklan",
         [
-          "Sebagian edisi seluler menampilkan iklan melalui Google AdMob. Saat suatu edisi menggunakan AdMob, Google dapat mengumpulkan atau menerima alamat IP dan perkiraan lokasi, pengenal perangkat atau aplikasi (termasuk ID iklan jika tersedia), interaksi dalam aplikasi seperti membuka aplikasi atau mengetuk layar, tayangan dan interaksi iklan, serta data error dan performa. Google dan mitra periklanannya dapat menggunakan atau membagikan informasi tersebut untuk menayangkan dan mengukur iklan, mendiagnosis masalah, serta mencegah penipuan. Jika diizinkan, informasi itu juga dapat digunakan untuk personalisasi iklan.",
-          "Jika persetujuan diperlukan, game menampilkan pemberitahuan privasi untuk iklan. Jika tersedia, buka Opsi Privasi di pengaturan game untuk meninjau atau mengubah pilihan, termasuk menarik persetujuan. Di iOS, kelola izin melalui Pengaturan → Privasi & Keamanan → Pelacakan. Jika Anda menolak pelacakan, aplikasi tidak dapat mengakses pengenal iklan iOS (IDFA). Di Android, gunakan pengaturan iklan pada perangkat untuk mengelola atau menghapus ID iklan. Bergantung pada pilihan dan wilayah, Anda mungkin tetap melihat iklan yang tidak dipersonalisasi."
+          "Banyak game kami gratis dan didukung oleh iklan. Saat ini kami menggunakan Google AdMob. Kami juga dapat menampilkan iklan dari jaringan lain, baik secara langsung maupun melalui mediasi AdMob, yang dapat mencakup layanan iklan TikTok seperti Pangle. Jaringan iklan yang digunakan dalam game dapat mengumpulkan informasi yang dijelaskan di atas untuk menayangkan dan mengukur iklan, mencegah penipuan, dan, jika diizinkan, mempersonalisasi iklan. Jaringan tersebut memproses informasi ini sebagai pengendali independen berdasarkan kebijakan privasi mereka sendiri.",
+          "Saat kami mempromosikan game di platform seperti TikTok atau Google, game dapat menggunakan perangkat pengembangan perangkat lunak (SDK) platform tersebut untuk mengirim peristiwa pemasangan dan peristiwa dalam game, beserta ID iklan perangkat jika diizinkan. Platform menggunakan data ini untuk mengukur kampanye mana yang menghasilkan pemasangan.",
+          "Di Wilayah Ekonomi Eropa, Inggris, Swiss, dan wilayah lain yang mewajibkan persetujuan, game akan menanyakan pilihan Anda sebelum menampilkan iklan yang dipersonalisasi. Anda dapat mengubah atau menarik pilihan itu kapan saja di Opsi Privasi pada pengaturan game, jika tersedia. Jika Anda tidak menyetujui, Anda mungkin tetap melihat iklan non-personalisasi berdasarkan konteks, seperti game yang sedang Anda mainkan."
+        ]
+      ],
+      [
+        "analytics",
+        "Analitik dan laporan kerusakan aplikasi",
+        [
+          "Game kami menggunakan Google Firebase. Firebase Analytics mencatat ID instans aplikasi, peristiwa seperti memulai level, menyelesaikan level, dan pembelian dalam aplikasi, tayangan iklan dan pendapatan iklan, informasi perangkat, serta perkiraan lokasi. Beberapa game menggunakan Firebase Crashlytics, yang mengumpulkan jejak kerusakan aplikasi dan kondisi perangkat saat kerusakan terjadi. Data Firebase dapat ditautkan dengan AdMob dan dengan platform iklan yang kami gunakan untuk kampanye, agar kami tahu iklan dan kampanye mana yang efektif. Jika diizinkan, ini termasuk ID iklan.",
+          "Kami menggunakan laporan ini secara agregat untuk memahami cara bermain, menyeimbangkan tingkat kesulitan, dan memperbaiki bug. Kami tidak menggunakannya untuk mengidentifikasi nama Anda. Data analitik tingkat pengguna disimpan paling lama 14 bulan."
+        ]
+      ],
+      [
+        "sharing",
+        "Dengan siapa kami membagikan informasi",
+        [
+          "Kami hanya membagikan informasi kepada penyedia layanan dan mitra yang membantu menjalankan game dan situs web kami. Mereka mencakup Google (AdMob, Firebase, dan Gmail); jaringan iklan atau mitra pengukuran tambahan yang digunakan dalam game, seperti TikTok atau Pangle; Apple dan Google Play untuk distribusi dan pembelian; serta Cloudflare untuk situs web ini. Kami juga dapat mengungkapkan informasi jika diwajibkan oleh hukum, untuk melindungi pemain, kami, atau orang lain, atau sebagai bagian dari merger atau akuisisi.",
+          "Kami tidak menjual informasi pribadi demi uang. Namun, berdasarkan undang-undang privasi beberapa negara bagian AS, mengizinkan mitra iklan mengumpulkan pengenal untuk iklan yang dipersonalisasi dapat dianggap sebagai “penjualan” atau “pembagian” informasi pribadi. Untuk menolak, matikan iklan yang dipersonalisasi di Opsi Privasi game, batasi pelacakan iklan di perangkat Anda (lihat di bawah), atau kirim email kepada kami."
         ]
       ],
       [
         "website",
-        "Saat mengunjungi situs",
+        "Mengunjungi situs web ini",
         [
-          "Cloudflare mengirimkan halaman dan gambar. Untuk menyediakan konten, melindungi situs, dan mendiagnosis gangguan, jaringannya dapat memproses alamat IP, jalur yang diminta, waktu, informasi peramban, dan status respons. Pemrosesan dapat berlangsung di luar negara Anda.",
-          "Anda dapat melihat gim dan membuka pratinjau gambar tanpa akun. Situs ini tidak memiliki formulir kontak, pembayaran, tag iklan, atau alat analitik internal. Tautan email membuka aplikasi email Anda. Kami hanya menerima pesan setelah Anda mengirimkannya. Situs ini tidak membaca simpanan gim.",
-          "Pada URL tanpa kode bahasa, server memilih halaman sesuai preferensi bahasa yang dikirim peramban. Bahasa yang tercantum pada URL diutamakan. Fitur ini tidak menggunakan kuki."
+          "Cloudflare mengirimkan halaman dan gambar situs web ini. Untuk menampilkan halaman, melindungi situs, dan mendiagnosis gangguan, Cloudflare dapat memproses alamat IP Anda, halaman yang diminta, waktu permintaan, informasi browser, dan status respons. Jaringan globalnya dapat memproses permintaan di luar negara Anda.",
+          "Situs web ini tidak memiliki tag iklan, analitik studio, formulir kontak, atau fitur pembayaran, dan tidak membaca data simpanan game Anda. Jika Anda membuka tautan tanpa awalan bahasa, server memilih bahasa halaman berdasarkan bahasa pilihan browser Anda. Fitur ini tidak menggunakan cookie."
         ]
       ],
       [
         "email",
-        "Saat Anda mengirim email",
+        "Saat Anda mengirim email kepada kami",
         [
-          "Kami menerima alamat pengirim, pesan, dan lampiran pilihan Anda untuk menjawab, menyelidiki masalah, atau menangani permintaan privasi. Kotak surat dukungan menggunakan Gmail dari Google. Jangan sertakan kata sandi, dokumen identitas, atau rincian pribadi yang tidak diperlukan.",
-          "Surat hanya disimpan selama diperlukan untuk menyelesaikan permintaan, menangani sengketa terkait, atau memenuhi kewajiban hukum, lalu dihapus. Penyedia hosting mengelola log teknis sesuai kebijakan retensinya. Kami dapat memberikan informasi jika diwajibkan hukum."
+          "Kami menggunakan alamat email, pesan, dan lampiran Anda untuk membalas, menyelidiki masalah, atau menindaklanjuti permintaan Anda. Kotak surat dukungan kami disediakan oleh Google (Gmail). Mohon jangan mengirim kata sandi, dokumen identitas, atau data pribadi lain yang tidak kami perlukan.",
+          "Kami menyimpan email hanya selama diperlukan untuk menyelesaikan permintaan, menangani sengketa terkait, atau memenuhi kewajiban hukum. Setelah itu, email akan kami hapus."
         ]
       ],
       [
         "security",
-        "Penyedia layanan dan keamanan",
+        "Keamanan, penyimpanan, dan transfer internasional",
         [
-          "Situs dan gambar dikirim melalui HTTPS. Akses ke email dukungan terbatas pada petugas yang menangani permintaan. Penyedia yang bekerja atas nama kami wajib menggunakan data sesuai tujuan dan memberikan perlindungan setara. Data pribadi dalam pesan hanya diungkapkan untuk layanan pilihan Anda atau bila hukum mewajibkan."
+          "Situs web kami disajikan melalui HTTPS, dan data yang dikirim oleh SDK dalam game kami dienkripsi selama transmisi. Hanya orang yang menangani permintaan yang dapat mengakses email dukungan. Kami menyimpan informasi pribadi hanya selama diperlukan untuk tujuan dalam kebijakan ini. Mitra menyimpan data yang mereka kumpulkan sesuai kebijakan penyimpanan mereka sendiri.",
+          "Tim dan penyedia layanan kami berada di Amerika Serikat dan negara lain, sehingga informasi Anda dapat diproses di luar negara Anda. Jika diwajibkan, transfer tersebut dilindungi dengan pengamanan seperti Klausul Kontrak Standar Komisi Eropa."
         ]
       ],
       [
         "choices",
-        "Pilihan dan penghapusan",
+        "Hak dan pilihan Anda",
         [
-          "Di iOS, Hapus App menghapus data lokal. Mengeluarkan app dengan tetap menyimpan dokumen dan data mempertahankan simpanan. Di Android, hapus penyimpanan aplikasi. Di peramban, hapus data situs gim. Kemajuan dapat hilang permanen. Kelola cadangan sistem atau awan secara terpisah.",
-          "Untuk mengakses, menyalin, memperbaiki, membatasi pemrosesan, menghapus data yang pernah Anda kirim, atau menarik persetujuan jika berlaku, kirim email dari alamat semula dan sebutkan gim atau pesan terkait. Kami dapat meminta informasi minimum untuk memverifikasi permintaan dan akan menjawab dalam batas waktu yang diwajibkan hukum.",
-          "Anda juga dapat menghubungi otoritas perlindungan data setempat. Studio tidak dapat mengambil atau menghapus dari jarak jauh simpanan yang hanya ada di perangkat Anda."
+          "Iklan: di iOS, Anda dapat mengizinkan atau menolak pelacakan di Pengaturan → Privasi & Keamanan → Pelacakan. Jika Anda menolak pelacakan, aplikasi tidak dapat mengakses ID iklan (IDFA). Di Android, buka Setelan → Privasi → Iklan untuk menyetel ulang atau menghapus ID iklan. Di dalam game, buka Opsi Privasi, jika tersedia, untuk mengubah persetujuan Anda.",
+          "Data game: hapus aplikasi, atau di Android hapus penyimpanan aplikasi, untuk menghapus data lokal. Untuk game browser, hapus data situs. Tindakan ini menghapus progres secara permanen. Kami tidak dapat memulihkan atau menghapus simpanan yang hanya ada di perangkat Anda.",
+          "Bergantung pada tempat tinggal Anda, Anda mungkin berhak mengakses, memperbaiki, menghapus, membatasi, atau memindahkan informasi pribadi Anda; menolak pemrosesan; menarik persetujuan; serta menolak penjualan atau pembagian informasi Anda dan iklan bertarget. Menggunakan hak-hak ini tidak akan membuat Anda diperlakukan secara diskriminatif. Untuk mengajukan permintaan, kirim email kepada kami dan sebutkan game yang dimaksud. Data yang dikumpulkan oleh SDK terhubung dengan pengenal di perangkat Anda, bukan dengan nama Anda. Jika pengaturan game menampilkan ID pemain, sertakan ID tersebut. Jika tidak, kami akan membantu Anda menggunakan alat milik mitra. Kami mungkin meminta informasi minimum yang diperlukan untuk memverifikasi permintaan, dan kami akan membalas dalam jangka waktu yang ditetapkan hukum. Anda juga dapat mengajukan keluhan kepada otoritas perlindungan data setempat."
         ]
       ],
       [
         "children",
-        "Anak dan keluarga",
+        "Anak-anak",
         [
-          "Bermain luring tidak memerlukan nama, tanggal lahir, atau kontak anak. Jika anak mengirim data melalui email, orang tua atau wali dapat meminta akses atau penghapusan. Jangan sertakan identitas pada permintaan pertama. Persetujuan orang tua diminta bila diwajibkan."
+          "Game kami dibuat untuk khalayak umum. Kami tidak dengan sengaja mengumpulkan informasi pribadi dari anak di bawah 13 tahun, atau di bawah usia minimum yang ditetapkan hukum di negara Anda. Jika sebuah game ditujukan untuk anak-anak atau termasuk dalam program keluarga seperti Google Play Families, kami mengatur iklan dan analitiknya sesuai ketentuan: tanpa iklan yang dipersonalisasi, tanpa pengumpulan ID iklan, dan hanya menggunakan jaringan iklan yang disertifikasi untuk program tersebut. Jika Anda yakin seorang anak telah memberikan informasi pribadi kepada kami, hubungi kami dan kami akan menghapusnya."
         ]
       ],
       [
         "platforms",
-        "Platform dan perubahan kebijakan",
+        "Platform dan perubahan kebijakan ini",
         [
-          "Apple, Google Play dan platform perangkat menangani akun toko, unduhan, cadangan dan diagnostik yang Anda pilih untuk dibagikan sesuai kebijakan dan pengaturan masing-masing. Platform lain seperti WeChat atau host sumber daya dapat memproses permintaan pengiriman. Baca pemberitahuan tambahan untuk edisi Anda.",
-          "Littlejoy Games mengoperasikan situs dan menerima permintaan privasi melalui email di bawah. Jika praktik berubah, kami akan memperbarui halaman dan tanggal berlakunya serta meminta persetujuan bila diwajibkan."
+          "Apple, Google Play, dan platform distribusi lainnya mengelola akun toko, unduhan, cadangan, dan pembayaran berdasarkan kebijakan mereka sendiri. Bacalah juga pemberitahuan tambahan yang disertakan dengan edisi game Anda.",
+          "Kami akan memperbarui kebijakan ini dan tanggal di bagian atas halaman saat praktik kami berubah, misalnya saat sebuah game menambahkan jaringan iklan atau layanan analitik baru. Jika diwajibkan hukum, kami akan meminta persetujuan Anda kembali."
         ]
       ]
     ]

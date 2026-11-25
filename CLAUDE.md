@@ -48,8 +48,13 @@ long words in pixel headings (German and Russian are the longest).
   `lib/locales/<lang>-legal.json` (privacy, terms), `lib/site-copy.json`,
   `lib/editorial.json`, `lib/showcase.json` and `lib/concept-names.json`. Every new key
   needs all 14 languages.
-- The privacy policy names "Bird Sort" on purpose (a Firebase Analytics disclosure
-  update). Don't "fix" it to Fly Home.
+- The privacy policy (`privacy` in `*-legal.json`) is deliberately generic. It covers
+  Google AdMob (plus mediation or other networks such as TikTok/Pangle), ad-campaign
+  attribution SDKs, and Firebase Analytics/Crashlytics without naming individual games.
+  When a game adds a new SDK, check that the policy still covers it, update
+  `policyUpdated` in `app/[[...path]]/page.jsx`, and add the provider to the
+  `provider-links` list there. The TikTok/Pangle policy URLs were not verified, so add
+  them once that SDK actually ships.
 - **After adding CJK or Korean characters**, rerun `scripts/build-fonts.py` (see its
   docstring). Otherwise the glyphs are missing from the `Littlejoy Display` subset.
   The font must keep that name because the OFL reserves "Fusion Pixel".

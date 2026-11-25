@@ -1,5 +1,5 @@
 import Starfield from "./Starfield";
-import { PixelSprite, SplitText } from "./Pixel";
+import { PixelSprite, SplitText, longestWord } from "./Pixel";
 
 export default function PageBanner({
   lang = "en",
@@ -23,7 +23,7 @@ export default function PageBanner({
               <span className="kicker-text">{kicker}</span>
             </p>
           )}
-          <h1 className="display banner-title">
+          <h1 className="display banner-title" style={{ "--long": longestWord(title, lang) }}>
             <SplitText text={title} lang={lang} />
           </h1>
           {intro && <p className="banner-intro">{intro}</p>}

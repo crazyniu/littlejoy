@@ -1927,8 +1927,12 @@ html:not(.js) .mw {
 .banner .kicker .sprite {
   margin-right: 4px;
 }
+.banner-copy {
+  container-type: inline-size;
+}
+/* Shrink when the longest word would not fit (pixel glyphs ≈ 0.85em wide). */
 .banner-title {
-  font-size: clamp(2.6rem, 7vw, 5.8rem);
+  font-size: min(clamp(2.6rem, 7vw, 5.8rem), calc(100cqi / (var(--long, 1) * 0.85)));
   margin-bottom: 26px;
 }
 .banner-intro {
@@ -3240,7 +3244,7 @@ body:has(.lightbox[open]) {
     font-size: clamp(1.35rem, 6.4vw, 2rem);
   }
   .banner-title {
-    font-size: clamp(1.9rem, 10.5vw, 2.8rem);
+    font-size: min(clamp(1.9rem, 10.5vw, 2.8rem), calc(100cqi / (var(--long, 1) * 0.85)));
   }
   .game-name {
     font-size: clamp(1.9rem, 10vw, 2.8rem);
