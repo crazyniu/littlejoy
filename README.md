@@ -100,13 +100,41 @@ frame is replaced automatically.
 
 The list is in `artSlots` in `lib/portfolio.mjs`.
 
-## Deploying
+## Tests
 
-The site is deployed to the existing Cloudflare Worker `littlejoy-games` using
-the Workers static-assets Direct Upload API. See **CLAUDE.md → Deploying** for
-the step-by-step procedure. Wrangler also works if you have it set up:
-deploy `worker.mjs` with an `ASSETS` binding pointing to `out/`, using the
-assets config produced by `node scripts/cf-assets.mjs manifest`.
+```bash
+npm run build
+npm run preview &                 # serves out/ on :4173
+npm run smoke                     # 108 routing checks against the preview
+npm run smoke -- https://shopkivoo.com   # same checks against production
+node scripts/cf-assets.mjs check  # dry run of the deploy bundle
+```
+
+## CI/CD (GitHub Actions)
+
+| Workflow | Runs on | What it does |
+| --- | --- | --- |
+| `CI` (`.github/workflows/ci.yml`) | every pull request | `npm ci` → build → routing smoke test → deploy bundle check |
+| `Deploy` (`.github/workflows/deploy.yml`) | push to `main`, or run manually | the same checks, then deploys to Cloudflare and smoke-tests production |
+
+`main` is protected by the ruleset in `.github/rulesets/default-branch.json`:
+changes land through pull requests, and the **Build and test** check must pass.
+Dependabot (`.github/dependabot.yml`) opens monthly update PRs for npm packages
+and GitHub Actions.
+
+Deploying needs two settings in the repository (Settings → Secrets and variables → Actions):
+
+| Name | Kind | Value |
+| --- | --- | --- |
+| `CLOUDFLARE_ACCOUNT_ID` | variable | Cloudflare account ID |
+| `CLOUDFLARE_API_TOKEN` | secret | API token with **Account → Workers Scripts → Edit** |
+
+Without the token the Deploy workflow still builds and tests, but it skips the
+deploy step and shows a warning.
+
+To deploy by hand with a token:
+`CLOUDFLARE_API_TOKEN=… CLOUDFLARE_ACCOUNT_ID=… node scripts/cf-assets.mjs deploy`
+(after `npm run build`). CLAUDE.md describes the route without a token, through the Cloudflare MCP.
 
 ## Licenses
 

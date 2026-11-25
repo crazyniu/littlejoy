@@ -1,0 +1,57 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# Never run two deploys at once; let a running deploy finish.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: Deploy to Cloudflare
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://shopkivoo.com
+    env:
+      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+      CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+
+      - run: npm run build
+
+      - name: Smoke-test routing through worker.mjs
+        run: |
+          npm run preview > preview.log 2>&1 &
+          for i in $(seq 30); do curl -fs -o /dev/null http://localhost:4173/en/ && break; sleep 1; done
+          npm run smoke -- http://localhost:4173
+
+      - name: Deploy
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: node scripts/cf-assets.mjs deploy
+
+      - name: Smoke-test production
+        if: env.CLOUDFLARE_API_TOKEN != ''
+        run: |
+          sleep 10
+          npm run smoke -- https://shopkivoo.com
+
+      - name: Skip deploy (no token)
+        if: env.CLOUDFLARE_API_TOKEN == ''
+        run: echo "::warning title=Deploy skipped::Add the CLOUDFLARE_API_TOKEN secret to the production environment or repository to enable automatic deploys."
