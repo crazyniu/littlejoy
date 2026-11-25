@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build --webpack",
+    "postbuild": "node scripts/postbuild.mjs",
+    "images": "node scripts/images.mjs",
     "preview": "node scripts/preview.mjs",
     "smoke": "node scripts/smoke.mjs"
   },
@@ -16,5 +18,8 @@
   },
   "engines": {
     "node": ">=22"
+  },
+  "devDependencies": {
+    "sharp": "0.35.5"
   }
 }

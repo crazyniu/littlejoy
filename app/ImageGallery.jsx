@@ -1,9 +1,9 @@
-"use client";
-import { useId, useRef, useState } from "react";
+import Img, { galleryData } from "./Img";
 
+// Thumbnails that open the shared #lightbox (site.js). Each thumbnail is a
+// real link to the full image, so the gallery works without scripts too.
 export default function ImageGallery({
   items,
-  title,
   controls,
   className = "",
   priority = false,
@@ -11,139 +11,63 @@ export default function ImageGallery({
   coverOnly = false,
   limit,
   tilt = false,
-  children,
+  sizes = "(max-width: 720px) 60vw, 360px",
 }) {
-  const dialog = useRef(null);
-  const swipe = useRef(null);
-  const description = useId();
-  const [index, setIndex] = useState(0);
-  const selected = items[index];
-  const multiple = items.length > 1;
-  function step(delta) {
-    setIndex((current) => (current + delta + items.length) % items.length);
-  }
-  function open(i, trigger) {
-    trigger.focus({ preventScroll: true });
-    setIndex(i);
-    dialog.current.showModal();
-  }
   return (
-    <>
-      <div className={"image-gallery " + className}>
-        {items.slice(0, coverOnly ? 1 : (limit ?? items.length)).map((item, i) => {
-          const thumb = item.thumbnail ?? item;
-          return (
-            <figure key={item.src} data-tilt={tilt || undefined} style={{ "--n": i }}>
-              <button
-                type="button"
-                className="image-trigger"
-                aria-haspopup="dialog"
-                aria-label={controls.open + " · " + item.caption}
-                onClick={(event) => open(i, event.currentTarget)}
-              >
-                {children || (
-                  <img
-                    src={thumb.src}
-                    alt={item.caption}
-                    width={thumb.width}
-                    height={thumb.height}
-                    loading={priority && i === 0 ? "eager" : "lazy"}
-                    fetchPriority={priority && i === 0 ? "high" : undefined}
-                  />
-                )}
-                <span className="enlarge" aria-hidden="true">
-                  +
-                </span>
-              </button>
-              {captions && <figcaption>{item.caption}</figcaption>}
-            </figure>
-          );
-        })}
-      </div>
-      <dialog
-        ref={dialog}
-        className="lightbox"
-        aria-label={title}
-        aria-describedby={description}
-        onClick={(e) => {
-          if (e.target === e.currentTarget) dialog.current.close();
-        }}
-        onKeyDown={(e) => {
-          if (!multiple) return;
-          if (e.key === "ArrowRight" || e.key === "ArrowLeft") {
-            e.preventDefault();
-            step(e.key === "ArrowRight" ? 1 : -1);
-          }
-        }}
-      >
-        <div className="lightbox-inner">
-          <button
-            className="lightbox-close"
-            type="button"
-            autoFocus
-            onClick={() => dialog.current.close()}
-            aria-label={controls.close}
-          >
-            ×
-          </button>
-          <div
-            className="lightbox-stage"
-            onTouchStart={(e) => {
-              const touch = e.touches[0];
-              swipe.current =
-                e.touches.length === 1 ? [touch.clientX, touch.clientY] : null;
-            }}
-            onTouchCancel={() => {
-              swipe.current = null;
-            }}
-            onTouchEnd={(e) => {
-              const start = swipe.current;
-              swipe.current = null;
-              if (!multiple || !start || e.touches.length) return;
-              const touch = e.changedTouches[0];
-              const dx = touch.clientX - start[0],
-                dy = touch.clientY - start[1];
-              if (Math.abs(dx) > 45 && Math.abs(dx) > Math.abs(dy) * 1.5)
-                step(dx < 0 ? 1 : -1);
-            }}
-          >
-            <img
-              key={selected.src}
-              src={selected.src}
-              alt={selected.caption}
-              loading="lazy"
-            />
-          </div>
-          <div className="lightbox-toolbar">
-            {multiple && (
-              <button
-                type="button"
-                aria-label={controls.previous}
-                onClick={() => step(-1)}
-              >
-                ←
-              </button>
-            )}
-            <p id={description} aria-live="polite">
-              {selected.caption}
-              {multiple && (
-                <small>
-                  {index + 1} / {items.length}
-                </small>
-              )}
-            </p>
-            {multiple && (
-              <button
-                type="button"
-                aria-label={controls.next}
-                onClick={() => step(1)}
-              >
-                →
-              </button>
-            )}
-          </div>
+    <div className={"image-gallery " + className} data-gallery={galleryData(items)}>
+      {items.slice(0, coverOnly ? 1 : (limit ?? items.length)).map((item, i) => {
+        const thumb = item.thumbnail ?? item;
+        return (
+          <figure key={item.src} data-tilt={tilt ? "holo" : undefined} style={{ "--n": i }}>
+            <a
+              className="image-trigger"
+              href={item.src}
+              data-lightbox={i}
+              aria-label={controls.open + " · " + item.caption}
+            >
+              <Img
+                src={thumb.src}
+                alt={item.caption}
+                sizes={sizes}
+                priority={priority && i === 0}
+                pixelate
+              />
+              <span className="enlarge" aria-hidden="true">
+                +
+              </span>
+            </a>
+            {captions && <figcaption>{item.caption}</figcaption>}
+          </figure>
+        );
+      })}
+    </div>
+  );
+}
+
+// One dialog per page, filled in by site.js.
+export function Lightbox({ controls }) {
+  return (
+    <dialog id="lightbox" className="lightbox" aria-label={controls.open}>
+      <div className="lightbox-inner">
+        <button className="lightbox-close" type="button" data-close aria-label={controls.close}>
+          ×
+        </button>
+        <div className="lightbox-stage">
+          <img alt="" />
         </div>
-      </dialog>
-    </>
+        <div className="lightbox-toolbar">
+          <button type="button" data-step="-1" aria-label={controls.previous}>
+            ←
+          </button>
+          <p aria-live="polite">
+            <span data-caption />
+            <small data-counter />
+          </p>
+          <button type="button" data-step="1" aria-label={controls.next}>
+            →
+          </button>
+        </div>
+      </div>
+    </dialog>
   );
 }

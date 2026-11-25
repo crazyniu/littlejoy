@@ -12,6 +12,7 @@
 // `manifest` + `upload` are the manual path used with the Cloudflare MCP when no
 // API token is available (see CLAUDE.md → "Deploying").
 import { createHash } from "node:crypto";
+import { existsSync } from "node:fs";
 import { mkdir, readFile, readdir, writeFile } from "node:fs/promises";
 import { dirname, extname, join, normalize, relative, sep } from "node:path";
 import { languages } from "../lib/languages.js";
@@ -44,7 +45,8 @@ const TYPES = {
 
 // Next.js writes RSC payloads (index.txt, __next.*.txt) for client-side
 // navigation. The site uses plain links, so they are not deployed.
-const skip = (path) => /(^|\/)(index\.txt|__next\.[^/]*\.txt)$/.test(path);
+// _headers is not an asset: its rules travel in the assets config.
+const skip = (path) => /(^|\/)(index\.txt|__next\.[^/]*\.txt)$/.test(path) || path === "/_headers";
 
 async function walk(dir) {
   const entries = await readdir(dir, { withFileTypes: true });
@@ -80,15 +82,16 @@ function runWorkerFirst() {
   const legacyTop = Object.keys(legacyRoutes).filter((r) => !r.includes("/"));
   for (const lang of Object.keys(languages)) {
     for (const r of legacyTop) list.push(`/${lang}/${r}*`);
-    list.push(`/${lang}/games/*`);
   }
   return list;
 }
 
-const assetsConfig = () => ({
+const headersFile = join(OUT, "_headers");
+const assetsConfig = async () => ({
   html_handling: "auto-trailing-slash",
   not_found_handling: "404-page",
   run_worker_first: runWorkerFirst(),
+  ...(existsSync(headersFile) ? { _headers: await readFile(headersFile, "utf8") } : {}),
 });
 
 async function buildManifest() {
@@ -174,7 +177,7 @@ async function deploy() {
           main_module: MAIN_MODULE,
           compatibility_date: COMPATIBILITY_DATE,
           bindings: [{ type: "assets", name: "ASSETS" }],
-          assets: { jwt: completion, config: assetsConfig() },
+          assets: { jwt: completion, config: await assetsConfig() },
         }),
       ],
       { type: "application/json" },
@@ -191,7 +194,7 @@ async function manifestFiles() {
   await mkdir(DEPLOY, { recursive: true });
   const { manifest } = await buildManifest();
   await writeFile(join(DEPLOY, "manifest.json"), JSON.stringify(manifest));
-  await writeFile(join(DEPLOY, "assets-config.json"), JSON.stringify(assetsConfig(), null, 2));
+  await writeFile(join(DEPLOY, "assets-config.json"), JSON.stringify(await assetsConfig(), null, 2));
   console.log("→ deploy/manifest.json, deploy/assets-config.json");
 }
 
@@ -206,7 +209,9 @@ async function check() {
   await buildManifest();
   const modules = [...(await workerModules()).keys()];
   console.log(`worker modules: ${modules.join(", ")}`);
-  console.log(`run_worker_first: ${assetsConfig().run_worker_first.length} patterns`);
+  const config = await assetsConfig();
+  console.log(`run_worker_first: ${config.run_worker_first.length} patterns`);
+  console.log(`_headers: ${config._headers ? config._headers.split("\n").filter((l) => l.startsWith("/")).length + " rules" : "none"}`);
 }
 
 const [command, arg] = process.argv.slice(2);

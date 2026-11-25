@@ -43,7 +43,7 @@ export default function Portfolio({ lang, copy, story, show, labels }) {
         />
         <section className="games-showcase" data-group="games">
           {games.map((game, i) => (
-            <GameFeature key={game.slug} game={game} index={i} lang={lang} copy={copy} full />
+            <GameFeature key={game.slug} game={game} index={i} lang={lang} copy={copy} heading="h2" />
           ))}
         </section>
         <section className="concept-gallery" data-group="concepts">
@@ -59,18 +59,10 @@ export default function Portfolio({ lang, copy, story, show, labels }) {
               {concepts.map((slug, i) => (
                 <li key={slug} id={slug} className="concept-tile" data-reveal>
                   <ImageGallery
-                    items={[
-                      {
-                        src: "/art/covers/" + slug + ".webp",
-                        caption: names[i],
-                        width: 418,
-                        height: 627,
-                      },
-                    ]}
-                    title={names[i]}
+                    items={[{ src: "/art/covers/" + slug + ".webp", caption: names[i] }]}
                     controls={copy.explore.preview}
                     captions={false}
-                    coverOnly
+                    sizes="(max-width: 720px) 46vw, 280px"
                     tilt
                   />
                   <div className="concept-meta">

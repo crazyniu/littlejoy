@@ -5,9 +5,11 @@ import conceptNames from "../lib/concept-names.json";
 import ArtSlot from "./ArtSlot";
 import GameFeature from "./GameFeature";
 import ImageGallery from "./ImageGallery";
+import Img from "./Img";
 import PageBanner from "./PageBanner";
+import PixelCity from "./PixelCity";
 import Starfield from "./Starfield";
-import { Kicker, PixelArrow, PixelSprite, SplitText } from "./Pixel";
+import { Kicker, PixelArrow, PixelSprite, SplitText, longestWord } from "./Pixel";
 
 const segmenters = new Map();
 function words(text, lang) {
@@ -29,7 +31,7 @@ export function SectionHead({ kicker, index, title, text, lang, align }) {
   return (
     <div className={"section-head" + (align ? " section-head--" + align : "")}>
       {kicker && <Kicker index={index}>{kicker}</Kicker>}
-      <h2 className="display">
+      <h2 className="display" style={{ "--long": longestWord(title, lang) }}>
         <SplitText text={title} lang={lang} />
       </h2>
       {text && (
@@ -41,10 +43,10 @@ export function SectionHead({ kicker, index, title, text, lang, align }) {
   );
 }
 
-function Hero({ lang, copy, labels, story, show }) {
+function Hero({ lang, copy, labels, story, show, arcade }) {
   return (
     <section className="hero">
-      <Starfield />
+      <Starfield critters />
       <div className="hero-sun" aria-hidden="true" />
       <div className="hero-floor" aria-hidden="true" />
       <div className="hero-clouds" aria-hidden="true">
@@ -63,45 +65,40 @@ function Hero({ lang, copy, labels, story, show }) {
               <SplitText text={show.heroA} lang={lang} />
             </span>
             <span className="hero-line hero-line--accent">
-              <SplitText
-                text={show.heroB}
-                lang={lang}
-                start={[...show.heroA].length}
-              />
+              <SplitText text={show.heroB} lang={lang} start={[...show.heroA].length} />
             </span>
           </h1>
           <p className="hero-lead">{story.lead}</p>
           <div className="hero-actions">
             <Button href={address(lang, "games")}>{story.work}</Button>
-            <Button href={address(lang, "about")} variant="ghost" arrow={false}>
-              {labels.about}
+            <Button href={address(lang, "play")} variant="ghost" arrow={false}>
+              <PixelSprite name="pad" size={2} /> {arcade.play}
             </Button>
           </div>
         </div>
-        <div className="hero-stage" aria-hidden="true">
-          <div className="console">
-            <div className="console-screen">
-              <img
+        <div className="hero-stage">
+          <a className="console" href={address(lang, "play")} aria-label={arcade.playTitle + " · " + arcade.playKicker}>
+            <span className="console-screen">
+              <Img
                 src="/art/site/island.webp"
                 alt=""
-                width="1080"
-                height="720"
-                fetchPriority="high"
+                sizes="(max-width: 959px) 86vw, 540px"
+                priority
               />
-              <span className="console-press">PRESS START</span>
-            </div>
-            <div className="console-controls">
+              <span className="console-press" aria-hidden="true">PRESS START</span>
+            </span>
+            <span className="console-controls" aria-hidden="true">
               <i className="console-pad" />
               <span className="console-brand">LITTLEJOY</span>
               <span className="console-keys">
                 <i />
                 <i />
               </span>
-            </div>
-          </div>
-          <img className="hero-mascot hero-mascot--fish" src="/art/clownfish.webp" alt="" />
-          <img className="hero-mascot hero-mascot--bird" src="/art/sunbird.webp" alt="" />
-          <img className="hero-mascot hero-mascot--puffer" src="/art/little-fish.webp" alt="" />
+            </span>
+          </a>
+          <img className="hero-mascot hero-mascot--fish" src="/art/clownfish.webp" alt="" width="192" height="170" />
+          <img className="hero-mascot hero-mascot--bird" src="/art/sunbird.webp" alt="" width="310" height="315" />
+          <img className="hero-mascot hero-mascot--puffer" src="/art/little-fish.webp" alt="" width="192" height="158" />
           <PixelSprite name="heart" size={5} className="hero-pop hero-pop--1" />
           <PixelSprite name="coin" size={4} className="hero-pop hero-pop--2" />
           <PixelSprite name="star" size={4} className="hero-pop hero-pop--3" />
@@ -195,7 +192,7 @@ export function Pillars({ show, lang }) {
   const icons = ["star", "bulb", "phone"];
   return (
     <div className="pillars">
-      <h2 className="pillars-title display">
+      <h2 className="pillars-title display" style={{ "--long": longestWord(show.pillarsTitle, lang) }}>
         <SplitText text={show.pillarsTitle} lang={lang} />
       </h2>
       <ul className="pillar-grid" data-stagger>
@@ -221,7 +218,7 @@ function ConceptMarquee({ lang, story }) {
       <div className="shell">
         <SectionHead
           kicker={conceptNames[lang].heading}
-          index="03"
+          index="02"
           title={story.ideaTitle}
           text={story.ideaText}
           lang={lang}
@@ -240,13 +237,7 @@ function ConceptMarquee({ lang, story }) {
                     aria-hidden={copyIndex ? "true" : undefined}
                     tabIndex={copyIndex ? -1 : undefined}
                   >
-                    <img
-                      src={"/art/covers/" + slug + ".webp"}
-                      alt=""
-                      width="418"
-                      height="627"
-                      loading="lazy"
-                    />
+                    <Img src={"/art/covers/" + slug + ".webp"} sizes="220px" />
                     <span className="concept-name">{name}</span>
                     <span className="concept-tag">{story.conceptTag}</span>
                   </a>
@@ -276,12 +267,11 @@ function StudioTeaser({ lang, labels, story, show, copy }) {
       <div className="shell teaser-layout">
         <div className="teaser-art" data-reveal="wipe">
           <div className="crt" data-parallax="0.06">
-            <img
+            <Img
               src="/art/site/workroom.webp"
               alt={copy.ui.workshopArt}
-              width="1152"
-              height="768"
-              loading="lazy"
+              sizes="(max-width: 959px) 92vw, 600px"
+              pixelate
             />
           </div>
           <PixelSprite name="pad" size={6} className="teaser-pad" />
@@ -289,7 +279,7 @@ function StudioTeaser({ lang, labels, story, show, copy }) {
         <div className="teaser-copy">
           <SectionHead
             kicker={labels.about}
-            index="04"
+            index="03"
             title={show.processTitle}
             text={labels.team}
             lang={lang}
@@ -320,7 +310,7 @@ export function CallToAction({ lang, labels, story, show, support = true }) {
             <PixelSprite name="mail" size={6} />
           </div>
           <Kicker index="✉">{labels.contact}</Kicker>
-          <h2 className="display">
+          <h2 className="display" style={{ "--long": longestWord(story.mailTitle, lang) }}>
             <SplitText text={story.mailTitle} lang={lang} />
           </h2>
           <p className="cta-text">{labels.contactIntro}</p>
@@ -339,15 +329,50 @@ export function CallToAction({ lang, labels, story, show, support = true }) {
   );
 }
 
-export function StudioHome({ lang, copy, labels, story, show }) {
+function PlayTeaser({ lang, arcade }) {
+  const perches = [
+    [0, 0, 2],
+    [1, 2],
+    [1, 1, 0],
+  ];
+  return (
+    <section className="play-teaser">
+      <div className="shell">
+        <div className="play-panel" data-reveal>
+          <div className="play-copy">
+            <Kicker index="▶">{arcade.playKicker}</Kicker>
+            <h2 className="display" style={{ "--long": longestWord(arcade.teaserTitle, lang) }}>
+              <SplitText text={arcade.teaserTitle} lang={lang} />
+            </h2>
+            <p>{arcade.teaserText}</p>
+            <Button href={address(lang, "play")}>{arcade.teaserCta}</Button>
+          </div>
+          <a className="play-preview" href={address(lang, "play")} tabIndex={-1} aria-hidden="true">
+            {perches.map((birds, i) => (
+              <span className={"pp-branch " + (i % 2 ? "is-right" : "is-left")} key={i} style={{ "--i": i }}>
+                {birds.map((c, j) => (
+                  <span className={"pp-bird pp-c" + c} key={j} style={{ "--j": j }}>
+                    <PixelSprite name="perch" size={4} />
+                  </span>
+                ))}
+              </span>
+            ))}
+            <span className="pp-title">{arcade.playTitle}</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export function StudioHome({ lang, copy, labels, story, show, arcade }) {
   return (
     <>
-      <Hero lang={lang} copy={copy} labels={labels} story={story} show={show} />
+      <Hero lang={lang} copy={copy} labels={labels} story={story} show={show} arcade={arcade} />
       <Ticker lang={lang} copy={copy} />
       <section className="studio-intro" id="studio">
         <div className="shell">
           <Manifesto text={copy.ui.aboutBody} lang={lang} kicker={copy.ui.about} />
-          <Pillars show={show} lang={lang} />
         </div>
       </section>
       <StatsStrip copy={copy} show={show} />
@@ -355,7 +380,7 @@ export function StudioHome({ lang, copy, labels, story, show }) {
         <div className="shell">
           <SectionHead
             kicker={copy.ui.works}
-            index="02"
+            index="01"
             title={story.spotTitle}
             text={story.spotText}
             lang={lang}
@@ -365,6 +390,7 @@ export function StudioHome({ lang, copy, labels, story, show }) {
           <GameFeature key={game.slug} game={game} index={i} lang={lang} copy={copy} />
         ))}
       </section>
+      <PlayTeaser lang={lang} arcade={arcade} />
       <ConceptMarquee lang={lang} story={story} />
       <StudioTeaser lang={lang} labels={labels} story={story} show={show} copy={copy} />
       <CallToAction lang={lang} labels={labels} story={story} show={show} />
@@ -373,35 +399,33 @@ export function StudioHome({ lang, copy, labels, story, show }) {
 }
 
 export function About({ lang, labels, copy, story, show }) {
+  const names = conceptNames[lang].names;
   const steps = [
     {
       title: story.teamTitle,
       text: [story.teamText],
       sprite: "bulb",
-      image: { src: "/art/site/workroom.webp", width: 1152, height: 768, caption: copy.ui.workshopArt },
+      covers: ["rainy-teahouse", "otter-post", "moonlit-kiln"].map((slug) => [
+        "/art/covers/" + slug + ".webp",
+        names[concepts.indexOf(slug)],
+      ]),
     },
     {
       title: story.artTitle,
       text: [story.artText],
       sprite: "pencil",
-      covers: ["rainy-teahouse", "otter-post", "moonlit-kiln"],
+      covers: games.map((g) => ["/art/covers/" + g.slug + ".webp", copy.games[g.slug].name]),
     },
     {
       title: story.drawTitle,
       text: [story.drawText, story.drawMore],
       sprite: "phone",
-      image: { src: "/art/site/sketch-desk.webp", width: 1199, height: 656, caption: story.deskCaption },
+      image: { src: "/art/site/sketch-desk.webp", caption: story.deskCaption },
     },
   ];
   return (
     <>
-      <PageBanner
-        lang={lang}
-        kicker={copy.ui.indie}
-        title={labels.about}
-        intro={labels.team}
-        sprite="logo"
-      >
+      <PageBanner lang={lang} kicker={copy.ui.indie} title={labels.about} intro={labels.team} sprite="logo">
         <p className="banner-chip">
           <PixelSprite name="pin" size={3} />
           {labels.hq} · {labels.location}
@@ -409,7 +433,16 @@ export function About({ lang, labels, copy, story, show }) {
       </PageBanner>
       <section className="about-story">
         <div className="shell about-story-layout">
-          <ArtSlot {...artSlots.team} alt={labels.team} className="about-portrait" />
+          <ArtSlot {...artSlots.team} alt={labels.team} className="about-portrait">
+            <div className="art-frame about-portrait" data-reveal="wipe">
+              <Img
+                src="/art/site/workroom.webp"
+                alt={copy.ui.workshopArt}
+                sizes="(max-width: 959px) 92vw, 640px"
+                pixelate
+              />
+            </div>
+          </ArtSlot>
           <div className="about-story-copy">
             <Kicker index="01">{copy.ui.about}</Kicker>
             <p className="about-lead" data-reveal>
@@ -422,7 +455,14 @@ export function About({ lang, labels, copy, story, show }) {
               </div>
               <div data-reveal>
                 <dt>{copy.ui.works}</dt>
-                <dd>{games.map((g) => copy.games[g.slug].name).join(" · ")}</dd>
+                <dd>
+                  {games.map((g, i) => (
+                    <span key={g.slug}>
+                      {i > 0 && " · "}
+                      <a href={address(lang, "games/" + g.slug)}>{copy.games[g.slug].name}</a>
+                    </span>
+                  ))}
+                </dd>
               </div>
               <div data-reveal>
                 <dt>{conceptNames[lang].heading}</dt>
@@ -432,10 +472,8 @@ export function About({ lang, labels, copy, story, show }) {
           </div>
         </div>
       </section>
-      <StatsStrip copy={copy} show={show} />
       <section className="studio-intro">
         <div className="shell">
-          <Manifesto text={copy.ui.aboutBody} lang={lang} kicker={story.teamTitle} />
           <Pillars show={show} lang={lang} />
         </div>
       </section>
@@ -460,22 +498,14 @@ export function About({ lang, labels, copy, story, show }) {
                     <ImageGallery
                       className="framed-print"
                       items={[step.image]}
-                      title={step.title}
                       controls={copy.explore.preview}
                       captions={false}
+                      sizes="(max-width: 959px) 92vw, 560px"
                     />
                   ) : (
-                    <div className="cover-stack">
-                      {step.covers.map((slug, j) => (
-                        <img
-                          key={slug}
-                          src={"/art/covers/" + slug + ".webp"}
-                          alt={conceptNames[lang].names[concepts.indexOf(slug)]}
-                          width="418"
-                          height="627"
-                          loading="lazy"
-                          style={{ "--n": j }}
-                        />
+                    <div className={"cover-stack cover-stack--" + step.covers.length}>
+                      {step.covers.map(([src, alt], j) => (
+                        <Img key={src} src={src} alt={alt} sizes="220px" style={{ "--n": j }} pixelate />
                       ))}
                     </div>
                   )}
@@ -487,7 +517,9 @@ export function About({ lang, labels, copy, story, show }) {
       </section>
       <section className="city">
         <div className="shell city-layout">
-          <ArtSlot {...artSlots.city} alt={labels.location} />
+          <ArtSlot {...artSlots.city} alt={labels.location}>
+            <PixelCity label={labels.location} />
+          </ArtSlot>
           <div className="city-card" data-reveal>
             <PixelSprite name="pin" size={5} />
             <p className="city-label">{labels.hq}</p>
@@ -519,17 +551,10 @@ export function ContactPage({ lang, labels, story, copy, show, support }) {
         artwork={
           <ImageGallery
             className="framed-print"
-            items={[
-              {
-                src: "/art/site/post-desk.webp",
-                caption: story.mailCaption,
-                width: 1199,
-                height: 656,
-              },
-            ]}
-            title={story.mailTitle}
+            items={[{ src: "/art/site/post-desk.webp", caption: story.mailCaption }]}
             controls={copy.explore.preview}
             captions={false}
+            sizes="(max-width: 959px) 92vw, 560px"
             priority
           />
         }
@@ -538,7 +563,12 @@ export function ContactPage({ lang, labels, story, copy, show, support }) {
       </PageBanner>
       <section className="letter">
         <div className="shell letter-layout">
-          <SectionHead kicker={labels.contact} index="01" title={story.mailTitle} lang={lang} />
+          <div className="letter-head">
+            <Kicker index="01">{labels.contact}</Kicker>
+            <h2 className="display" style={{ "--long": longestWord(story.mailTitle, lang) }}>
+              <SplitText text={story.mailTitle} lang={lang} />
+            </h2>
+          </div>
           <div className="letter-copy" data-stagger>
             <p data-reveal>{story.mailText}</p>
             <p data-reveal>{story.mailMore}</p>
@@ -603,10 +633,12 @@ function SupportPage({ lang, labels, story, copy, show }) {
               return (
                 <article className={"howto-card game--" + game.color} key={game.slug} data-reveal data-tilt>
                   <header>
-                    <img src={"/art/covers/" + game.slug + ".webp"} alt="" width="720" height="1080" loading="lazy" />
+                    <Img src={"/art/covers/" + game.slug + ".webp"} sizes="120px" />
                     <div>
                       <p className="howto-genre">{info.genre}</p>
-                      <h3>{info.name}</h3>
+                      <h3>
+                        <a href={address(lang, "games/" + game.slug)}>{info.name}</a>
+                      </h3>
                     </div>
                   </header>
                   <ol>
