@@ -4041,6 +4041,11 @@ img[data-pixelate] {
   .screen-strip figure:nth-child(even) {
     margin-top: 0;
   }
+  /* The 7:3 skyline is a sliver on phones: crop it to 4:3 around downtown. */
+  .city .art-frame img {
+    aspect-ratio: 4 / 3;
+    object-position: 64% 50%;
+  }
   .game-scene-chip {
     left: 8px;
     bottom: 8px;

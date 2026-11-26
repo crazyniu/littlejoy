@@ -329,6 +329,78 @@
   ],
   "lqip": "data:image/webp;base64,UklGRmQAAABXRUJQVlA4IFgAAADwAQCdASoMAAgAAoBCJbACdADcgCYnhgAAzh91dibAc7hr1igjF7stnu4nSDhY6WQKhy+BFJjvQqPx8/UMDcwRQZxLCU8B0fxgwsdiz1Y/ouI5sH7lAAAA"
  },
+ "/art/slots/bubble-fish-keyart.webp": {
+  "w": 1600,
+  "h": 900,
+  "set": [
+   [
+    640,
+    "/art/r/slots/bubble-fish-keyart-640.webp"
+   ],
+   [
+    1024,
+    "/art/r/slots/bubble-fish-keyart-1024.webp"
+   ],
+   [
+    1400,
+    "/art/r/slots/bubble-fish-keyart-1400.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRmoAAABXRUJQVlA4IF4AAACwAQCdASoMAAcAAoBCJbACdACg28xAAP7gCWXFhsIX3tX8xNZ8IIMNvjA4c9kgDCyVLx4Vd+iQuNBLcxWkgIO9/xHadJ0jgNmVc9ts/J3Vevi3n77cwRkKHk+NdwAA"
+ },
+ "/art/slots/fly-home-keyart.webp": {
+  "w": 1600,
+  "h": 900,
+  "set": [
+   [
+    640,
+    "/art/r/slots/fly-home-keyart-640.webp"
+   ],
+   [
+    1024,
+    "/art/r/slots/fly-home-keyart-1024.webp"
+   ],
+   [
+    1400,
+    "/art/r/slots/fly-home-keyart-1400.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRl4AAABXRUJQVlA4IFIAAADwAQCdASoMAAcAAoBCJagCdAD7EKXG9gAA9pl0CPdjlwf5B0ALQOHisgFkuXRbJgOeougULi3uQHLx/vcNaMiYBCCh3DP2wXk091CT6MUkAAAA"
+ },
+ "/art/slots/los-angeles-skyline.webp": {
+  "w": 2100,
+  "h": 900,
+  "set": [
+   [
+    640,
+    "/art/r/slots/los-angeles-skyline-640.webp"
+   ],
+   [
+    1024,
+    "/art/r/slots/los-angeles-skyline-1024.webp"
+   ],
+   [
+    1400,
+    "/art/r/slots/los-angeles-skyline-1400.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRlAAAABXRUJQVlA4IEQAAADQAQCdASoMAAUAAoBCJagCdAEDW18pqAD+8ubgn9AGtx8eUFa2WweXz+RtO/q1lGUR2KVGiT8L8t2l749/Xz/RZAAAAA=="
+ },
+ "/art/slots/team-portrait.webp": {
+  "w": 1200,
+  "h": 900,
+  "set": [
+   [
+    640,
+    "/art/r/slots/team-portrait-640.webp"
+   ],
+   [
+    1024,
+    "/art/r/slots/team-portrait-1024.webp"
+   ]
+  ],
+  "lqip": "data:image/webp;base64,UklGRmYAAABXRUJQVlA4IFoAAADwAQCdASoMAAkAAoBCJbACdAEOdHF81wAA/oPAuVAJmQxoO0Myo0jGFNf/cf6HBnSHCzfD3fPqG+9JOS8n8bnNbns7TJBwAJpUnO1XD7U+xaufYBF0F+hgAAA="
+ },
  "/art/store/bubble-fish-1.webp": {
   "w": 1080,
   "h": 1620,

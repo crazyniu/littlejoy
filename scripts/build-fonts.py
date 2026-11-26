@@ -25,6 +25,9 @@ import sys
 from pathlib import Path
 
 from fontTools import subset
+from fontTools.pens.boundsPen import BoundsPen
+from fontTools.pens.t2CharStringPen import T2CharStringPen
+from fontTools.pens.transformPen import TransformPen
 from fontTools.ttLib import TTFont
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -61,16 +64,47 @@ def collect_text():
     return "".join(sorted(c for c in chars if c.isprintable() or c == " "))
 
 
-def build(source, text, out):
+# Fusion Pixel's zh_hans build sets Western quotes, the middle dot and the
+# bullet full-width (1 em), which leaves a gap in "We’re" and "don’t". In the
+# Latin file they are re-spaced to their ink width plus 1 px on each side.
+# (Dashes, the ellipsis and the arrow/star icons already fill the em.)
+PROPORTIONAL = "‘’“”·•"
+
+
+def respace(font):
+    cmap = font.getBestCmap()
+    glyphs = font.getGlyphSet()
+    top = font["CFF "].cff.topDictIndex[0]
+    nominal = getattr(top.Private, "nominalWidthX", 0)
+    px = font["head"].unitsPerEm // 12  # one pixel of the 12 px design
+    for char in PROPORTIONAL:
+        name = cmap.get(ord(char))
+        if not name:
+            continue
+        bounds = BoundsPen(glyphs)
+        glyphs[name].draw(bounds)
+        x_min, _, x_max, _ = bounds.bounds
+        advance = int(x_max - x_min) + 2 * px
+        pen = T2CharStringPen(advance - nominal, glyphs)
+        glyphs[name].draw(TransformPen(pen, (1, 0, 0, 1, px - x_min, 0)))
+        old = top.CharStrings[name]
+        top.CharStrings[name] = pen.getCharString(private=old.private, globalSubrs=old.globalSubrs)
+        font["hmtx"][name] = (advance, px)
+
+
+def build(source, text, out, proportional=False):
     options = subset.Options()
     options.flavor = "woff2"
     options.layout_features = ["*"]
     options.name_IDs = ["*"]
     options.notdef_outline = True
-    font = TTFont(source)
+    # Keep the source's timestamp so rebuilding unchanged text gives identical files.
+    font = TTFont(source, recalcTimestamp=False)
     subsetter = subset.Subsetter(options)
     subsetter.populate(text=text)
     subsetter.subset(font)
+    if proportional:
+        respace(font)
 
     name = font["name"]
     for record in name.names:
@@ -88,7 +122,7 @@ def build(source, text, out):
 
 def main(source):
     text = collect_text()
-    build(source, "".join(c for c in text if ord(c) < SPLIT), FONTS / "littlejoy-display.woff2")
+    build(source, "".join(c for c in text if ord(c) < SPLIT), FONTS / "littlejoy-display.woff2", proportional=True)
     build(source, "".join(c for c in text if ord(c) >= SPLIT), FONTS / "littlejoy-display-cjk.woff2")
 
 
