@@ -52,6 +52,10 @@ const jobs = [
   expect("/fonts/silkscreen.woff2", 200),
   expect("/sitemap.xml", 200, { contains: "hreflang" }),
   expect("/robots.txt", 200),
+  // Finished art slots render the artwork, not the drawn fallback.
+  expect("/en/games/fly-home/", 200, { contains: "/art/slots/fly-home-keyart.webp" }),
+  expect("/en/about/", 200, { contains: "/art/slots/los-angeles-skyline.webp" }),
+  expect("/art/r/slots/team-portrait-640.webp", 200),
   expect("/app-ads.txt", 200),
   expect("/this-page-does-not-exist/", 404, { contains: "CONTINUE?" }),
 ];

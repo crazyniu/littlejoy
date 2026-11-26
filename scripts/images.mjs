@@ -20,10 +20,11 @@ const widths = {
   store: [480, 720],
   covers: [360],
   site: [640],
+  slots: [640, 1024, 1400],
   "": [640],
 };
 // Folders whose images get a mosaic placeholder for the depixelate reveal.
-const mosaic = new Set(["store", "covers", "site"]);
+const mosaic = new Set(["store", "covers", "site", "slots"]);
 
 async function walk(dir) {
   const entries = await readdir(dir, { withFileTypes: true });

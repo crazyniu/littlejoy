@@ -90,16 +90,21 @@ long words in pixel headings (German and Russian are the longest).
   It writes two files split at U+2E80 (`littlejoy-display.woff2`, 5 KiB, and
   `littlejoy-display-cjk.woff2`); `layout.jsx` preloads the CJK file only for zh,
   zh-hant, ja and ko. The font must keep that name because the OFL reserves
-  "Fusion Pixel".
+  "Fusion Pixel". The zh_hans source has full-width `‘’“”·•`, so the script re-spaces
+  them to their ink width in the Latin file (`PROPORTIONAL`). Otherwise "We’re" shows a
+  gap. Output is reproducible, so an unchanged rerun leaves the files identical.
 - Thai uses `Littlejoy International`. Vietnamese also falls back to it, because
   neither Silkscreen nor Fusion Pixel has all the diacritics.
 
 ## Art slots
 
-`ArtSlot` checks `public/<src>` at build time. Until the file exists, production renders
-its `children` (a drawn fallback such as `GameScene` or `PixelCity`) and dev shows a
-placeholder. Slots are listed in `artSlots` in `lib/portfolio.mjs`; README.md has the table.
-To add art, drop the `.webp` at that path and rebuild. No code change is needed.
+`ArtSlot` checks `public/<src>` at build time and renders the art through `<Img>`
+(srcset, mosaic, depixelate). Until the file exists, production renders its `children`
+(a drawn fallback such as `GameScene` or `PixelCity`) and dev shows a placeholder. Slots
+are listed in `artSlots` in `lib/portfolio.mjs`; README.md has the table. All four are
+filled. To replace art, save the `.webp` at that exact size, run `npm run images`, and
+rebuild. No code change is needed. Keep generation drafts in `art-wip/` (gitignored). The
+art must contain no text or logos, and it must reuse the studio's own mascots.
 
 ## Deploying
 

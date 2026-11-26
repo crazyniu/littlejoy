@@ -89,7 +89,7 @@ export default function GamePage({ slug, lang, copy, labels, story, show, arcade
 
       <section className="gd-world">
         <div className="shell gd-world-layout">
-          <ArtSlot {...artSlots[slug]} alt={feature.worldTitle}>
+          <ArtSlot {...artSlots[slug]} alt={feature.worldTitle} sizes="(max-width: 959px) 92vw, 680px">
             <GameScene game={game} title={feature.worldTitle} />
           </ArtSlot>
           <div className="world-copy" data-stagger>

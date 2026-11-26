@@ -112,22 +112,24 @@ python3 scripts/build-fonts.py path/to/fusion-pixel-12px-proportional-zh_hans.wo
 The full font is in the `fusion-pixel-font-12px-proportional-woff2-v2024.05.12`
 release at https://github.com/TakWolf/fusion-pixel-font/releases.
 
-## Art slots (artwork still to be made)
+## Art slots
 
-Some sections are waiting for final artwork. Until the file exists, production
-shows a drawn fallback (a pixel level map for key art, the pixel city for the
-skyline, a studio photo for the portrait), and `npm run dev` shows a striped
-**ART SLOT** frame. To fill a slot, export the image at the size below, save it
-at the path shown, and rebuild. The fallback is replaced automatically.
+Four sections use larger illustrations: the key art on each game page, the
+team illustration and the Los Angeles skyline on About. They are listed in
+`artSlots` in `lib/portfolio.mjs`.
 
 | Slot | Path in `public/` | Size |
 | --- | --- | --- |
 | Bubble Fish key art | `art/slots/bubble-fish-keyart.webp` | 1600×900 |
 | Fly Home key art | `art/slots/fly-home-keyart.webp` | 1600×900 |
-| Team portrait (About) | `art/slots/team-portrait.webp` | 1200×900 |
+| Team illustration (About) | `art/slots/team-portrait.webp` | 1200×900 |
 | Los Angeles skyline (About) | `art/slots/los-angeles-skyline.webp` | 2100×900 |
 
-The list is in `artSlots` in `lib/portfolio.mjs`.
+To replace one, export the image at that size, save it at that path, then run
+`npm run images` and rebuild. If a file is missing, production shows a drawn
+fallback (a pixel level map, the studio workroom, a procedural pixel city) and
+`npm run dev` shows a striped **ART SLOT** frame. Generation drafts go in
+`art-wip/`, which git ignores.
 
 ## Tests
 

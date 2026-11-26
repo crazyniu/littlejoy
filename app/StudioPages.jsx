@@ -433,7 +433,7 @@ export function About({ lang, labels, copy, story, show }) {
       </PageBanner>
       <section className="about-story">
         <div className="shell about-story-layout">
-          <ArtSlot {...artSlots.team} alt={labels.team} className="about-portrait">
+          <ArtSlot {...artSlots.team} alt={labels.team} className="about-portrait" sizes="(max-width: 959px) 92vw, 600px">
             <div className="art-frame about-portrait" data-reveal="wipe">
               <Img
                 src="/art/site/workroom.webp"
@@ -517,7 +517,7 @@ export function About({ lang, labels, copy, story, show }) {
       </section>
       <section className="city">
         <div className="shell city-layout">
-          <ArtSlot {...artSlots.city} alt={labels.location}>
+          <ArtSlot {...artSlots.city} alt={labels.location} sizes="(max-width: 1280px) 94vw, 1200px">
             <PixelCity label={labels.location} />
           </ArtSlot>
           <div className="city-card" data-reveal>
